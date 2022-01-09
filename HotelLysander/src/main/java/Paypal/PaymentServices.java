@@ -51,7 +51,7 @@ public class PaymentServices {
     private RedirectUrls getRedirectURLs() {
         RedirectUrls redirectUrls = new RedirectUrls();
         redirectUrls.setCancelUrl("http://localhost/HotelLysander/bookInLysanderRate.html");
-        redirectUrls.setReturnUrl("http://localhost/HotelLysander/ReviewPaypalServlet");
+        redirectUrls.setReturnUrl("http://localhost/HotelLysander/ExecutePaymentServlet");
 
         return redirectUrls;
     }
@@ -74,16 +74,17 @@ public class PaymentServices {
         } catch (PayPalRESTException e) {
             e.printStackTrace();
         }
+
+        return payment;
     }
 
     private List<Transaction> getTransactionInformation(OrderDetails orderDetail) {
-        Details details = new Details();
-        details.setPaymentAmount(OrderDetails.getPaymentAmount());
+//        Details details = new Details();
+//        details.setPaymentAmount(orderDetail.getPaymentAmount());
 
         Amount amount = new Amount();
         amount.setCurrency("LKR");
-        amount.setTotal(OrderDetails.getPaymentAmount());
-        amount.setDetails(details);
+        amount.setTotal(orderDetail.getPaymentAmount());
 
         Transaction transaction = new Transaction();
         transaction.setAmount(amount);

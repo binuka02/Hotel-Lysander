@@ -1,5 +1,7 @@
 package Paypal;
 
+import com.paypal.base.rest.PayPalRESTException;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -18,27 +20,28 @@ public class AuthorizedPaymentServlet extends HttpServlet {
 
 
 
-    public AuthorizePaymentServlet() {
-        }
+        String paymentAmount = request.getParameter("paymentAmount");
 
-        protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-            String paymentAmount = request.getParameter("paymentAmount");
 
-            OrderDetail orderDetail = new OrderDetail(product, subtotal, shipping, tax, total);
+        OrderDetails orderDetail = new OrderDetails(paymentAmount);
 
+        try {
+            PaymentServices paymentServices = new PaymentServices();
+            String approvalLink = null;
             try {
-                PaymentServices paymentServices = new PaymentServices();
-                String approvalLink = paymentServices.authorizePayment(orderDetail);
-
-                response.sendRedirect(approvalLink);
-
-            } catch (PayPalRESTException ex) {
-                request.setAttribute("errorMessage", ex.getMessage());
-                ex.printStackTrace();
-                request.getRequestDispatcher("Error.html").forward(request, response);
+                approvalLink = paymentServices.authorizePayment(orderDetail);
+            } catch (PayPalRESTException e) {
+                e.printStackTrace();
             }
-        }
 
+            response.sendRedirect(approvalLink);
+
+        } catch (Exception ex) {
+            request.setAttribute("errorMessage", ex.getMessage());
+            ex.printStackTrace();
+            request.getRequestDispatcher("Error.html").forward(request, response);
+        }
     }
+
 }
+

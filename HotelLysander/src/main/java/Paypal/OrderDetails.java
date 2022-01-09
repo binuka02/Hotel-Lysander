@@ -12,13 +12,10 @@ public class OrderDetails extends Details {
         this.paymentAmount = paymentAccount;
     }
 
-    public static String getPaymentAmount()
+    public String getPaymentAmount()
     {
         return paymentAmount;
     }
 
-    public void setPaymentAmount(String paymentAmount)
-    {
-        this.paymentAmount = paymentAmount;
-    }
+
 }
