@@ -86,6 +86,7 @@ public class PaymentServices {
         amount.setCurrency("LKR");
         amount.setTotal(orderDetail.getPaymentAmount());
 
+
         Transaction transaction = new Transaction();
         transaction.setAmount(amount);
         transaction.setDescription("Hotel Lysander");
