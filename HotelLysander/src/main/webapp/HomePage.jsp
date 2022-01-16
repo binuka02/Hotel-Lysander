@@ -126,23 +126,7 @@
             background-color: rgba(255,255,255,1);
             overflow: hidden;
         }
-        #Rectangle_25 {
-            fill: rgba(41,38,38,1);
-            stroke: rgba(112,112,112,1);
-            stroke-width: 1px;
-            stroke-linejoin: miter;
-            stroke-linecap: butt;
-            stroke-miterlimit: 4;
-            shape-rendering: auto;
-        }
-        .Rectangle_25 {
-            position: absolute;
-            overflow: visible;
-            width: 1920px;
-            height: 262px;
-            left: 0px;
-            top: 5138px;
-        }
+
         #HOME {
             left: 41px;
             top: 43px;
@@ -1525,23 +1509,7 @@
             color: rgba(206,185,162,1);
             letter-spacing: 0.1px;
         }
-        #Rectangle_18 {
-            fill: rgba(178,172,172,1);
-            stroke: rgba(112,112,112,1);
-            stroke-width: 1px;
-            stroke-linejoin: miter;
-            stroke-linecap: butt;
-            stroke-miterlimit: 4;
-            shape-rendering: auto;
-        }
-        .Rectangle_18 {
-            position: absolute;
-            overflow: visible;
-            width: 656px;
-            height: 33px;
-            left: 482px;
-            top: 5237px;
-        }
+
         #Email {
             left: 496px;
             top: 5240px;
@@ -1968,16 +1936,11 @@
     <img id="png_20211213_001810_0000-remov" src="png_20211213_001810_0000-remov.png" srcset="png_20211213_001810_0000-remov.png 1x, png_20211213_001810_0000-remov@2x.png 2x">
     -->
 
-    <svg class="Rectangle_25">
-        <rect id="Rectangle_25" rx="0" ry="0" x="0" y="0" width="100%" height="262">
-        </rect>
-    </svg>
+
     <div id="HOME">
         <span>HOME</span>
     </div>
-    <div id="CONTACT_US">
-        <span>REVIEW</span>
-    </div>
+
     <div id="ABOUT_US">
         <span>ABOUT US</span>
     </div>
@@ -2308,12 +2271,7 @@
     <div id="THE_LYSANDER_cm">
         <span>THE LYSANDER</span>
     </div>
-    <div id="THE_LYSANDER_cn">
-        <span>THE LYSANDER</span>
-    </div>
-    <div id="Enter_Your_Email_Here_to_Revie">
-        <span>Enter Your Email Here to Review Us.....</span>
-    </div>
+
     <svg class="Line_9" viewBox="0 0 366 3">
         <path id="Line_9" d="M 0 0 L 366 0">
         </path>
@@ -2364,49 +2322,11 @@
         <path id="Line_10" d="M 0 0 L 0 18">
         </path>
     </svg>
-    <img id="fb" src="fb.png" srcset="fb.png 1x, fb@2x.png 2x">
 
-    <img id="ig" src="ig.png" srcset="ig.png 1x, ig@2x.png 2x">
 
-    <img id="tw" src="tw.png" srcset="tw.png 1x, tw@2x.png 2x">
 
-    <img id="share" src="share.png" srcset="share.png 1x, share@2x.png 2x">
 
-    <div id="Contact_Us">
-        <span>Contact Us</span>
-    </div>
-    <div id="Rate_Us">
-        <span>Rate Us</span>
-    </div>
-    <div id="Email_">
-        <span>Email</span><br/>
-    </div>
-    <div id="n_4_70_1378026">
-        <span>+94 70 1378026</span>
-    </div>
-    <div id="infothelysanderhotelgmailcom">
-        <span>info@thelysanderhotel@gmail.com</span>
-    </div>
-    <svg class="Rectangle_18">
-        <rect id="Rectangle_18" rx="10" ry="10" x="0" y="0" width="656" height="33">
-        </rect>
-    </svg>
-    <div id="Email">
-        <span>Email....</span>
-    </div>
-    <img id="n_46-1469053_star-icon-black-f" src="n_46-1469053_star-icon-black-f.png" srcset="n_46-1469053_star-icon-black-f.png 1x, n_46-1469053_star-icon-black-f@2x.png 2x">
 
-    <img id="n_46-1469053_star-icon-black-f_dd" src="n_46-1469053_star-icon-black-f_dd.png" srcset="n_46-1469053_star-icon-black-f_dd.png 1x, n_46-1469053_star-icon-black-f_dd@2x.png 2x">
-
-    <img id="n_15-1150391_highly-suited-rat" src="n_15-1150391_highly-suited-rat.png" srcset="n_15-1150391_highly-suited-rat.png 1x, n_15-1150391_highly-suited-rat@2x.png 2x">
-
-    <img id="n_15-1150391_highly-suited-rat_df" src="n_15-1150391_highly-suited-rat_df.png" srcset="n_15-1150391_highly-suited-rat_df.png 1x, n_15-1150391_highly-suited-rat_df@2x.png 2x">
-
-    <img id="n_15-1150391_highly-suited-rat_dg" src="n_15-1150391_highly-suited-rat_dg.png" srcset="n_15-1150391_highly-suited-rat_dg.png 1x, n_15-1150391_highly-suited-rat_dg@2x.png 2x">
-
-    <div id="All_Rights_Reserverd">
-        <span>All Rights Reserverd</span>
-    </div>
     <svg class="Icon_metro-registered" viewBox="2.571 2.203 10.429 10.429">
         <path id="Icon_metro-registered" d="M 8.635072708129883 6.294865608215332 C 8.635072708129883 5.953428268432617 8.518673896789551 5.718691825866699 8.28587532043457 5.590654373168945 C 8.157838821411133 5.520813941955566 7.930862426757812 5.485893249511719 7.604947090148926 5.485893249511719 L 6.889095306396484 5.485893249511719 L 6.889095306396484 7.121284484863281 L 7.831915855407715 7.121284484863281 C 8.087990760803223 7.121284484863281 8.285868644714355 7.049505233764648 8.425549507141113 6.905945777893066 C 8.565231323242188 6.762387275695801 8.635068893432617 6.558691024780273 8.635062217712402 6.294856071472168 Z M 8.937705039978027 7.95353889465332 L 10.13079833984375 10.12436676025391 C 10.16183567047119 10.19032382965088 10.15989971160889 10.25046157836914 10.12499332427979 10.30478096008301 C 10.09395027160645 10.36686134338379 10.04156589508057 10.39790153503418 9.967841148376465 10.39790153503418 L 9.083216667175293 10.39790153503418 C 9.005615234375 10.39790153503418 8.951295852661133 10.36492347717285 8.920259475708008 10.29896640777588 L 7.791187286376953 8.174702644348145 L 6.889115333557129 8.174702644348145 L 6.889115333557129 10.21167087554932 C 6.889115333557129 10.26599025726318 6.871651649475098 10.3106107711792 6.836724281311035 10.34553050994873 C 6.801797866821289 10.38045024871826 6.757177352905273 10.39791011810303 6.702865600585938 10.39791107177734 L 5.923011779785156 10.39791107177734 C 5.868692398071289 10.39791107177734 5.824069023132324 10.38045120239258 5.789141654968262 10.34553050994873 C 5.754215240478516 10.31060981750488 5.736754417419434 10.26599025726318 5.736761093139648 10.21167087554932 L 5.736761093139648 4.624561309814453 C 5.736761093139648 4.570241928100586 5.75422191619873 4.525622367858887 5.789141654968262 4.490701675415039 C 5.824062347412109 4.455780982971191 5.868682861328125 4.438321113586426 5.923001289367676 4.438321113586426 L 7.634055137634277 4.438321113586426 C 8.130688667297363 4.438321113586426 8.499281883239746 4.484879493713379 8.739833831787109 4.577995777130127 C 9.069632530212402 4.698272705078125 9.329590797424316 4.909729957580566 9.519707679748535 5.212368965148926 C 9.70982551574707 5.515007972717285 9.80488395690918 5.864202499389648 9.80488395690918 6.259951591491699 C 9.80488395690918 6.616903305053711 9.722434043884277 6.937967300415039 9.557534217834473 7.223142623901367 C 9.392635345458984 7.508318901062012 9.16856861114502 7.720744132995605 8.885334968566895 7.860419273376465 C 8.908624649047852 7.899215698242188 8.926084518432617 7.930255889892578 8.937715530395508 7.95353889465332 Z M 7.785361289978027 3.134661197662354 C 7.203372001647949 3.134661197662354 6.648538589477539 3.248150825500488 6.120862007141113 3.475130319595337 C 5.593185424804688 3.702109813690186 5.138262748718262 4.006684303283691 4.756093502044678 4.388853073120117 C 4.373924255371094 4.771022319793701 4.069350242614746 5.225945472717285 3.842370510101318 5.753622055053711 C 3.615390777587891 6.281298637390137 3.501901149749756 6.836132049560547 3.501901149749756 7.418120384216309 C 3.501901149749756 8.000109672546387 3.615394115447998 8.55494213104248 3.842380523681641 9.082619667053223 C 4.069366931915283 9.610296249389648 4.373937606811523 10.06521892547607 4.756093502044678 10.4473876953125 C 5.138249397277832 10.82955741882324 5.593172073364258 11.13413143157959 6.120862007141113 11.36111068725586 C 6.648552894592285 11.58808994293213 7.203388214111328 11.70158004760742 7.785370826721191 11.70158004760742 C 8.367354393005371 11.70158004760742 8.922183036804199 11.58808994293213 9.449860572814941 11.36111068725586 C 9.977538108825684 11.13413143157959 10.43246078491211 10.82955741882324 10.81462955474854 10.4473876953125 C 11.19679832458496 10.06521892547607 11.50137329101562 9.610296249389648 11.72835254669189 9.082619667053223 C 11.95533180236816 8.55494213104248 12.06882476806641 8.000109672546387 12.06883144378662 7.418120384216309 C 12.06883907318115 6.836132049560547 11.95534610748291 6.281298637390137 11.72835254669189 5.753622055053711 C 11.5013599395752 5.225945472717285 11.19678592681885 4.771022319793701 10.81462955474854 4.388853073120117 C 10.43247413635254 4.006684303283691 9.977551460266113 3.702109813690186 9.449860572814941 3.475130319595337 C 8.922170639038086 3.248150587081909 8.367338180541992 3.134660720825195 7.785362243652344 3.134661197662354 Z M 13.00000095367432 7.418110847473145 C 13.00000095367432 8.124259948730469 12.86226749420166 8.799369812011719 12.58680248260498 9.443438529968262 C 12.31133651733398 10.0875072479248 11.94079494476318 10.64234066009521 11.47517776489258 11.10793685913086 C 11.00956058502197 11.57353401184082 10.45473003387451 11.94406890869141 9.810688972473145 12.21954154968262 C 9.166646957397461 12.49501419067383 8.491537094116211 12.63275146484375 7.785361289978027 12.63275051116943 C 7.079184532165527 12.63274955749512 6.404075622558594 12.49501323699951 5.76003360748291 12.2195405960083 C 5.115991592407227 11.94406890869141 4.561158657073975 11.57353401184082 4.095534324645996 11.10793685913086 C 3.629910707473755 10.64233875274658 3.259376049041748 10.08750629425049 2.983930587768555 9.443438529968262 C 2.708485126495361 8.799370765686035 2.570751905441284 8.124261856079102 2.570731401443481 7.418110847473145 C 2.570710897445679 6.711960792541504 2.708443641662598 6.03685188293457 2.983930587768555 5.392783641815186 C 3.259417295455933 4.748715877532959 3.629951953887939 4.193882942199707 4.095534801483154 3.72828483581543 C 4.561117649078369 3.262686729431152 5.115953922271729 2.892151832580566 5.760044097900391 2.61668062210083 C 6.404133796691895 2.341208934783936 7.079238891601562 2.20347261428833 7.785361289978027 2.203471183776855 C 8.491482734680176 2.203469753265381 9.166591644287109 2.341206312179565 9.810688972473145 2.61668062210083 C 10.45478534698486 2.892154693603516 11.00962162017822 3.262689590454102 11.47519779205322 3.72828483581543 C 11.94077396392822 4.193880081176758 12.31130504608154 4.748713493347168 12.5867919921875 5.392783641815186 C 12.86227798461914 6.036853790283203 13.00001525878906 6.711962699890137 13.00000095367432 7.418110847473145 Z">
         </path>
@@ -2543,83 +2463,83 @@
     }
 
 </script>
-<footer class="footer">
-    <div class="container bottom_border">
-        <div class="row">
-            <div class=" col-sm-4 col-md col-sm-4  col-12 col">
-                <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
-                <!--headin5_amrc-->
-                <p class="mb10">The Lysander is the crown jewel of the Leisure and Aviation sector of Sri Lanka’s leading conglomerate, Lysander PLC and was the first hotel to be reinstated as a five-star hotel in Galle in 2017. Since its launch in 2012, it has grown from strength to strength gaining international acclaim including Regional Winner Luxury Business Hotel in South West Asia (2016) and Winner- Best Luxury Business Hotel in Sri Lanka (2017) at The World Luxury Hotel Awards.</p>
-                <p><i class="fa fa-location-arrow"></i> +94-123456789 </p>
-                <p><i class="fa fa-phone"></i>  +94-123456789  </p>
-                <p><i class="fa fa fa-envelope"></i> hotellysanderinfo@gmail.com  </p>
+<%--<footer class="footer">--%>
+<%--    <div class="container bottom_border">--%>
+<%--        <div class="row">--%>
+<%--            <div class=" col-sm-4 col-md col-sm-4  col-12 col">--%>
+<%--                <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>--%>
+<%--                <!--headin5_amrc-->--%>
+<%--                <p class="mb10">The Lysander is the crown jewel of the Leisure and Aviation sector of Sri Lanka’s leading conglomerate, Lysander PLC and was the first hotel to be reinstated as a five-star hotel in Galle in 2017. Since its launch in 2012, it has grown from strength to strength gaining international acclaim including Regional Winner Luxury Business Hotel in South West Asia (2016) and Winner- Best Luxury Business Hotel in Sri Lanka (2017) at The World Luxury Hotel Awards.</p>--%>
+<%--                <p><i class="fa fa-location-arrow"></i> +94-123456789 </p>--%>
+<%--                <p><i class="fa fa-phone"></i>  +94-123456789  </p>--%>
+<%--                <p><i class="fa fa fa-envelope"></i> hotellysanderinfo@gmail.com  </p>--%>
 
 
-            </div>
+<%--            </div>--%>
 
 
-            <div class=" col-sm-4 col-md  col-6 col" id="footerelement">
-                <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
-                <!--headin5_amrc-->
-                <ul class="footer_ul_amrc">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Room & Suits</a></li>
-                    <li><a href="">Dining</a></li>
-                    <li><a href="">Wellness</a></li>
-                    <li><a href="">Wedding</a></li>
-                    <li><a href="">Offers</a></li>
-                </ul>
-                <!--footer_ul_amrc ends here-->
-            </div>
+<%--            <div class=" col-sm-4 col-md  col-6 col" id="footerelement">--%>
+<%--                <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>--%>
+<%--                <!--headin5_amrc-->--%>
+<%--                <ul class="footer_ul_amrc">--%>
+<%--                    <li><a href="">Home</a></li>--%>
+<%--                    <li><a href="">Room & Suits</a></li>--%>
+<%--                    <li><a href="">Dining</a></li>--%>
+<%--                    <li><a href="">Wellness</a></li>--%>
+<%--                    <li><a href="">Wedding</a></li>--%>
+<%--                    <li><a href="">Offers</a></li>--%>
+<%--                </ul>--%>
+<%--                <!--footer_ul_amrc ends here-->--%>
+<%--            </div>--%>
 
 
-            <div class=" col-sm-4 col-md  col-6 col" id="footerelement">
-                <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
-                <!--headin5_amrc-->
-                <ul class="footer_ul_amrc">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Room & Suits</a></li>
-                    <li><a href="">Dining</a></li>
-                    <li><a href="">Wellness</a></li>
-                    <li><a href="">Wedding</a></li>
-                    <li><a href="">Offers</a></li>
-                </ul>
-                <!--footer_ul_amrc ends here-->
-            </div>
+<%--            <div class=" col-sm-4 col-md  col-6 col" id="footerelement">--%>
+<%--                <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>--%>
+<%--                <!--headin5_amrc-->--%>
+<%--                <ul class="footer_ul_amrc">--%>
+<%--                    <li><a href="">Home</a></li>--%>
+<%--                    <li><a href="">Room & Suits</a></li>--%>
+<%--                    <li><a href="">Dining</a></li>--%>
+<%--                    <li><a href="">Wellness</a></li>--%>
+<%--                    <li><a href="">Wedding</a></li>--%>
+<%--                    <li><a href="">Offers</a></li>--%>
+<%--                </ul>--%>
+<%--                <!--footer_ul_amrc ends here-->--%>
+<%--            </div>--%>
 
 
-            <div class=" col-sm-4 col-md  col-12 col">
+<%--            <div class=" col-sm-4 col-md  col-12 col">--%>
 
-                <!--headin5_amrc ends here-->
-                <h5 class="headin5_amrc col_white_amrc pt2">Give us a Feedback</h5>
-                <a href="Feedback.html"><button type="button" class="btn btn-light" id="feedback_button" onclick="myFunctionFeedback()">Feedback</button></a>
-                <!--footer_ul2_amrc ends here-->
-            </div>
-        </div>
-    </div>
+<%--                <!--headin5_amrc ends here-->--%>
+<%--                <h5 class="headin5_amrc col_white_amrc pt2">Give us a Feedback</h5>--%>
+<%--                <a href="Feedback.html"><button type="button" class="btn btn-light" id="feedback_button" onclick="myFunctionFeedback()">Feedback</button></a>--%>
+<%--                <!--footer_ul2_amrc ends here-->--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--    </div>--%>
 
 
-    <div class="container">
-        <ul class="foote_bottom_ul_amrc">
-            <li><a href="">Room & Suits</a></li>
-            <li><a href="">Dining</a></li>
-            <li><a href="">Wellness</a></li>
-            <li><a href="">Wedding</a></li>
-            <li><a href="">Offers</a></li>
-        </ul>
-        <!--foote_bottom_ul_amrc ends here-->
-        <p class="text-center">Copyright @2022 | <a href="#">Lysander Hotel</a></p>
+<%--    <div class="container">--%>
+<%--        <ul class="foote_bottom_ul_amrc">--%>
+<%--            <li><a href="">Room & Suits</a></li>--%>
+<%--            <li><a href="">Dining</a></li>--%>
+<%--            <li><a href="">Wellness</a></li>--%>
+<%--            <li><a href="">Wedding</a></li>--%>
+<%--            <li><a href="">Offers</a></li>--%>
+<%--        </ul>--%>
+<%--        <!--foote_bottom_ul_amrc ends here-->--%>
+<%--        <p class="text-center">Copyright @2022 | <a href="#">Lysander Hotel</a></p>--%>
 
-        <ul class="social_footer_ul">
-            <li><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="http://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-        <!--social_footer_ul ends here-->
-    </div>
+<%--        <ul class="social_footer_ul">--%>
+<%--            <li><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></li>--%>
+<%--            <li><a href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>--%>
+<%--            <li><a href="http://linkedin.com"><i class="fab fa-linkedin"></i></a></li>--%>
+<%--            <li><a href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>--%>
+<%--        </ul>--%>
+<%--        <!--social_footer_ul ends here-->--%>
+<%--    </div>--%>
 
-</footer>
+<%--</footer>--%>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
