@@ -12,7 +12,7 @@ public class dbConFeedback {
     public Connection createConnection() throws ClassNotFoundException, SQLException
     {
         Class.forName("com.mysql.jdbc.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/lysander", "root", "");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotellysander", "root", "");
         return con;
     }
 

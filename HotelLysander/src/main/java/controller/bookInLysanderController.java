@@ -56,10 +56,12 @@ public class bookInLysanderController extends HttpServlet {
         int status=dbConModel.addBooking(bookLysanderobj);
         if(status>0)
         {
-            out.print("<p>Booking Recorded!!!</P>");
-            RequestDispatcher rs = request.getRequestDispatcher("welcome.html");
+            out.print("<p>Booking Recorded!!!</p>");
+            RequestDispatcher rs = request.getRequestDispatcher("SignUpSuccess.html");
             rs.include(request, response);
-        }else{
+        }
+        else
+        {
             out.println("Booking not Caputured");
             RequestDispatcher rs = request.getRequestDispatcher("Error.html");
             rs.include(request, response);

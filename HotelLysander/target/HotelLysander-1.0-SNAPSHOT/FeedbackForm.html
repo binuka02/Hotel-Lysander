@@ -77,23 +77,23 @@
 
                 <br><p id="heading">FEEDBACK FORM</p><br>
 
-                <form method="POST" action="FeedbackController">
+                <form class="row g-3" method="POST" action="FeedbackController">
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Name:</label>
-                        <input type="text" name="Name" class="form-control" id="exampleFormControlInput1" placeholder="Enter Name ">
+                        <label for="validationDefault01" class="form-label">Name:</label>
+                        <input type="text" name="Name" class="form-control" id="validationDefault01" placeholder="Enter Name " required>
                     </div><br>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Email Address:</label>
-                        <input type="email" name="Email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email">
+                        <label for="validationDefault02">Email Address:</label>
+                        <input type="email" name="Email" class="form-control" id="validationDefault02" placeholder="Enter Email" required>
                     </div><br>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Subject:</label>
-                        <input type="text" name="Subject" class="form-control" id="exampleFormControlInput1" placeholder="Enter Subject " >
+                        <label for="validationDefaultSubject">Subject:</label>
+                        <input type="text" name="Subject" class="form-control" id="validationDefaultSubject" placeholder="Enter Subject " required>
                     </div><br>
 
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Message</label>
-                        <textarea class="form-control" name="Message" id="exampleFormControlTextarea1" rows="5"  placeholder="Enter Message"></textarea>
+                        <label for="validationDefaultMessage">Message</label>
+                        <textarea class="form-control" name="Message" id="validationDefaultMessage" rows="5"  placeholder="Enter Message" required></textarea>
                     </div><br><br>
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <a href="FeedbackThanks.html"> <button type="submit" class="btn btn-secondary" id="buttons">Submit</button></a>
