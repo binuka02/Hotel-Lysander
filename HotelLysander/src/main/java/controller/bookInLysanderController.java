@@ -1,10 +1,12 @@
 
 package controller;
 
+import Model.dbConModel;
 import Model.bookInLysanderModel;
 import Model.bookInLysanderRateModel;
 import java.io.IOException;
 import java.io.PrintWriter;
+import static java.lang.System.out;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -51,10 +53,18 @@ public class bookInLysanderController extends HttpServlet {
         bookLysanderobj.setKidsCount(kidsCount);
         bookLysanderobj.setPackages(packages);
 
-
+        int status=dbConModel.addBooking(bookLysanderobj);
+        if(status>0)
+        {
+            out.print("<p>Booking Recorded!!!</P>");
+            RequestDispatcher rs = request.getRequestDispatcher("welcome.html");
+            rs.include(request, response);
+        }else{
+            out.println("Booking not Caputured");
+            RequestDispatcher rs = request.getRequestDispatcher("Error.html");
+            rs.include(request, response);
+        }
         //forward to bookInLysanderRateController
-        RequestDispatcher reqDispatcherobj = request.getRequestDispatcher("bookInLysanderRateController");
-        reqDispatcherobj.forward(request, response);
 
     }
 

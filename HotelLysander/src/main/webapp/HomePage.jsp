@@ -2521,7 +2521,7 @@
 
     //function to open the login and signup
     function myFunctionChooseLogInSignUp() {
-        window.open("LogInPage.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=700,height=600");
+        window.open("LogInPage.html");
     }
 
     // fuction to open a window to take reviews if neede like that
@@ -2534,7 +2534,7 @@
         var logInfo=true;
         if(logInfo===true)
         {
-            window.open("BookingNew.html");
+            window.open("bookInLysander.jsp");
         }else
         {
             window.open("Error.html");
