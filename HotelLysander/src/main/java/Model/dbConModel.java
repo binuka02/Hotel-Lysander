@@ -19,19 +19,19 @@ public class dbConModel {
     public static Connection createConnection() throws ClassNotFoundException, SQLException {
         Connection con = null;
         Class.forName("com.mysql.jdbc.Driver");
-        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotellysander", "root", "");
+        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "");
         Statement st = con.createStatement();
         System.out.println("connection established successfully...!!");
         return con;
     }
 
-    public boolean checkLogin(String guest_Email, String guest_NIC) {
+    public boolean checkLogin(String guest_FName, String guest_NIC) {
         boolean st = false;
         try {
 
 
-            PreparedStatement ps = createConnection().prepareStatement("select * from guest where guest_Email=? and guest_NIC=?");
-            ps.setString(1, guest_Email);
+            PreparedStatement ps = createConnection().prepareStatement("select * from guest where guest_FName=? and guest_NIC=?");
+            ps.setString(1, guest_FName);
             ps.setString(2, guest_NIC);
             ResultSet rs = ps.executeQuery();
             st = rs.next();
