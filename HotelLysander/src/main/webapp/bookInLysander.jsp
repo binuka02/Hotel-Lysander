@@ -118,7 +118,7 @@ and open the template in the editor.
 
                     <div class="form-group mb-3">
                         <label for="exampleFormControlInput1" id="label_name">Username</label>
-                        <input class="form-control" type="text" value="<% out.println("UserName Took From The SESSION"); %>" aria-label="readonly input example" readonly>
+                        <input class="form-control" type="text" value="" aria-label="readonly input example" >
                     </div>
                     <div class="form-floating mb-3">
 
@@ -132,11 +132,11 @@ and open the template in the editor.
                             <div class="row align-items-start">
                                 <div class="col">
                                     <label class="control-label" for="date">Check-In</label>
-                                    <input class="form-control" id="date" name="date" placeholder="Check-In" type="text"/>
+                                    <input class="form-control" alue="<%=request.getParameter("checkInDate") %>" id="date" name="date" placeholder="Check-In" type="text"/>
                                 </div>
                                 <div class="col">
                                     <label class="control-label" for="date">Check-Out  </label>
-                                    <input class="form-control" id="date" name="date" placeholder="Check-Out" type="text"/>
+                                    <input class="form-control" id="date" value="<%=request.getParameter("checkOutDate") %>" name="date" placeholder="Check-Out" type="text"/>
                                 </div>
 
                             </div>
