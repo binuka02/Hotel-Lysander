@@ -28,28 +28,37 @@ public class loginController extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         //apply form inputs in to a getter
-        String guest_Email = request.getParameter("guest_Email");
+        String guest_Fname = request.getParameter("guest_Fname");
         String guest_NIC = request.getParameter("guest_NIC");
 
         //check matching status of email and nic
         try{
             dbConModel con = new dbConModel();
-            boolean match = con.checkLogin(guest_Email,guest_NIC);
+            boolean match = con.checkLogin(guest_Fname,guest_NIC);
             if(match==true)
             {
+
+                HttpSession session = request.getSession();
+                session.setAttribute("guest_Fname", guest_Fname);
+                request.setAttribute("guest_Fname", guest_Fname);
+
+                //setting session to expiry in 30 mins
+                session.setMaxInactiveInterval(60*60);
+
                 out.println("You have successfully logged!!!");
                 RequestDispatcher lrd = request.getRequestDispatcher("HomePage.jsp");
                 lrd.include(request, response);
                 //logInfo=true;
             }else
             {
-                out.println("Email and NIC is not matching");
+                out.println("userName and NIC is not matching");
                 RequestDispatcher lrd = request.getRequestDispatcher("LogInPage.html");
                 lrd.include(request, response);
             }
         }catch(Exception se) {
             se.printStackTrace();
         }
+
 
     }
 }

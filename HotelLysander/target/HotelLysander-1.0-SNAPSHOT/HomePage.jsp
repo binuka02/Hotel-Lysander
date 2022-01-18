@@ -2007,12 +2007,18 @@
             </svg>
         </div>
     </a>
-
+<%--    <%--%>
+<%--        //String user="Login/SignUp";--%>
+<%--        String user= (String) session.getAttribute("guest_Email");--%>
+<%--        <script>--%>
+<%--        document.getElementById("LOGINsp").innerHTML = user;--%>
+<%--        </script>--%>
+<%--    %>--%>
 
     <!-- login link in the second header -->
     <button id="btnLoginHome" type="" onclick="myFunctionChooseLogInSignUp()">
         <div id="LOGIN">
-            <span>LOGIN / SIGNUP</span>
+            <span id="LOGINsp"><%=(request.getAttribute("guest_Fname") == null) ? "Login/SignUp" : request.getAttribute("guest_Fname")%></span>
         </div>
         <svg class="Line_4" viewBox="0 0 2 31">
             <path id="Line_4" d="M 0 0 L 0 31">

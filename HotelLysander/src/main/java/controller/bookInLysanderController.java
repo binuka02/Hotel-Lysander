@@ -56,20 +56,20 @@ public class bookInLysanderController extends HttpServlet {
         bookLysanderobj.setKidsCount(kidsCount);
         bookLysanderobj.setPackages(packages);
 
-        int status=dbConModel.addBooking(bookLysanderobj);
-        if(status>0)
-        {
-            out.print("<p>Booking Recorded!!!</p>");
-            RequestDispatcher rs = request.getRequestDispatcher("SignUpSuccess.html");
-            rs.include(request, response);
-        }
-        else
-        {
-            out.println("Booking not Caputured");
-            RequestDispatcher rs = request.getRequestDispatcher("Error.html");
-            rs.include(request, response);
-        }
-        //forward to bookInLysanderRateController
+//        int status=dbConModel.addBooking(bookLysanderobj);
+//        if(status>0)
+//        {
+//            out.print("<p>Booking Recorded!!!</p>");
+//            RequestDispatcher rs = request.getRequestDispatcher("SignUpSuccess.html");
+//            rs.include(request, response);
+//        }
+//        else
+//        {
+//            out.println("Booking not Caputured");
+//            RequestDispatcher rs = request.getRequestDispatcher("Error.html");
+//            rs.include(request, response);
+//        }
+//        //forward to bookInLysanderRateController
 
     }
 

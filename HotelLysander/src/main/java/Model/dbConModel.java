@@ -25,13 +25,13 @@ public class dbConModel {
         return con;
     }
 
-    public boolean checkLogin(String guest_Email, String guest_NIC) {
+    public boolean checkLogin(String guest_FName, String guest_NIC) {
         boolean st = false;
         try {
 
 
-            PreparedStatement ps = createConnection().prepareStatement("select * from guest where guest_Email=? and guest_NIC=?");
-            ps.setString(1, guest_Email);
+            PreparedStatement ps = createConnection().prepareStatement("select * from guest where guest_FName=? and guest_NIC=?");
+            ps.setString(1, guest_FName);
             ps.setString(2, guest_NIC);
             ResultSet rs = ps.executeQuery();
             st = rs.next();
@@ -90,5 +90,15 @@ public class dbConModel {
         }
 
         return status;
+    }
+
+    public int checkBooking(String cInDate,String cOutDate, String roomType) throws SQLException, ClassNotFoundException {
+        PreparedStatement ps = createConnection().prepareStatement("SELECT COUNT gFname FROM Bookings where (cInDate=? AND cOutDate=?) AND (roomType=?)");
+        ps.setString(1,cInDate);
+        ps.setString(2,cOutDate);
+        ps.setString(3,roomType);
+
+        //find a way to take the count in int
+        return 0;
     }
 }
