@@ -2,6 +2,7 @@
 package Model;
 
 public class bookInLysanderModel {
+    private String Fname;
     private String region;
     private String checkInDate;
     private String checkOutDate;
@@ -11,6 +12,7 @@ public class bookInLysanderModel {
     private String kidsCount;
     private String packages;
 
+    public void setFname(String Fname) {this.Fname=Fname;}
     public void setRegion(String region) { this.region = region; }
     public void setCheckInDate(String checkInDate) { this.checkInDate = checkInDate; }
     public void setCheckOutDate(String checkOutDate) { this.checkOutDate = checkOutDate; }
@@ -20,6 +22,7 @@ public class bookInLysanderModel {
     public void setKidsCount(String kidsCount) { this.kidsCount = kidsCount; }
     public void setPackages(String packages) { this.packages = packages; }
 
+    public String getFname() {return this.Fname;}
     public String getRegion() { return this.region; }
     public String getCheckInDate() { return checkInDate; }
     public String getCheckOutDate() { return this.checkOutDate; }

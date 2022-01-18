@@ -32,10 +32,12 @@ public class bookInLysanderController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
+        PrintWriter out = response.getWriter();
         //requests from the bookInLysander.jsp
+        String Fname = request.getParameter("name");
         String region = request.getParameter("region");
         String checkInDate = request.getParameter("date");
-        String checkOutDate = request.getParameter("date");
+        String checkOutDate = request.getParameter("dateOut");
         String roomType = request.getParameter("roomType");
         String roomsCount = request.getParameter("roomsCount");
         String adultsCount = request.getParameter("adultsCount");
@@ -44,6 +46,7 @@ public class bookInLysanderController extends HttpServlet {
 
         //object and setters to pass the data to **bookInLysanderModel**
         bookInLysanderModel bookLysanderobj = new bookInLysanderModel();
+        bookLysanderobj.setFname(Fname);
         bookLysanderobj.setRegion(region);
         bookLysanderobj.setCheckInDate(checkInDate);
         bookLysanderobj.setCheckOutDate(checkOutDate);

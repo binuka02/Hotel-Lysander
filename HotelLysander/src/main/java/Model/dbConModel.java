@@ -19,7 +19,7 @@ public class dbConModel {
     public static Connection createConnection() throws ClassNotFoundException, SQLException {
         Connection con = null;
         Class.forName("com.mysql.jdbc.Driver");
-        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotellysander", "root", "");
+        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "");
         Statement st = con.createStatement();
         System.out.println("connection established successfully...!!");
         return con;
@@ -70,7 +70,8 @@ public class dbConModel {
             PreparedStatement ps = con.prepareStatement("insert into bookings values(?,?,?,?,?,?,?,?)");
 
             //bookingID has made into auto increment and we hope it will increase xd(:
-            //ps.setString(1,bookLysanderobj. getgName());
+
+            ps.setString(1, bookLysanderobj. getFname());
             ps.setString(2, bookLysanderobj.getRegion());
             ps.setString(3, bookLysanderobj.getCheckInDate());
             ps.setString(4, bookLysanderobj.getCheckOutDate());
