@@ -1,20 +1,16 @@
 package controller;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
-import java.io.IOException;
-import java.io.IOException;
-import java.io.PrintWriter;
-import static java.lang.System.out;
+import Model.dbConModel;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
-import Mail.MailUtil;
-import Model.dbConModel;
+import static java.lang.System.out;
 //import javax.persistence.Id;
 
 @WebServlet(name = "signpController", value = "/signpController")
@@ -55,10 +51,10 @@ public class signpController extends HttpServlet {
             se.printStackTrace();
 
         }
-        try {
-            MailUtil.sendMail("hotellysanderinfo@gmail.com");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        try {
+//            MailUtil.sendMail("hotellysanderinfo@gmail.com");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 }

@@ -1,15 +1,10 @@
 package Mail;
 
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.Authenticator;
-import javax.mail.PasswordAuthentication;
-import java.util.Properties;
-import javax.mail.Session;
-import javax.mail.Transport;
+import javax.mail.*;
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.util.Properties;
 
 /**
  *
@@ -19,6 +14,8 @@ public class MailUtil {
 
     public static void sendMail(String recepient) throws Exception
     {
+
+
         System.out.println("Preparing to send email");
         Properties properties = new Properties();
 
@@ -48,15 +45,31 @@ public class MailUtil {
         Transport.send(message);
         System.out.println("Message sent Successfully");
     }
+    public static String name;
+    public static String email_Adress;
+    public static String subject;
+    public static String message;
+
+    public boolean getFeedback(String name, String email_Adress, String subject, String message)
+    {
+        this.name=name;
+        this.email_Adress=email_Adress;
+        this.subject=subject;
+        this.message=message;
+        return false;
+    }
 
     private static Message prepareMessage(Session session, String myAccountEmail, String recepient) throws AddressException, MessagingException {
         try{
+
+
             Message message =  new MimeMessage(session);
             message.setFrom(new InternetAddress(myAccountEmail));
             message.setRecipient(Message.RecipientType.TO, new InternetAddress(recepient));
-            message.setSubject("Hotel Lysander");
-            String htmlCode = "<h1>WE LOVE JAVA </h1>";
-            message.setContent(htmlCode, "text/html");
+            message.setSubject("Customer Feedback");
+//            String htmlCode = "<h1>HOTEL LYSANDER</h1>";
+//            message.setContent(htmlCode, "text/html");
+            message.setText("Name : "+name+"<br>Email : "+email_Adress+"<br>Subject :"+subject+"<br>Message :"+message);
             return message;
 
 

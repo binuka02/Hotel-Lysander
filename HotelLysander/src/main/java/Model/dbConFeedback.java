@@ -1,10 +1,8 @@
 package Model;
 
-import Mail.MailUtil;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class dbConFeedback {
@@ -24,9 +22,6 @@ public class dbConFeedback {
         ps.setString(3, subject);
         ps.setString(4, message);
         int i = ps.executeUpdate();
-
-
-
 
 
         if(i > 0)
