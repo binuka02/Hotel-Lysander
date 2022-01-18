@@ -1,17 +1,16 @@
 package controller;
 
-import Model.bookInLysanderCalculationModel;
-import Model.bookInLysanderModel;
 import Model.bookInLysanderRateModel;
-import java.io.IOException;
-import java.io.PrintWriter;
-import static java.lang.Boolean.TRUE;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+import static java.lang.Boolean.TRUE;
 
 @WebServlet(name = "bookInLysanderRateController", urlPatterns = {"/bookInLysanderRateController"})
 public class bookInLysanderRateController extends HttpServlet {
@@ -72,7 +71,7 @@ public class bookInLysanderRateController extends HttpServlet {
         } else {
             PATH = "bookInLysanderRate.jsp";
         }
-        RequestDispatcher reqDispatcherobj = request.getRequestDispatcher(PATH);
+        RequestDispatcher reqDispatcherobj = request.getRequestDispatcher("AuthorizedPaymentServlet");
         reqDispatcherobj.forward(request, response);
     }
 

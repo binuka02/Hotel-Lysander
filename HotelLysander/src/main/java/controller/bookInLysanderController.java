@@ -1,18 +1,17 @@
 
 package controller;
 
-import Model.dbConModel;
 import Model.bookInLysanderModel;
-import Model.bookInLysanderRateModel;
-import java.io.IOException;
-import java.io.PrintWriter;
-import static java.lang.System.out;
+import Model.dbConModel;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 @WebServlet(name = "bookInLysanderController", urlPatterns = {"/bookInLysanderController"})
 public class bookInLysanderController extends HttpServlet {
@@ -59,13 +58,13 @@ public class bookInLysanderController extends HttpServlet {
         int status=dbConModel.addBooking(bookLysanderobj);
         if(status>0)
         {
-            out.print("<p>Booking Recorded!!!</p>");
-            RequestDispatcher rs = request.getRequestDispatcher("SignUpSuccess.html");
+            System.out.print("<p>Booking Recorded!</p>");
+            RequestDispatcher rs = request.getRequestDispatcher("BoookingSuccess.html");
             rs.include(request, response);
         }
         else
         {
-            out.println("Booking not Caputured");
+            System.out.print("Booking not Captured");
             RequestDispatcher rs = request.getRequestDispatcher("Error.html");
             rs.include(request, response);
         }

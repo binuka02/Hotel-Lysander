@@ -67,11 +67,11 @@ public class dbConModel {
 
         try {
             Connection con = dbConModel.createConnection();
-            PreparedStatement ps = con.prepareStatement("insert into bookings values(?,?,?,?,?,?,?,?)");
+            PreparedStatement ps = con.prepareStatement("insert into bookings values(?,?,?,?,?,?,?,?,?)");
 
             //bookingID has made into auto increment and we hope it will increase xd(:
 
-            ps.setString(1, bookLysanderobj. getFname());
+            ps.setString(1, bookLysanderobj.getFname());
             ps.setString(2, bookLysanderobj.getRegion());
             ps.setString(3, bookLysanderobj.getCheckInDate());
             ps.setString(4, bookLysanderobj.getCheckOutDate());
@@ -79,6 +79,7 @@ public class dbConModel {
             ps.setString(6, bookLysanderobj.getAdultsCount());
             ps.setString(7, bookLysanderobj.getKidsCount());
             ps.setString(8, bookLysanderobj.getPackages());
+            ps.setString(9, bookLysanderobj.getRoomCount());
 
             status = ps.executeUpdate();
             //con.close();

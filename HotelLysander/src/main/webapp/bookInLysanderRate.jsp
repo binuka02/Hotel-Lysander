@@ -105,7 +105,7 @@
             <div class="p-3 border bg-light" id="rightcolumn">
 
                 <p class="heading">Rates</p>
-                <form action="bookInLysanderRateController" method="POST">
+                <form action="AuthorizedPaymentServlet" method="POST">
 
                     <div class="container2 mb-3">
                         <div class="row">
@@ -144,7 +144,7 @@
                             <div class="col">
                                 <div class="form" id="textbox">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="TRUE" name="paymentAmount" id="flexCheckDefault">
+                                        <input class="form-check-input" type="checkbox" value="TRUE" name="checkPaymentAmount" id="flexCheckDefault">
                                         <label class="form-check-label" for="flexCheckDefault">
                                             <b>CLICK HERE TO PAY THE FULL AMOUNT</b>
                                         </label>
@@ -154,7 +154,7 @@
                         </div>
                     </div>  
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button type="submit" name="submitDONE" class="btn btn-secondary" id="buttons">OK</button>
+                        <button type="submit" name="paymentAmount"  class="btn btn-secondary" id="buttons">OK</button>
                     </div><br>
                 </form>
             </div>
