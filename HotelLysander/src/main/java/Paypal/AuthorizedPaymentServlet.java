@@ -20,28 +20,31 @@ public class AuthorizedPaymentServlet extends HttpServlet {
 
 
 
-        String paymentAmount = request.getParameter("paymentAmount");
+
+        //String paymentAmount = "20"; //request.getParameter("paymentAmount");
+        String product = "ABC";
+        String subtotal = "20";
+        String shipping = "10";
+        String tax = "15";
+        String paymentAmount = "100";
 
 
-        OrderDetails orderDetail = new OrderDetails(paymentAmount);
+        OrderDetails orderDetail = new OrderDetails(product,subtotal,shipping,tax,paymentAmount);
 
         try {
             PaymentServices paymentServices = new PaymentServices();
-            String approvalLink = null;
-            try {
-                approvalLink = paymentServices.authorizePayment(orderDetail);
-            } catch (PayPalRESTException e) {
-                e.printStackTrace();
-            }
-
+            String approvalLink = paymentServices.authorizePayment(orderDetail);
             response.sendRedirect(approvalLink);
 
-        } catch (Exception ex) {
+            } catch (PayPalRESTException ex) {
             request.setAttribute("errorMessage", ex.getMessage());
             ex.printStackTrace();
             request.getRequestDispatcher("Error.html").forward(request, response);
+            }
+
+
         }
     }
 
-}
+
 
