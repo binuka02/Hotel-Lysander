@@ -1,6 +1,6 @@
 
 package Model;
-
+//edited by sandaru
 public class bookInLysanderModel {
     private String region;
     private String checkInDate;
