@@ -108,7 +108,18 @@ and open the template in the editor.
 
     </style>
     <body>
+    <%
+        String userName = null;
+//allow access only if session exists
+        if(session.getAttribute("guest_Fname") == null){
+            response.sendRedirect("LogInPage.html");
+            System.out.println("log in to Your account before booking");
+        }else {
 
+            RequestDispatcher rs = request.getRequestDispatcher("HomePage.jsp");
+            rs.include(request, response);
+        }
+    %>
         <div class="col" id="background"> <!--LEFT SIDE COLUMN-->
             <div class="p-3 border bg-light" id="leftcolumn">
 
