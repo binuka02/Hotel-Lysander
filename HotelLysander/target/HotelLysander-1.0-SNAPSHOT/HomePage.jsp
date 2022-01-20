@@ -156,8 +156,8 @@
             color: rgba(255,255,255,1);
         }
         #ABOUT_US {
-            left: 19px;
-            top: 1021px;
+            left: 10px;
+            top: 1000px;
             position: absolute;
             overflow: visible;
             width: 111px;
@@ -366,8 +366,8 @@
         .Rectangle_6 {
             position: absolute;
             overflow: visible;
-            width: 164px;
-            height: 47px;
+            width: 50px;
+            height: 45px;
             left: 0px;
             top: 0px;
         }
@@ -1240,14 +1240,14 @@
         .Line_9 {
             overflow: visible;
             position: absolute;
-            width: 366px;
+            width: 500px;
             height: 3px;
-            left: 170px;
+            left: 130px;
             top: 3548px;
             transform: matrix(1,0,0,1,0,0);
         }
         #LUXURY_HOTEL_cq {
-            left: 247px;
+            left: 260px;
             top: 3555px;
             position: absolute;
             overflow: visible;
@@ -1623,8 +1623,8 @@
             transform: matrix(1,0,0,1,0,0);
         }
         #Rectangle_19 {
-            opacity: 0.64;
-            fill: rgba(169,229,237,1);
+            opacity: 0.5;
+            fill: #0b0526;
             stroke: rgba(112,112,112,1);
             stroke-width: 1px;
             stroke-linejoin: miter;
@@ -1635,8 +1635,8 @@
         .Rectangle_19 {
             position: absolute;
             overflow: visible;
-            width: 302px;
-            height: 70px;
+            width: 500px;
+            height: 60px;
             left: 0px;
             top: 4186px;
         }
@@ -2002,7 +2002,7 @@
     <a href="">
         <div id="Group_2">
             <svg class="Rectangle_6">
-                <rect id="Rectangle_6" rx="10" ry="10" x="0" y="0" width="224" height="47">
+                <rect onclick="myFunctionChooseLogInSignUp()" id="Rectangle_6" rx="10" ry="10" x="0" y="0" width="224" height="47">
                 </rect>
             </svg>
         </div>
@@ -2012,7 +2012,7 @@
     <!-- login link in the second header -->
     <button id="btnLoginHome" type="" onclick="myFunctionChooseLogInSignUp()">
         <div id="LOGIN">
-            <span><%=(request.getAttribute("guest_Fname") == null) ? "Login/SignUp" : request.getAttribute("guest_Fname")%></span>
+            <span><%=(request.getAttribute("guest_Fname") == null) ? "Login" : request.getAttribute("guest_Fname")%></span>
         </div>
         <svg class="Line_4" viewBox="0 0 2 31">
             <path id="Line_4" d="M 0 0 L 0 31">
@@ -2126,8 +2126,9 @@
 
             <!-- Button to submit the details in check in and chekout in the homepage -->
             <button type="submit" name="submit" style="cursor: pointer;">
+
                 <svg class="Rectangle_8">
-                    <rect id="Rectangle_8" rx="0" ry="0" x="0" y="0" width="306" height="109">
+                    <rect onclick="goToBooking()" id="Rectangle_8" rx="0" ry="0" x="0" y="0" width="306" height="109">
                     </rect>
                 </svg>
                 <div id="CHECK__RESERVE">
@@ -2159,8 +2160,9 @@
 			and surroundings so comfortable you won't want to leave. <br/>
 			There's nothing old fashioned about that.</span>
     </div>
+    <a href="http://localhost:8080/HotelLysander/Rooms&Suites.jsp">
     <img id="tllon-rooms-superiorroom-1680-" src="Images/roomandsuits.png">
-
+    </a>
     <svg class="Rectangle_9">
         <rect id="Rectangle_9" rx="0" ry="0" x="0" y="0" width="1080" height="473">
         </rect>
@@ -2182,18 +2184,22 @@
             <span>ROOM & SUITES</span>
         </div>
     </div>
+    <a href="http://localhost:8080/HotelLysander/dining.jsp">
     <img id="n_0211212_235935_0000_1" src="Images/dining.jpg">
-
+    </a>
     <svg class="Rectangle_11">
         <rect id="Rectangle_11" rx="0" ry="0" x="0" y="0" width="465" height="500">
         </rect>
     </svg>
+    <a href="http://localhost:8080/HotelLysander/wedding.jsp">
     <img id="png_20211213_000013_0000" src="Images/wedding.png">
-
+    </a>
+    <a href="http://localhost:8080/HotelLysander/dining.jsp">
     <img id="png_20211213_000101_0000" src="Images/meeting.png">
-
+    </a>
+    <a href="http://localhost:8080/HotelLysander/dining.jsp">
     <img id="n_0211213_000131_0000" src="Images/wellness.png">
-
+    </a>
     <svg class="Rectangle_12">
         <rect id="Rectangle_12" rx="0" ry="0" x="0" y="0" width="465" height="497">
         </rect>
@@ -2268,22 +2274,30 @@
     </div>
     <img id="n_0211213_000433_0000" src="Images/big2.jpg">
 
+    <a href="http://localhost:8080/HotelLysander/">
     <div id="THE_LYSANDER_cm">
         <span>THE LYSANDER</span>
     </div>
+    </a>
 
+    <a href="http://localhost:8080/HotelLysander/">
     <svg class="Line_9" viewBox="0 0 366 3">
         <path id="Line_9" d="M 0 0 L 366 0">
         </path>
     </svg>
+    </a>
+
+    <a href="http://localhost:8080/HotelLysander/">
     <div id="LUXURY_HOTEL_cq">
         <span>LUXURY HOTEL</span>
     </div>
-    <img id="png_20211213_000159_0000" src="png_20211213_000159_0000.png" srcset="png_20211213_000159_0000.png 1x, png_20211213_000159_0000@2x.png 2x">
+    </a>
 
-    <img id="png_20211213_000321_0000" src="png_20211213_000321_0000.png" srcset="png_20211213_000321_0000.png 1x, png_20211213_000321_0000@2x.png 2x">
+    <img id="png_20211213_000159_0000" src="Images/bottom1.jpg">
 
-    <img id="png_20211213_000348_0000" src="png_20211213_000348_0000.png" srcset="png_20211213_000348_0000.png 1x, png_20211213_000348_0000@2x.png 2x">
+    <img id="png_20211213_000321_0000" src="Images/bottom2.png">
+
+    <img id="png_20211213_000348_0000" src="Images/bottom3.jpg">
 
     <svg class="Rectangle_15">
         <rect id="Rectangle_15" rx="0" ry="0" x="0" y="0" width="445" height="413">
