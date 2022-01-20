@@ -33,11 +33,12 @@ public class signpController extends HttpServlet {
         String guest_Country = request.getParameter("guest_Country");
         String guest_NIC = request.getParameter("guest_NIC");
         String guest_Phone = request.getParameter("guest_Phone");
+        String guest_Username = request.getParameter("guest_Username");
 
         try {
             dbConModel con = new dbConModel();
 
-            boolean match = con.regUser(guest_FName, guest_LName, guest_Email, guest_Country, guest_NIC, guest_Phone);
+            boolean match = con.regUser(guest_FName, guest_LName, guest_Email, guest_Country, guest_NIC, guest_Phone, guest_Username);
             if (match == true) {
                 out.println("You have successfully registered!!!");
                 RequestDispatcher rs = request.getRequestDispatcher("SignUpSuccess.html");

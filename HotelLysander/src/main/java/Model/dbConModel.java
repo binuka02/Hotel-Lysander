@@ -16,6 +16,8 @@ import java.util.logging.Logger;
 
 
 public class dbConModel {
+
+
     public static Connection createConnection() throws ClassNotFoundException, SQLException {
         Connection con = null;
         Class.forName("com.mysql.jdbc.Driver");
@@ -25,13 +27,13 @@ public class dbConModel {
         return con;
     }
 
-    public boolean checkLogin(String guest_FName, String guest_NIC) {
+    public boolean checkLogin(String guest_Username, String guest_NIC) {
         boolean st = false;
         try {
 
 
-            PreparedStatement ps = createConnection().prepareStatement("select * from guest where guest_FName=? and guest_NIC=?");
-            ps.setString(1, guest_FName);
+            PreparedStatement ps = createConnection().prepareStatement("select * from guest where guest_Username=? and guest_NIC=?");
+            ps.setString(1, guest_Username);
             ps.setString(2, guest_NIC);
             ResultSet rs = ps.executeQuery();
             st = rs.next();
@@ -44,8 +46,8 @@ public class dbConModel {
 
     }
 
-    public boolean regUser(String guest_FName, String guest_LName, String guest_Email, String guest_Country, String guest_NIC, String guest_Phone) throws ClassNotFoundException, SQLException {
-        PreparedStatement ps = createConnection().prepareStatement("insert into guest values(?,?,?,?,?,?)");
+    public boolean regUser(String guest_FName, String guest_LName, String guest_Email, String guest_Country, String guest_NIC, String guest_Phone, String guest_Username) throws ClassNotFoundException, SQLException {
+        PreparedStatement ps = createConnection().prepareStatement("insert into guest values(?,?,?,?,?,?,?)");
 
         ps.setString(1, guest_FName);
         ps.setString(2, guest_LName);
@@ -53,6 +55,7 @@ public class dbConModel {
         ps.setString(4, guest_Country);
         ps.setString(5, guest_NIC);
         ps.setString(6, guest_Phone);
+        ps.setString(7, guest_Username);
         int i = ps.executeUpdate();
         System.out.println("Insert: " + i);
         if (i > 0)
