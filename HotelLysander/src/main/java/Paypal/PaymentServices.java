@@ -1,16 +1,17 @@
 package Paypal;
 
-import java.util.*;
-
 import com.paypal.api.payments.*;
-import com.paypal.base.rest.*;
+import com.paypal.base.rest.APIContext;
+import com.paypal.base.rest.PayPalRESTException;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PaymentServices {
 
     private static final String CLIENT_ID = "AQrJCaXJaJAY8CbvwgDTy7UV-wcxonZNkiIqA0zvepLbY_QwfTUgf7XuUdNR9qq5evrOvvMrkvqUUUXn";
     private static final String CLIENT_SECRET = "EJoPXZQx4cib5MHT4MVhyhgKSmzcfUDx4EwzFOqqxPMhJ9SchH32qGK8TsQyf20QId8zCIqE2Uu86Ooa";
     private static final String MODE = "sandbox";
-    private String approvalLink;
 
     public String authorizePayment(OrderDetails orderDetail)
             throws PayPalRESTException {
@@ -50,8 +51,8 @@ public class PaymentServices {
 
     private RedirectUrls getRedirectURLs() {
         RedirectUrls redirectUrls = new RedirectUrls();
-        redirectUrls.setCancelUrl("http://localhost/HotelLysander/bookInLysanderRate.html");
-        redirectUrls.setReturnUrl("http://localhost/HotelLysander/ExecutePaymentServlet");
+        redirectUrls.setCancelUrl("http://localhost:8080/HotelLysander/bookInLysanderRate.html");
+        redirectUrls.setReturnUrl("http://localhost:8080/HotelLysander/BoookingSuccess.html");
 
         return redirectUrls;
     }
@@ -79,12 +80,13 @@ public class PaymentServices {
     }
 
     private List<Transaction> getTransactionInformation(OrderDetails orderDetail) {
-//        Details details = new Details();
-//        details.setPaymentAmount(orderDetail.getPaymentAmount());
+        Details details = new Details();
+        details.setSubtotal(orderDetail.getPaymentAmount());
 
         Amount amount = new Amount();
-        amount.setCurrency("LKR");
+        amount.setCurrency("USD");
         amount.setTotal(orderDetail.getPaymentAmount());
+        amount.setDetails(details);
 
 
         Transaction transaction = new Transaction();
@@ -95,9 +97,10 @@ public class PaymentServices {
         List<Item> items = new ArrayList<Item>();
 
         Item item = new Item();
-        item.setCurrency("LKR")
-                .setPrice(orderDetail.getPaymentAmount())
-                .setQuantity("1");
+        item.setCurrency("USD");
+        item.setName(orderDetail.getProduct());
+        item.setPrice(orderDetail.getPaymentAmount());
+        item.setQuantity("1");
 
         items.add(item);
         itemList.setItems(items);
@@ -111,6 +114,7 @@ public class PaymentServices {
 
     private String getApprovalLink(Payment approvedPayment) {
         List<Links> links = approvedPayment.getLinks();
+        String approvalLink = null;
 
         for (Links link : links)
         {

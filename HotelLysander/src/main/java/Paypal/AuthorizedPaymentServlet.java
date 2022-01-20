@@ -20,16 +20,16 @@ public class AuthorizedPaymentServlet extends HttpServlet {
 
 
 
+    String product = request.getParameter("product");
+    String paymentAmount = request.getParameter("paymentAmount");
+//        String product = "ABC";
+//        String subtotal = "20";
+//        String shipping = "10";
+//        String tax = "15";
+//        String paymentAmount = "100";
 
-        //String paymentAmount = "20"; //request.getParameter("paymentAmount");
-        String product = "ABC";
-        String subtotal = "20";
-        String shipping = "10";
-        String tax = "15";
-        String paymentAmount = "100";
 
-
-        OrderDetails orderDetail = new OrderDetails(product,subtotal,shipping,tax,paymentAmount);
+        OrderDetails orderDetail = new OrderDetails(product, paymentAmount);
 
         try {
             PaymentServices paymentServices = new PaymentServices();

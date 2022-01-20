@@ -1,45 +1,31 @@
 package Paypal;
 
-import com.paypal.api.payments.Details;
 
-public class OrderDetails extends Details {
+
+public class OrderDetails{
 
 
     public String product;
     public String subtotal;
     public String shipping;
     public String tax;
-    public String paymentAmount;
+    public float paymentAmount;
 
 
-    public OrderDetails(String product, String subtotal, String shipping, String tax, String paymentAmount)
+    public OrderDetails(String product, String paymentAmount)
     {
         super();
         this.product = product;
-        this.subtotal = subtotal;
-        this.shipping = shipping;
-        this.tax = tax;
-        this.paymentAmount = paymentAmount;
+        this.paymentAmount = Float.parseFloat(paymentAmount);
     }
 
     public String getPaymentAmount()
     {
-        return paymentAmount;
+        return String.format("%.2f",paymentAmount);
     }
 
-    public String getSubtotal()
-    {
-        return subtotal;
-    }
-
-    public String getShipping()
-    {
-        return shipping;
-    }
-
-    public String getTax()
-    {
-        return tax;
+    public void setPaymentAmount(float paymentAmount) {
+        this.paymentAmount = paymentAmount;
     }
 
     public String getProduct()
@@ -47,5 +33,7 @@ public class OrderDetails extends Details {
         return product;
     }
 
-
+    public void setProduct(String product) {
+        this.product = product;
+    }
 }

@@ -116,7 +116,8 @@
                             </div>
                             <div class="col">
                                 <div class="form" id="textbox">
-                                    <p>Calculated Total Amount ${totalAmount}</p>
+                                    <input type="text" name="product" value="Luxury Room">
+<%--                                    <p>Calculated Total Amount ${totalAmount}</p>--%>
                                 </div>
                             </div>
                         </div>
@@ -132,13 +133,13 @@
                             </div>
                             <div class="col">
                                 <div class="form" id="textbox">
-                                    <p>calculated Amount 20% ${paymentAmount}</p>
+                                    <input type="text" name="paymentAmount" value="20">
+<%--                                    <p>calculated Amount 20% ${paymentAmount}</p>--%>
                                 </div>
                             </div>
                         </div>
                     </div>        
                     <div class="container2 mb-3">
-                        <div class="row">
                             <div class="col">
                             </div>
                             <div class="col">
@@ -154,7 +155,7 @@
                         </div>
                     </div>  
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button type="submit" name="paymentAmount"  class="btn btn-secondary" id="buttons">OK</button>
+                        <button type="submit" name="checkPaymentAmount"  class="btn btn-secondary" id="buttons">OK</button>
                     </div><br>
                 </form>
             </div>

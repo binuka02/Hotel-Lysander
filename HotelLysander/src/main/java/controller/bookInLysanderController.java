@@ -59,7 +59,7 @@ public class bookInLysanderController extends HttpServlet {
         if(status>0)
         {
             System.out.print("<p>Booking Recorded!</p>");
-            RequestDispatcher rs = request.getRequestDispatcher("BoookingSuccess.html");
+            RequestDispatcher rs = request.getRequestDispatcher("bookInLysanderRate.jsp");
             rs.include(request, response);
         }
         else
