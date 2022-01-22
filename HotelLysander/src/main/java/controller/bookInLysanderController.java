@@ -1,6 +1,7 @@
 
 package controller;
 
+import Bill.BillCalc;
 import Model.dbConModel;
 import Model.bookInLysanderModel;
 import Model.bookInLysanderRateModel;
@@ -63,11 +64,24 @@ public class bookInLysanderController extends HttpServlet {
         try {
             int count=obj.checkBooking(checkInDate,checkOutDate,roomType);
 
-            if(count==30){
+            if(count>=30){
                 System.out.println("Already booked your preferences try on other one");
                 RequestDispatcher rs = request.getRequestDispatcher("Error.html");
                 rs.include(request, response);
             }else {
+//                int status=dbConModel.addBooking(bookLysanderobj);
+//                if(status>0)
+//                {
+//                    out.print("<p>Booking Recorded!!!</p>");
+//                    RequestDispatcher rs = request.getRequestDispatcher("SignUpSuccess.html");
+//                    rs.include(request, response);
+//                }
+//                else
+//                {
+//                    out.println("Booking not Caputured");
+//                    RequestDispatcher rs = request.getRequestDispatcher("Error.html");
+//                    rs.include(request, response);
+//                }
                 out.print("<p>Booking Recorded!!!</p>");
                 RequestDispatcher rs = request.getRequestDispatcher("SignUpSuccess.html");
                 rs.include(request, response);
@@ -78,6 +92,8 @@ public class bookInLysanderController extends HttpServlet {
             e.printStackTrace();
         }
 
+        BillCalc bill = new BillCalc();
+        bill.finalcharge(bookLysanderobj);
         int status=dbConModel.addBooking(bookLysanderobj);
         if(status>0)
         {
