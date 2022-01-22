@@ -157,7 +157,7 @@ and open the template in the editor.
                                 <option selected></option>
                                 <option value="1">Single Room</option>
                                 <option value="2">Double Room</option>
-                                <option value="3">Tripple Room</option>
+                                <option value="3">Deluxe Room</option>
                             </select>
                         </div>
                         <div class="container2">
@@ -208,10 +208,9 @@ and open the template in the editor.
                         <label class="control-label" for="date">Package</label>
                         <select class="form-select" name="packages" aria-label="Default select example">
                             <option selected></option>
-                            <option value="1">FB</option>
-                            <option value="2">HB</option>
-                            <option value="3">BB</option>
-                            <option value="3">RO</option>
+                            <option value="5">BB</option>
+                            <option value="6">HB</option>
+                            <option value="7">FB</option>
                         </select>
                     </div>
                     <br>

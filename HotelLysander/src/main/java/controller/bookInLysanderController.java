@@ -58,7 +58,7 @@ public class bookInLysanderController extends HttpServlet {
 
         dbConModel obj=new dbConModel();
 
-        int count= 0;
+        int count = 0;
         try {
             count = obj.checkBooking(checkInDate,checkOutDate,roomType);
         } catch (SQLException e) {
@@ -67,28 +67,28 @@ public class bookInLysanderController extends HttpServlet {
             e.printStackTrace();
         }
 
-        if(count>=30){
-                System.out.println("Already booked your preferences try on other one");
-                RequestDispatcher rs = request.getRequestDispatcher("Error.html");
-                rs.include(request, response);
-            }else {
-//                int status=dbConModel.addBooking(bookLysanderobj);
-//                if(status>0)
-//                {
-//                    out.print("<p>Booking Recorded!!!</p>");
-//                    RequestDispatcher rs = request.getRequestDispatcher("SignUpSuccess.html");
-//                    rs.include(request, response);
-//                }
-//                else
-//                {
-//                    out.println("Booking not Caputured");
-//                    RequestDispatcher rs = request.getRequestDispatcher("Error.html");
-//                    rs.include(request, response);
-//                }
-                out.print("<p>Booking Recorded!!!</p>");
-                RequestDispatcher rs = request.getRequestDispatcher("SignUpSuccess.html");
-                rs.include(request, response);
-            }
+//        if(count>=30){
+//                System.out.println("Already booked your preferences try on other one");
+//                RequestDispatcher rs = request.getRequestDispatcher("Error.html");
+//                rs.include(request, response);
+//            }else {
+////                int status=dbConModel.addBooking(bookLysanderobj);
+////                if(status>0)
+////                {
+////                    out.print("<p>Booking Recorded!!!</p>");
+////                    RequestDispatcher rs = request.getRequestDispatcher("SignUpSuccess.html");
+////                    rs.include(request, response);
+////                }
+////                else
+////                {
+////                    out.println("Booking not Caputured");
+////                    RequestDispatcher rs = request.getRequestDispatcher("Error.html");
+////                    rs.include(request, response);
+////                }
+//                out.print("<p>Booking Recorded!!!</p>");
+//                RequestDispatcher rs = request.getRequestDispatcher("bookInLysanderRate.jsp");
+//                rs.include(request, response);
+//            }
 
 
         BillCalc bill = new BillCalc();
@@ -97,7 +97,7 @@ public class bookInLysanderController extends HttpServlet {
         if(status>0)
         {
             out.print("<p>Booking Recorded!!!</p>");
-            RequestDispatcher rs = request.getRequestDispatcher("SignUpSuccess.html");
+            RequestDispatcher rs = request.getRequestDispatcher("bookInLysanderRate.jsp");
             rs.include(request, response);
         }
         else
