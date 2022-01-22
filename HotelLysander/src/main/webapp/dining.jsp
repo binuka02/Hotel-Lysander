@@ -28,8 +28,10 @@
         }
 
         #LysanderHeaderName {
-            font-family: Corinthia;
+            font-family: Perpetua Titling MT;
+            font-weight: bold;
             font-size: 50px;
+            color: #9e6c1c;
         }
 
         #WelcomeDivMainParagraph {
@@ -56,16 +58,155 @@
             margin-top: -290px;
             margin-bottom: 40px;
         }
+
+        #Lysanders
+        {
+            font-family: Forte;
+            font-size: 80px;
+        }
+        #category
+        {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /*body {*/
+        /*    height: 100vh;*/
+        /*    display: flex;*/
+        /*    flex-direction: column;*/
+        /*    justify-content: center;*/
+        /*    align-items: center;*/
+        /*}*/
+
+        p {
+            /*font-family: "calibri";*/
+            max-width: 40ch;
+            text-align: center;
+            transform: scale(0.94);
+            animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+        }
+        @keyframes scale {
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        span {
+            display: inline-block;
+            opacity: 0;
+            filter: blur(4px);
+        }
+
+        span:nth-child(1) {
+            animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(2) {
+            animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(3) {
+            animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(4) {
+            animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(5) {
+            animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(6) {
+            animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(7) {
+            animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(8) {
+            animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(9) {
+            animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(10) {
+            animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(11) {
+            animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(12) {
+            animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(13) {
+            animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(14) {
+            animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(15) {
+            animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(16) {
+            animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(17) {
+            animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(18) {
+            animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(19) {
+            animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        @keyframes fade-in {
+            100% {
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+
     </style>
 </head>
 
 <body>
-    <a href="HomePage.jsp">
-        <button type="button" class="btn btn-outline-primary" style="margin-top: 25px; margin-left: 20px;">Click To Go Back To HomePage</button>
-    </a>
+
     <div class="flex-container text-center" id="WelcomeDiv">
-        <h4 id="LysanderHeaderName"><b>Welcome <br> to <br> LYSANDER's <br> --Rooms & Suites-- </b></h4>
-        <h4 style="margin-top: 30px; margin-bottom: 40px;">Seaside Breaking Rooms Since 1815</h4>
+
+        <p>
+            <span><p id="LysanderHeaderName"></p></span>
+        <span><p id="LysanderHeaderName">Welcome </p></span>
+        <span><p id="LysanderHeaderName"> to</p></span><br><br>
+        <span><span id="Lysanders"><p>LYSANDER'S </p></span></span><br>
+        <span><span id="category"> -- </span></span>
+        <span><span id="category"> Dining </span></span>
+        <span><span id="category"> --</span></span><br>
+        <span><h6 style="margin-top: 10px; margin-bottom: 40px;">Seaside </h6></span>
+        <span><h6 style="margin-top: 10px; margin-bottom: 40px;"> Breaking </h6></span>
+        <span><h6 style="margin-top: 10px; margin-bottom: 40px;"> Dinings </h6></span>
+        <span><h6 style="margin-top: 10px; margin-bottom: 40px;"> Since </h6></span>
+        <span><h6 style="margin-top: 10px; margin-bottom: 40px;"> 1815</h6></span>
+        </p>
+
 
     </div>
 
