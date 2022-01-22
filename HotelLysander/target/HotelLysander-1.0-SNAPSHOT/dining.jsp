@@ -185,6 +185,23 @@
             }
         }
 
+        .card-title
+        {
+            text-align: center;
+            font-weight: bold;
+        }
+
+       
+        card-body
+        {
+            text-align: center;
+        }
+
+
+        .col{
+            text-align: center;
+        }
+
     </style>
 </head>
 
@@ -217,7 +234,7 @@
     <div id="CarouselDivRoomsPage" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="Images/diningOne.png" alt="First slide">
+                <img class="d-block w-100" src="Images/dining1.jpg" alt="First slide">
             </div>
         </div>
     </div>
@@ -225,7 +242,7 @@
         <div class="row">
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/diningTwo.png" alt="Card image cap">
+                    <img class="card-img-top" src="Images/buffet.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">BUFFET</h5>
                     </div>
@@ -253,7 +270,7 @@
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/diningThree.png" alt="Card image cap">
+                    <img class="card-img-top" src="Images/sushi.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">SHUSHI TIME</h5>
                     </div>
@@ -281,7 +298,7 @@
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/diningFour.png" alt="Card image cap">
+                    <img class="card-img-top" src="Images/bbq.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">BBQ PARTY</h5>
                     </div>
@@ -309,7 +326,7 @@
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/diningTwo.png" alt="Card image cap">
+                    <img class="card-img-top" src="Images/bar.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">BAR</h5>
                     </div>
