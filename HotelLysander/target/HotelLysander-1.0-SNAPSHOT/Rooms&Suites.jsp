@@ -19,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <title>Rooms and Suites</title>
     <style>
 
@@ -188,8 +190,48 @@
             }
         }
 
+        .card-title
+        {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #book
+        {
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: #9e6c1c;
+            border: #9e6c1c;
+            font-weight: bold;
+        }
+        card-body
+        {
+            text-align: center;
+        }
+
+        #price
+        {
+            color: #9e6c1c;
+            font-weight: bold;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .col{
+            text-align: center;
+        }
+
     </style>
+
 </head>
+<%--    <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js" ></script>--%>
+    <script>
+        $(function(){ $("footer").load("Footer.html") });
+    </script>
+
+
+
 
 <body>
 
@@ -218,19 +260,40 @@
     <div style="margin-left: 20px;">
         <h5 id="LysanderRoomsHTag">ROOMS & SUITES</h5>
     </div>
-
-    <div id="CarouselDivRoomsPage" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="Images/MicrosoftTeams-image.png" alt="First slide">
+                <img class="d-block w-100" src="Images/rooms%20(4).jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Images/rooms%20(13).jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Images/rooms%20(7).jpg" alt="Third slide">
             </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
+
+
+
     <div class="d-flex justify-content-center" style="margin-top: 40px; margin-bottom: 40px;">
         <div class="row">
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/MicrosoftTeams-image.png" alt="Card image cap">
+                    <img class="card-img-top" src="Images/singleroom.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">SINGLE ROOM</h5>
                     </div>
@@ -242,16 +305,16 @@
                         <li class="list-group-item">Minibar</li>
                         <li class="list-group-item">Fully Air Conditioned</li>
                         <li class="list-group-item">Smart Television with Netflix</li>
-                        <li class="list-group-item">Price: $50</li>
+                        <li class="list-group-item" id="price">$50</li>
                     </ul>
                     <div class="card-body">
-                        <button onclick="myFunctionBookOpen()" type="button" class="btn btn-primary">BOOK NOW</button>
+                        <button onclick="myFunctionBookOpen()" type="button" class="btn btn-primary" id="book">BOOK NOW</button>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/MicrosoftTeams-image.png" alt="Card image cap">
+                    <img class="card-img-top" src="Images/doubleroom.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">DOUBLE ROOM</h5>
                     </div>
@@ -263,16 +326,16 @@
                         <li class="list-group-item">Hot Chocolate</li>
                         <li class="list-group-item">Minibar</li>
                         <li class="list-group-item">Refrigerator</li>
-                        <li class="list-group-item">Price: $100</li>
+                        <li class="list-group-item" id="price">$100</li>
                     </ul>
                     <div class="card-body">
-                        <button onclick="myFunctionBookOpen()" type="button" class="btn btn-primary">BOOK NOW</button>
+                        <button onclick="myFunctionBookOpen()" type="button" class="btn btn-primary" id="book">BOOK NOW</button>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/MicrosoftTeams-image.png" alt="Card image cap">
+                    <img class="card-img-top" src="Images/kingsizebedroom.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">KING SIZE ROOM</h5>
                     </div>
@@ -284,16 +347,16 @@
                         <li class="list-group-item">Sauna</li>
                         <li class="list-group-item">Hot Spring</li>
                         <li class="list-group-item">Tennis Court</li>
-                        <li class="list-group-item">Price: $200</li>
+                        <li class="list-group-item" id="price">$200</li>
                     </ul>
                     <div class="card-body">
-                        <button onclick="myFunctionBookOpen()" type="button" class="btn btn-primary">BOOK NOW</button>
+                        <button onclick="myFunctionBookOpen()" type="button" class="btn btn-primary" id="book">BOOK NOW</button>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/MicrosoftTeams-image.png" alt="Card image cap">
+                    <img class="card-img-top" src="Images/cabana.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">CABANAS</h5>
                     </div>
@@ -305,10 +368,10 @@
                         <li class="list-group-item">Bottled Water</li>
                         <li class="list-group-item">Baggage Storage</li>
                         <li class="list-group-item">Special Diet Menus</li>
-                        <li class="list-group-item">Price: $350</li>
+                        <li class="list-group-item" id="price">$350</li>
                     </ul>
                     <div class="card-body">
-                        <button onclick="myFunctionBookOpen()" type="button" class="btn btn-primary">BOOK NOW</button>
+                        <button onclick="myFunctionBookOpen()" type="button" class="btn btn-primary" id="book">BOOK NOW</button>
                     </div>
                 </div>
             </div>
@@ -333,6 +396,8 @@
         }
 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -63,17 +63,17 @@
             margin-top: -290px;
             margin-bottom: 40px;
 
-        
-        /*#division-container {*/
-        /*    background-color: beige;*/
-        /*    width: 110px;*/
-        /*    padding-top: 15px;*/
-        /*    padding-bottom: 15px;*/
-        /*}*/
 
-        /*#division-container-button {*/
-        /*    width: 200px;*/
-        /*}*/
+        #division-container {
+            background-color: beige;
+            width: 110px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        #division-container-button {
+            width: 200px;
+        }
 
         #Lysanders
         {
