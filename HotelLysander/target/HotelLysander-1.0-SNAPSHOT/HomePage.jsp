@@ -1932,11 +1932,6 @@
             -webkit-transform: scale(0,1);
             transform: scale(0,1);
         }
-        .effect-underline:hover
-        {
-            -webkit-transform: scale(1.08);
-            transform: scale(1.08);
-        }
 
         .effect-underline:hover:after {
             opacity: 1;
