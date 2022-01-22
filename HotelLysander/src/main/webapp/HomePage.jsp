@@ -16,6 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Hotel Lysander</title>
     <style id="applicationStylesheet" type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
 
         /*footer*/
         .col_white_amrc { color:#FFF;}
@@ -366,7 +367,7 @@
         .Rectangle_6 {
             position: absolute;
             overflow: visible;
-            width: 50px;
+            width: 10px;
             height: 45px;
             left: 0px;
             top: 0px;
@@ -1916,6 +1917,36 @@
             font-size: 30px;
         }
 
+        .effect-underline:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            height: 1em;
+            width: 100%;
+            border-bottom: 2px solid;
+            margin-top: 10px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: scale(0,1);
+            transform: scale(0,1);
+        }
+
+        .effect-underline:hover:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        #effect-underline1:after
+        {
+            left: 10;
+        }
+        #effect-underline2:after
+        {
+            left: 5;
+        }
+
     </style>
 
 </head>
@@ -2002,7 +2033,7 @@
     <a href="">
         <div id="Group_2">
             <svg class="Rectangle_6">
-                <rect onclick="myFunctionChooseLogInSignUp()" id="Rectangle_6" rx="10" ry="10" x="0" y="0" width="224" height="47">
+                <rect onclick="myFunctionChooseLogInSignUp()" id="Rectangle_6" rx="10" ry="10" x="0" y="0" width="100" height="47">
                 </rect>
             </svg>
         </div>
@@ -2023,35 +2054,39 @@
     <!-- Rooms and Suits link in the header -->
     <a href="http://localhost:8080/HotelLysander/Rooms&Suites.jsp">
         <div id="Rooms__Suits">
-            <span>ROOMS & SUITS</span>
+            <span class="effect-underline" id="effect-underline1">ROOMS & SUITS</span>
         </div>
     </a>
+
+
+
+
 
     <!-- Dining link in the header -->
     <a href="http://localhost:8080/HotelLysander/dining.jsp">
         <div id="Dining">
-            <span>DINING</span>
+            <span class="effect-underline" id="effect-underline2">DINING</span>
         </div>
     </a>
 
     <!-- Wellness link in the header -->
     <a href="http://localhost:8080/HotelLysander/Rooms&Suites.jsp">
         <div id="WELLNESS">
-            <span>WELLNESS</span>
+            <span class="effect-underline">WELLNESS</span>
         </div>
     </a>
 
     <!-- Offers link in the header -->
     <a href="http://localhost:8080/HotelLysander/Rooms&Suites.jsp">
         <div id="OFFERS">
-            <span>OFFERS</span>
+            <span class="effect-underline">OFFERS</span>
         </div>
     </a>
 
     <!-- Wedding link in the head -->
     <a href="http://localhost:8080/HotelLysander/wedding.jsp">
         <div id="WEDDING">
-            <span>WEDDING</span>
+            <span class="effect-underline">WEDDING</span>
         </div>
     </a>
 
@@ -2151,10 +2186,10 @@
         <span>Welcome to Lysander</span>
     </div>
     <div id="Seaside_Breaks_since_2000">
-        <span>Seaside Breaks since 2000</span>
+        <span>Seaside Breaks since 1815</span>
     </div>
     <div id="Our_lovely_luxury_hotel_opened">
-		<span>Our lovely luxury hotel opened in 2000 and today, while we've
+		<span>Our lovely luxury hotel opened in 1815 and today, while we've
 			made a few changes, <br/>the things that were a hit back then still
 			delight our visitors today: excellent service, <br/>incredible sea views,
 			and surroundings so comfortable you won't want to leave. <br/>
@@ -2198,7 +2233,7 @@
     <img id="png_20211213_000101_0000" src="Images/meeting.png">
     </a>
     <a href="http://localhost:8080/HotelLysander/dining.jsp">
-    <img id="n_0211213_000131_0000" src="Images/wellness.png">
+    <img id="n_0211213_000131_0000" src="Images/wellness.jpg">
     </a>
     <svg class="Rectangle_12">
         <rect id="Rectangle_12" rx="0" ry="0" x="0" y="0" width="465" height="497">

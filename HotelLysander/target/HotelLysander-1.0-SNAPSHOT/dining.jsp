@@ -191,7 +191,7 @@
             font-weight: bold;
         }
 
-       
+
         card-body
         {
             text-align: center;
