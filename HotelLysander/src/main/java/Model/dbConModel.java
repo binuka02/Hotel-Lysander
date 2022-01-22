@@ -95,4 +95,24 @@ public class dbConModel {
 
         return status;
     }
+    public int checkBooking(String cInDate,String cOutDate, String roomType) throws SQLException, ClassNotFoundException {
+        int count=0;
+        System.out.println("checkBooking started!!!");
+        PreparedStatement ps = createConnection().prepareStatement("SELECT COUNT gFname FROM bookings where (cInDate=? AND cOutDate=?) AND (roomType=?)");
+        ps.setString(1,cInDate);
+        ps.setString(2,cOutDate);
+        ps.setString(3,roomType);
+
+        ResultSet rs =ps.executeQuery();
+        if(rs.next()){
+            count= rs.getInt("count");
+            System.out.println(count+" amount");
+        }else
+        {
+            System.out.println("no count");
+        }
+
+        //find a way to take the count in int
+        return count;
+    }
 }
