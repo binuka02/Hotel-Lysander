@@ -142,11 +142,11 @@ and open the template in the editor.
                             <div class="row align-items-start">
                                 <div class="col">
                                     <label class="control-label" for="date">Check-In</label>
-                                    <input class="form-control" value="<%=request.getParameter("checkInDate") %>" id="date" name="date" placeholder="Check-In" type="text"/>
+                                    <input class="form-control" value="<%=(request.getParameter("checkInDate") == null) ? "" : request.getAttribute("checkInDate") %>" id="date" name="date" placeholder="Check-In" type="text"/>
                                 </div>
                                 <div class="col">
                                     <label class="control-label" for="date">Check-Out  </label>
-                                    <input class="form-control" id="date" value="<%=request.getParameter("checkOutDate") %>" name="dateOut" placeholder="Check-Out" type="text"/>
+                                    <input class="form-control" id="date1" value="<%=(request.getParameter("checkOutDate") == null) ? "" : request.getAttribute("checkOutDate") %>" name="dateOut" placeholder="Check-Out" type=""/>
                                 </div>
 
                             </div>
@@ -158,24 +158,23 @@ and open the template in the editor.
                                 <option value="1">Single Room</option>
                                 <option value="2">Double Room</option>
                                 <option value="3">Deluxe Room</option>
+                                <option value="4">Cabana</option>
                             </select>
                         </div>
                         <div class="container2">
                             <div class="row">
                                 <div class="col">
-                                    <label class="control-label" for="date">Rooms</label>
+                                    <label class="control-label" for="date">Custom Add ons</label>
                                     <select class="form-select" name="roomsCount" aria-label="Default select example">
                                         <option selected></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="1">4</option>
-                                        <option value="2">5</option>
-                                        <option value="3">6</option>
-                                        <option value="1">7</option>
-                                        <option value="2">8</option>
-                                        <option value="3">9</option>
-                                        <option value="3">10</option>
+                                        <option value="1">We Have a dog</option>
+                                        <option value="2">Im Vegan</option>
+                                        <option value="3">My baby need a cart</option>
+                                        <option value="1">We are on our honeyMoon</option>
+                                        <option value="1">Our First Date</option>
+                                        <option value="1">We Love Seafood</option>
+                                        <option value="1">Elder's Care</option>
+
                                     </select>
                                 </div>
                                 <div class="col">
@@ -192,7 +191,7 @@ and open the template in the editor.
                                         <div class="col">
                                             <label class="control-label" for="date">Kids</label>
                                             <select class="form-select" name="kidsCount" aria-label="Default select example">
-                                                <option selected></option>
+                                                <option selected value="0"></option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
