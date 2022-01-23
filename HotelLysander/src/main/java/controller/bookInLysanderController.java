@@ -93,7 +93,8 @@ public class bookInLysanderController extends HttpServlet {
         }
 
         BillCalc bill = new BillCalc();
-        bill.finalcharge(bookLysanderobj);
+        int fee=bill.finalcharge(bookLysanderobj);
+        bookLysanderobj.setHotelfee(fee);
         int status=dbConModel.addBooking(bookLysanderobj);
         if(status>0)
         {

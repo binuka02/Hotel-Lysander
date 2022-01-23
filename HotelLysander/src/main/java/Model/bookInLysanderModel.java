@@ -11,6 +11,7 @@ public class bookInLysanderModel {
     private String adultsCount;
     private String kidsCount;
     private String packages;
+    private int fee;
 
     public void setFname(String Fname) {this.Fname=Fname;}
     public void setRegion(String region) { this.region = region; }
@@ -22,6 +23,8 @@ public class bookInLysanderModel {
     public void setKidsCount(String kidsCount) { this.kidsCount = kidsCount; }
     public void setPackages(String packages) { this.packages = packages; }
 
+    public void setHotelfee(int fee){this.fee=fee;}
+
     public String getFname() {return this.Fname;}
     public String getRegion() { return this.region; }
     public String getCheckInDate() { return checkInDate; }
@@ -31,4 +34,6 @@ public class bookInLysanderModel {
     public String getAdultsCount() { return this.adultsCount; }
     public String getKidsCount() { return this.kidsCount; }
     public String getPackages() { return this.packages; }
+
+    public int getHotelfee(){return this.fee;}
 }
