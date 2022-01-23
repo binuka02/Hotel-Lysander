@@ -134,7 +134,7 @@
                     </div>
                     <div class="col">
                         <div class="form" id="textbox">
-                            <p>calculated Booking Fee 20%</p>
+                            <p>calculated Booking Fee 20% LKR <%=request.getAttribute("BookingFee")%>.00</p>
                         </div>
                     </div>
                 </div>

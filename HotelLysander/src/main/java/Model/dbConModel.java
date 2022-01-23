@@ -102,7 +102,7 @@ public class dbConModel {
 
         ResultSet rs =ps.executeQuery();
         if(rs.next()){
-            count= rs.getInt("count");
+            count= rs.getInt(count);
             System.out.println(count+" amount");
         }else
         {
