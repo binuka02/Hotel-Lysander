@@ -1,5 +1,8 @@
 package Bill;
 import Model.bookInLysanderModel;
+
+import java.time.LocalDate;
+
 public class BillCalc {
 
     public int finalcharge(bookInLysanderModel bookLysanderobj){
@@ -8,7 +11,12 @@ public class BillCalc {
         int roomTypeId=Integer.parseInt(bookLysanderobj.getRoomType());
         int kidsCount=Integer.parseInt(bookLysanderobj.getKidsCount());
         int adultCount=Integer.parseInt(bookLysanderobj.getAdultsCount());
+
+        LocalDate cIn=LocalDate.parse("2022-01-10");
+        LocalDate cOut=LocalDate.parse("2022-01-20");
+        int noOfDays =cOut.getDayOfYear()-cIn.getDayOfYear();
         int totCharge;
+
         switch (packageId*roomTypeId){
             case 5:
                 totCharge=8000;
@@ -40,8 +48,10 @@ public class BillCalc {
             default:
                 totCharge=50000;
         }
+
         totCharge= (int) (((totCharge*0.5)*kidsCount)+(totCharge*adultCount));
+        totCharge=totCharge*noOfDays;
         System.out.println("Booking cost: "+totCharge);
-        return 0;
+        return totCharge;
     }
 }

@@ -116,7 +116,7 @@
                             </div>
                             <div class="col">
                                 <div class="form" id="textbox">
-                                    <input type="text" name="product" value="Luxury Room">
+                                    <input type="text" name="product" value="Hotel Lysander">
 <%--                                    <p>Calculated Total Amount ${totalAmount}</p>--%>
                                 </div>
                             </div>
@@ -133,7 +133,8 @@
                             </div>
                             <div class="col">
                                 <div class="form" id="textbox">
-                                    <input type="text" name="paymentAmount" value="20">
+                                    <input type="text" name="paymentAmount" value="<%= request.getAttribute("fee")%>">
+                                    <p>Calculated Total Amount LKR <%= request.getAttribute("fee")%>.00</p>
 <%--                                    <p>calculated Amount 20% ${paymentAmount}</p>--%>
                                 </div>
                             </div>

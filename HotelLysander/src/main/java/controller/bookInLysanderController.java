@@ -92,7 +92,20 @@ public class bookInLysanderController extends HttpServlet {
 
 
         BillCalc bill = new BillCalc();
-        bill.finalcharge(bookLysanderobj);
+        int fee=10000;
+        fee=bill.finalcharge(bookLysanderobj);
+        System.out.println("fee from bill calculation "+fee);
+
+        request.setAttribute("fee",fee);
+        request.getRequestDispatcher("bookInLysanderRate.jsp").forward(request,response);
+
+        //int BookingFee=2000;
+//        BookingFee=(int)(fee*0.2);
+//        request.setAttribute("BookingFee",BookingFee);
+//        request.getRequestDispatcher("bookInLysanderRate.jsp").forward(request,response);
+
+        //bill.finalcharge(bookLysanderobj);
+
         int status=dbConModel.addBooking(bookLysanderobj);
         if(status>0)
         {
