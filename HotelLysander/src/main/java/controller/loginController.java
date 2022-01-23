@@ -30,7 +30,6 @@ public class loginController extends HttpServlet {
         //apply form inputs in to a getter
         String guest_Fname = request.getParameter("guest_Fname");
         String guest_NIC = request.getParameter("guest_NIC");
-
         //check matching status of email and nic
         try{
             dbConModel con = new dbConModel();
@@ -40,6 +39,7 @@ public class loginController extends HttpServlet {
                 HttpSession session = request.getSession();
                 session.setAttribute("guest_Fname", guest_Fname);
                 request.setAttribute("guest_Fname", guest_Fname);
+               
                 //setting session to expiry in 30 mins
                 session.setMaxInactiveInterval(60*60);
 

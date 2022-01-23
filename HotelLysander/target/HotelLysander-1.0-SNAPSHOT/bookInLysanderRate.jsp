@@ -133,7 +133,7 @@
                             </div>
                             <div class="col">
                                 <div class="form" id="textbox">
-                                    <input type="text" name="paymentAmount" value="<%= request.getAttribute("fee")%>">
+                                    <input type="text" name="paymentAmount" value="<%= request.getAttribute("fee")%>" readonly>
                                     <p>Calculated Total Amount LKR <%= request.getAttribute("fee")%>.00</p>
 <%--                                    <p>calculated Amount 20% ${paymentAmount}</p>--%>
                                 </div>
