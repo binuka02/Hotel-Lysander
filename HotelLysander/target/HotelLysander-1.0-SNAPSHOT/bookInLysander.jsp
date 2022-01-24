@@ -108,7 +108,17 @@ and open the template in the editor.
 
     </style>
     <body>
-
+    <%
+        String userName = null;
+        //allow access only if session exists
+        if(session.getAttribute("guest_Fname") == null){
+            response.sendRedirect("LogInPage.html");
+            System.out.println("log in to Your account before booking");
+        }else {
+            RequestDispatcher rs = request.getRequestDispatcher("HomePage.jsp");
+            rs.include(request, response);
+        }
+    %>
         <div class="col" id="background"> <!--LEFT SIDE COLUMN-->
             <div class="p-3 border bg-light" id="leftcolumn">
 
@@ -133,13 +143,12 @@ and open the template in the editor.
                             <div class="row align-items-start">
                                 <div class="col">
                                     <label class="control-label" for="date">Check-In</label>
-                                    <input class="form-control" value="<%=request.getAttribute("checkInDate")%>" id="date" name="date" placeholder="Check-In" type="text"/>
+                                    <input class="form-control" value="<%=(request.getParameter("checkInDate") == null) ? "" : request.getAttribute("checkInDate") %>" id="date" name="date" placeholder="Check-In" type="text"/>
                                 </div>
                                 <div class="col">
                                     <label class="control-label" for="date">Check-Out  </label>
-                                    <input class="form-control" id="date1" value="<%=(request.getParameter("checkOutDate") == null) ? "" : request.getAttribute("checkOutDate") %>" name="dateOut" placeholder="Check-Out" type=""/>
+                                    <input class="form-control" id="date1" value="<%=(request.getParameter("checkOutDate") == null) ? "" : request.getAttribute("checkOutDate") %>" name="dateOut" placeholder="Check-Out" type="text"/>
                                 </div>
-
                             </div>
                         </div><br>
                         <div class="form-group mb-3">
@@ -172,8 +181,8 @@ and open the template in the editor.
                                     <div class="row">
                                         <div class="col">
                                             <label class="control-label" for="date">Adults</label>
-                                            <select class="form-select" name="adultsCount" aria-label="Default select example">
-                                                <option selected></option>
+                                            <select class="form-select" name="adultsCount" aria-label="Default select example" >
+                                                <option selected value="<%=(request.getParameter("adultsCount") == null) ? "" : request.getAttribute("adultsCount")%>"></option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -182,7 +191,7 @@ and open the template in the editor.
                                         <div class="col">
                                             <label class="control-label" for="date">Kids</label>
                                             <select class="form-select" name="kidsCount" aria-label="Default select example">
-                                                <option selected value="0"></option>
+                                                <option selected value="<%=(request.getParameter("childrensCount") == null) ? "" : request.getAttribute("childrensCount")%>"></option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>

@@ -128,7 +128,7 @@ and open the template in the editor.
 
                     <div class="form-group mb-3">
                         <label for="exampleFormControlInput1" id="label_name">Username</label>
-                        <input class="form-control" type="text" value="<%%>" name="name">
+                        <input class="form-control" type="text" value="<%=(session.getAttribute("guest_Fname") == null) ? "" : session.getAttribute("guest_Fname")%>" name="name">
 
                     </div>
                     <div class="form-floating mb-3">
@@ -147,9 +147,8 @@ and open the template in the editor.
                                 </div>
                                 <div class="col">
                                     <label class="control-label" for="date">Check-Out  </label>
-                                    <input class="form-control" id="date1" value="<%=(request.getParameter("checkOutDate") == null) ? "" : request.getAttribute("checkOutDate") %>" name="dateOut" placeholder="Check-Out" type=""/>
+                                    <input class="form-control" id="date1" value="<%=(request.getParameter("checkOutDate") == null) ? "" : request.getAttribute("checkOutDate") %>" name="dateOut" placeholder="Check-Out" type="text"/>
                                 </div>
-
                             </div>
                         </div><br>
                         <div class="form-group mb-3">
@@ -182,8 +181,8 @@ and open the template in the editor.
                                     <div class="row">
                                         <div class="col">
                                             <label class="control-label" for="date">Adults</label>
-                                            <select class="form-select" name="adultsCount" aria-label="Default select example">
-                                                <option selected></option>
+                                            <select class="form-select" name="adultsCount" aria-label="Default select example" >
+                                                <option selected value="<%=(request.getParameter("adultsCount") == null) ? "" : request.getAttribute("adultsCount")%>"></option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -192,7 +191,7 @@ and open the template in the editor.
                                         <div class="col">
                                             <label class="control-label" for="date">Kids</label>
                                             <select class="form-select" name="kidsCount" aria-label="Default select example">
-                                                <option selected value="0"></option>
+                                                <option selected value="<%=(request.getParameter("childrensCount") == null) ? "" : request.getAttribute("childrensCount")%>"></option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
