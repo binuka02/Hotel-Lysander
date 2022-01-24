@@ -108,17 +108,7 @@ and open the template in the editor.
 
     </style>
     <body>
-    <%
-        String userName = null;
-        //allow access only if session exists
-        if(session.getAttribute("guest_Fname") == null){
-            response.sendRedirect("LogInPage.html");
-            System.out.println("log in to Your account before booking");
-        }else {
-            RequestDispatcher rs = request.getRequestDispatcher("HomePage.jsp");
-            rs.include(request, response);
-        }
-    %>
+
         <div class="col" id="background"> <!--LEFT SIDE COLUMN-->
             <div class="p-3 border bg-light" id="leftcolumn">
 
@@ -143,7 +133,7 @@ and open the template in the editor.
                             <div class="row align-items-start">
                                 <div class="col">
                                     <label class="control-label" for="date">Check-In</label>
-                                    <input class="form-control" value="<%=(request.getParameter("checkInDate") == null) ? "" : request.getAttribute("checkInDate") %>" id="date" name="date" placeholder="Check-In" type="text"/>
+                                    <input class="form-control" value="<%=request.getAttribute("checkInDate")%>" id="date" name="date" placeholder="Check-In" type="text"/>
                                 </div>
                                 <div class="col">
                                     <label class="control-label" for="date">Check-Out  </label>

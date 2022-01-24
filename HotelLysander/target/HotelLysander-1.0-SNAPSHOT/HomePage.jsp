@@ -2099,7 +2099,7 @@
 
     <!-- Form to input the CHECK AND RESERVE details in Home Page -->
     <div>
-        <form action="" method="GET">
+        <form action="HomeBookingFormController" method="POST">
             <svg class="Rectangle_7">
                 <rect id="Rectangle_7" rx="0" ry="0" x="0" y="0" width="1483" height="109">
                 </rect>
@@ -2163,11 +2163,11 @@
             <button type="submit" name="submit" style="cursor: pointer;">
 
                 <svg class="Rectangle_8">
-                    <rect onclick="goToBooking()" id="Rectangle_8" rx="0" ry="0" x="0" y="0" width="306" height="109">
+                    <rect onclick="" id="Rectangle_8" rx="0" ry="0" x="0" y="0" width="306" height="109">
                     </rect>
                 </svg>
                 <div id="CHECK__RESERVE">
-                    <span onclick="goToBooking()">CHECK & RESERVE</span>
+                    <span onclick="">CHECK & RESERVE</span>
                 </div>
             </button>
 
