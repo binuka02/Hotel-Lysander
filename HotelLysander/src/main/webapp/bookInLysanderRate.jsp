@@ -111,12 +111,12 @@
                         <div class="row">
                             <div class="col">
                                 <div class="row">
-                                    <label for="floatingInput" id="labels">Total Amount</label>
+                                    <label for="floatingInput" id="labels">Guest Name</label>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form" id="textbox">
-                                    <input type="text" name="product" value="Hotel Lysander">
+                                    <input type="text" name="product" value="<%=(session.getAttribute("guest_Fname") == null) ? "User" : session.getAttribute("guest_Fname")%>">
 <%--                                    <p>Calculated Total Amount ${totalAmount}</p>--%>
                                 </div>
                             </div>

@@ -128,7 +128,8 @@ and open the template in the editor.
 
                     <div class="form-group mb-3">
                         <label for="exampleFormControlInput1" id="label_name">Username</label>
-                        <input class="form-control" type="text" value="<%=(request.getAttribute("guest_Fname") == null) ? "" : request.getAttribute("guest_Fname")%>" name="name">
+                        <input class="form-control" type="text" value="<%=(session.getAttribute("guest_Fname") == null) ? "" : session.getAttribute("guest_Fname")%>" name="name">
+
                     </div>
                     <div class="form-floating mb-3">
 
