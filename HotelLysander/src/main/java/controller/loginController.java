@@ -43,13 +43,13 @@ public class loginController extends HttpServlet {
                 //setting session to expiry in 30 mins
                 session.setMaxInactiveInterval(60*60);
 
-                out.println("You have successfully logged!!!");
+                System.out.println("You have successfully logged!!!");
                 RequestDispatcher lrd = request.getRequestDispatcher("HomePage.jsp");
                 lrd.include(request, response);
                 //logInfo=true;
             }else
             {
-                out.println("Email and NIC is not matching");
+                System.out.println("Email and NIC is not matching");
                 RequestDispatcher lrd = request.getRequestDispatcher("LogInPage.html");
                 lrd.include(request, response);
             }

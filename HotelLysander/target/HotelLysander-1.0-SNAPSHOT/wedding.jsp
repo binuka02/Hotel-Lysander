@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
     <title>Rooms and Suites</title>
     <style>
-        .body {
+        body {
             margin: 0px;
             padding: 0px;
         }
@@ -62,6 +62,7 @@
         #HotelDescriptionDiv {
             margin-top: -290px;
             margin-bottom: 40px;
+        }
 
 
         #division-container {
@@ -90,14 +91,6 @@
             padding: 0;
             margin: 0;
         }
-
-        /*body {*/
-        /*    height: 100vh;*/
-        /*    display: flex;*/
-        /*    flex-direction: column;*/
-        /*    justify-content: center;*/
-        /*    align-items: center;*/
-        /*}*/
 
         p {
             /*font-family: "calibri";*/
@@ -200,6 +193,22 @@
                 filter: blur(0);
             }
         }
+        .card-title
+        {
+            text-align: center;
+            font-weight: bold;
+        }
+
+
+        card-body
+        {
+            text-align: center;
+        }
+
+
+        .col{
+            text-align: center;
+        }
 
     </style>
 </head>
@@ -226,29 +235,67 @@
 
     </div>
 
+
     <div style="margin-left: 20px;">
         <h5 id="LysanderRoomsHTag"><b>WEDDINGS</b></h5>
     </div>
-    <hr line="100%">
-    <div class="" style="margin-bottom: 40px;">
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="Images/wedding6.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="Images/wedding%20(1).jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="Images/wedding5.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="Images/wedding%20(3).jpg" alt="Forth slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="Images/wedding%20(4).jpg" alt="Fifth slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+    <br><br>
+
+    <div class="" style="margin-top: 40px;margin-bottom: 50px;">
         <div>
             <div style="padding-bottom: 30px; padding-right: 20px; padding-left: 20px;">
                 <h5 class="card-title" id="division-container">OUTDOOR</h5>
-                <img src="Images/MicrosoftTeams-image.png" class="img-fluid" alt="Responsive image">
+                <img src="Images/outdoor.jpg" class="img-fluid" alt="Responsive image">
                 <div class="flex-container text-center">
-                    <p style="padding-right: 150px; padding-left: 150px; font-size: 25px;">
-                        If you're Plannung to have a wedding ceremony at a pure beach not far away from the <br>
-                        capital, then Colombo Lysander is one of the best wedding venues in Sri Lanka. <br>
+                    <p>
+                        If you're Plannung to have a wedding ceremony at a pure beach not far away from the
+                        capital, then Colombo Lysander is one of the best wedding venues in Sri Lanka.
                         Can host up to 300 guests with their crowning classic design.
                     </p>
                     <button type="button" id="division-container-button" class="btn btn-primary">CONTACT US</button>
                 </div>
             </div>
-            <hr line="100%">
+<%--            <hr line="100%">--%>
 
             <div style="padding-bottom: 30px; padding-right: 20px; padding-left: 20px;">
-                <h5 class="card-title" id="division-container">OUTDOOR</h5>
-                <img src="Images/MicrosoftTeams-image.png" class="img-fluid" alt="Responsive image">
+                <h5 class="card-title" id="division-container">INDOOR</h5>
+                <img src="Images/indoor.jpg" class="img-fluid" alt="Responsive image">
                 <div class="flex-container text-center">
                     <p style="padding-right: 150px; padding-left: 150px; font-size: 25px;">
                         If you're Plannung to have a wedding ceremony at a pure beach not far away from the <br>
@@ -258,94 +305,15 @@
                     <button type="button" id="division-container-button" class="btn btn-primary">CONTACT US</button>
                 </div>
             </div>
-            <hr line="100%">
+<%--            <hr line="100%">--%>
 
-            <div style="padding-bottom: 30px; padding-right: 20px; padding-left: 20px;">
-                <h5 class="card-title" id="division-container">OUTDOOR</h5>
-                <img src="Images/MicrosoftTeams-image.png" class="img-fluid" alt="Responsive image">
-                <div class="flex-container text-center">
-                    <p style="padding-right: 150px; padding-left: 150px; font-size: 25px;">
-                        If you're Plannung to have a wedding ceremony at a pure beach not far away from the <br>
-                        capital, then Colombo Lysander is one of the best wedding venues in Sri Lanka. <br>
-                        Can host up to 300 guests with their crowning classic design.
-                    </p>
-                    <button type="button" id="division-container-button" class="btn btn-primary">CONTACT US</button>
-                </div>
-            </div>
-            <hr line="100%">
 
-            <div style="padding-bottom: 30px; padding-right: 20px; padding-left: 20px;">
-                <h5 class="card-title" id="division-container">OUTDOOR</h5>
-                <img src="Images/MicrosoftTeams-image.png" class="img-fluid" alt="Responsive image">
-                <div class="flex-container text-center">
-                    <p style="padding-right: 150px; padding-left: 150px; font-size: 25px;">
-                        If you're Plannung to have a wedding ceremony at a pure beach not far away from the <br>
-                        capital, then Colombo Lysander is one of the best wedding venues in Sri Lanka. <br>
-                        Can host up to 300 guests with their crowning classic design.
-                    </p>
-                    <button type="button" id="division-container-button" class="btn btn-primary">CONTACT US</button>
-                </div>
-            </div>
-            <hr line="100%">
-            <!-- <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/MicrosoftTeams-image.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                    <div class="card-body">
-                        <button onclick="myFunctionBookOpen()" type="button" class="btn btn-primary">BOOK NOW</button>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/MicrosoftTeams-image.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                    <div class="card-body">
-                        <button onclick="myFunctionBookOpen()" type="button" class="btn btn-primary">BOOK NOW</button>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/MicrosoftTeams-image.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                    <div class="card-body">
-                        <button onclick="myFunctionBookOpen()" type="button" class="btn btn-primary">BOOK NOW</button>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
+    <jsp:include page="Footer.html"></jsp:include>
 
     <script>
-        //function to open the choose country window
+
         function myFunctionBookOpen() {
             window.open("bookInLysander.jsp", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=540,height=660");
         }
