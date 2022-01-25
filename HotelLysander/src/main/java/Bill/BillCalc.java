@@ -14,6 +14,9 @@ public class BillCalc {
 
         LocalDate cIn=LocalDate.parse("2022-01-10");
         LocalDate cOut=LocalDate.parse("2022-01-20");
+
+         cIn=LocalDate.parse(bookLysanderobj.getCheckInDate());
+         cOut=LocalDate.parse(bookLysanderobj.getCheckOutDate());
         int noOfDays =cOut.getDayOfYear()-cIn.getDayOfYear();
         int totCharge;
 
@@ -46,7 +49,7 @@ public class BillCalc {
                 totCharge=32000;
                 break;
             default:
-                totCharge=50000;
+                totCharge=40000;
         }
 
         totCharge= (int) (((totCharge*0.5)*kidsCount)+(totCharge*adultCount));

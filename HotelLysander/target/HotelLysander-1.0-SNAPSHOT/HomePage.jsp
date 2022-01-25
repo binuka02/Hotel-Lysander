@@ -2099,7 +2099,7 @@
 
     <!-- Form to input the CHECK AND RESERVE details in Home Page -->
     <div>
-        <form action="" method="GET">
+        <form action="HomeBookingFormController" method="POST">
             <svg class="Rectangle_7">
                 <rect id="Rectangle_7" rx="0" ry="0" x="0" y="0" width="1483" height="109">
                 </rect>
@@ -2579,7 +2579,7 @@
         var logInfo=true;
         if(logInfo===true)
         {
-            window.open("bookInLysander.jsp","_self");
+            window.open("bookInLysander.jsp");
         }else
         {
             window.open("Error.html");

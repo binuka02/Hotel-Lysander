@@ -131,12 +131,6 @@ and open the template in the editor.
                         <input class="form-control" type="text" value="<%=(session.getAttribute("guest_Fname") == null) ? "" : session.getAttribute("guest_Fname")%>" name="name">
 
                     </div>
-                    <div class="form-floating mb-3">
-
-                        <input type="text" class="form-control" name="region" id="floatingInput" placeholder="Region">
-                        <label for="floatingInput">Region</label>
-
-                    </div>
                     <div class="form-group mb-3">
                         <label class="control-label">Region</label>
                         <select class="form-select" name="region" aria-label="Default select example" placeholder="Region">
@@ -400,7 +394,7 @@ and open the template in the editor.
                                 </div>
                                 <div class="col">
                                     <label class="control-label" for="date">Check-Out  </label>
-                                    <input class="form-control" id="date1" value="<%=(request.getParameter("checkOutDate") == null) ? "" : request.getAttribute("checkOutDate") %>" name="dateOut" placeholder="Check-Out" type=""/>
+                                    <input class="form-control" id="date1" value="<%=(request.getParameter("checkOutDate") == null) ? "" : request.getAttribute("checkOutDate") %>" name="dateOut" placeholder="Check-Out" type="text"/>
                                 </div>
 
                             </div>
@@ -424,10 +418,10 @@ and open the template in the editor.
                                         <option value="1">We Have a dog</option>
                                         <option value="2">Im Vegan</option>
                                         <option value="3">My baby need a cart</option>
-                                        <option value="1">We are on our HoneyMoon</option>
-                                        <option value="1">Our First Date</option>
-                                        <option value="1">We Love Seafood</option>
-                                        <option value="1">Elder's Care</option>
+                                        <option value="4">We are on our HoneyMoon</option>
+                                        <option value="5">Our First Date</option>
+                                        <option value="6">We Love Seafood</option>
+                                        <option value="7">Elder's Care</option>
 
                                     </select>
                                 </div>
@@ -435,7 +429,7 @@ and open the template in the editor.
                                     <div class="row">
                                         <div class="col">
                                             <label class="control-label" for="date">Adults</label>
-                                            <select class="form-select" name="adultsCount" aria-label="Default select example">
+                                            <select class="form-select" name="adultsCount" value="fasd" aria-label="Default select example">
                                                 <option selected></option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
