@@ -84,7 +84,7 @@ public class PaymentServices {
         details.setSubtotal(orderDetail.getPaymentAmount());
 
         Amount amount = new Amount();
-        amount.setCurrency("LKR");
+        amount.setCurrency("USD");
         amount.setTotal(orderDetail.getPaymentAmount());
         amount.setDetails(details);
 
@@ -97,7 +97,7 @@ public class PaymentServices {
         List<Item> items = new ArrayList<Item>();
 
         Item item = new Item();
-        item.setCurrency("LKR");
+        item.setCurrency("USD");
         item.setName(orderDetail.getProduct());
         item.setPrice(orderDetail.getPaymentAmount());
         item.setQuantity("1");
