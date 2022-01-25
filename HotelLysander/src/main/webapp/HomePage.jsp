@@ -2504,7 +2504,7 @@
         var logInfo=true;
         if(logInfo===true)
         {
-            window.open("bookInLysander.jsp");
+            window.open("bookInLysander.jsp","_self");
         }else
         {
             window.open("Error.html");

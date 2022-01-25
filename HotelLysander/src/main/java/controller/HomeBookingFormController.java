@@ -35,7 +35,7 @@ public class HomeBookingFormController extends HttpServlet {
         request.setAttribute("adultsCount",adCount);
         request.setAttribute("childrensCount",kdCount);
 
-        
+
         RequestDispatcher Brd=request.getRequestDispatcher("bookInLysander.jsp");
         Brd.include(request,response);
     }
