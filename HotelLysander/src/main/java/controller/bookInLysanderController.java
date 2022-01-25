@@ -109,13 +109,13 @@ public class bookInLysanderController extends HttpServlet {
         int status=dbConModel.addBooking(bookLysanderobj);
         if(status>0)
         {
-            out.print("<p>Booking Recorded!!!</p>");
+            System.out.print("<p>Booking Recorded!!!</p>");
             RequestDispatcher rs = request.getRequestDispatcher("bookInLysanderRate.jsp");
             rs.include(request, response);
         }
         else
         {
-            out.println("Booking not Caputured");
+            System.out.println("Booking not Caputured");
             RequestDispatcher rs = request.getRequestDispatcher("Error.html");
             rs.include(request, response);
         }

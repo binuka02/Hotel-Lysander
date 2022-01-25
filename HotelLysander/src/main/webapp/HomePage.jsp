@@ -2482,30 +2482,104 @@
             </path>
         </svg>
     -->
+<%--    <footer class="footer">--%>
+<%--        <div class="container bottom_border">--%>
+<%--            <div class="row">--%>
+<%--                <div class=" col-sm-4 col-md col-sm-4  col-12 col">--%>
+<%--                    <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>--%>
+<%--                    <!--headin5_amrc-->--%>
+<%--                    <p class="mb10">The Lysander is the crown jewel of the Leisure and Aviation sector of Sri Lanka’s leading conglomerate, Lysander PLC and was the first hotel to be reinstated as a five-star hotel in Galle in 2017. Since its launch in 2012, it has grown from strength to strength gaining international acclaim including Regional Winner Luxury Business Hotel in South West Asia (2016) and Winner- Best Luxury Business Hotel in Sri Lanka (2017) at The World Luxury Hotel Awards.</p>--%>
+<%--                    <p><i class="fa fa-location-arrow"></i> +94-123456789 </p>--%>
+<%--                    <p><i class="fa fa-phone"></i>  +94-123456789  </p>--%>
+<%--                    <p><i class="fa fa fa-envelope"></i> hotellysanderinfo@gmail.com  </p>--%>
+
+
+<%--                </div>--%>
+
+
+<%--                <div class=" col-sm-4 col-md  col-6 col" id="footerelement">--%>
+<%--                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>--%>
+<%--                    <!--headin5_amrc-->--%>
+<%--                    <ul class="footer_ul_amrc">--%>
+<%--                        <li><a href="">Home</a></li>--%>
+<%--                        <li><a href="">Room & Suits</a></li>--%>
+<%--                        <li><a href="">Dining</a></li>--%>
+<%--                        <li><a href="">Wellness</a></li>--%>
+<%--                        <li><a href="">Wedding</a></li>--%>
+<%--                        <li><a href="">Offers</a></li>--%>
+<%--                    </ul>--%>
+<%--                    <!--footer_ul_amrc ends here-->--%>
+<%--                </div>--%>
+
+
+<%--                <div class=" col-sm-4 col-md  col-6 col" id="footerelement">--%>
+<%--                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>--%>
+<%--                    <!--headin5_amrc-->--%>
+<%--                    <ul class="footer_ul_amrc">--%>
+<%--                        <li><a href="">Home</a></li>--%>
+<%--                        <li><a href="">Room & Suits</a></li>--%>
+<%--                        <li><a href="">Dining</a></li>--%>
+<%--                        <li><a href="">Wellness</a></li>--%>
+<%--                        <li><a href="">Wedding</a></li>--%>
+<%--                        <li><a href="">Offers</a></li>--%>
+<%--                    </ul>--%>
+<%--                    <!--footer_ul_amrc ends here-->--%>
+<%--                </div>--%>
+
+
+<%--                <div class=" col-sm-4 col-md  col-12 col">--%>
+
+<%--                    <!--headin5_amrc ends here-->--%>
+<%--                    <h5 class="headin5_amrc col_white_amrc pt2">Give us a Feedback</h5>--%>
+<%--                    <a href="Feedback.html"><button type="button" class="btn btn-light" id="feedback_button" onclick="myFunctionFeedback()">Feedback</button></a>--%>
+<%--                    <!--footer_ul2_amrc ends here-->--%>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+
+
+<%--        <div class="container">--%>
+<%--            <ul class="foote_bottom_ul_amrc">--%>
+<%--                <li><a href="">Room & Suits</a></li>--%>
+<%--                <li><a href="">Dining</a></li>--%>
+<%--                <li><a href="">Wellness</a></li>--%>
+<%--                <li><a href="">Wedding</a></li>--%>
+<%--                <li><a href="">Offers</a></li>--%>
+<%--            </ul>--%>
+<%--            <!--foote_bottom_ul_amrc ends here-->--%>
+<%--            <p class="text-center">Copyright @2022 | <a href="#">Lysander Hotel</a></p>--%>
+
+<%--            <ul class="social_footer_ul">--%>
+<%--                <li><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></li>--%>
+<%--                <li><a href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>--%>
+<%--                <li><a href="http://linkedin.com"><i class="fab fa-linkedin"></i></a></li>--%>
+<%--                <li><a href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>--%>
+<%--            </ul>--%>
+<%--            <!--social_footer_ul ends here-->--%>
+<%--        </div>--%>
+
+<%--    </footer>--%>
+
+
+
 </div>
+<jsp:include page="Footer.html"></jsp:include>
 
 <script>
-    //function to open the choose country window
-    function myFunctionChooseCountryWindowOpen() {
-        window.open("ChooseCountry.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=500,height=600");
-    }
+
 
     //function to open the login and signup
     function myFunctionChooseLogInSignUp() {
-        window.open("LogInPage.html");
+        window.open("LogInPage.html","_self");
     }
 
-    // fuction to open a window to take reviews if neede like that
-    function myFunctionGiveReviewWindowOpen() {
-        window.open("ChooseCountry.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=500,height=600");
-    }
 
     //function to connect to booking page
     function goToBooking(){
         var logInfo=true;
         if(logInfo===true)
         {
-            window.open("bookInLysander.jsp");
+            window.open("bookInLysander.jsp","_self");
         }else
         {
             window.open("Error.html");
@@ -2514,83 +2588,7 @@
     }
 
 </script>
-<%--<footer class="footer">--%>
-<%--    <div class="container bottom_border">--%>
-<%--        <div class="row">--%>
-<%--            <div class=" col-sm-4 col-md col-sm-4  col-12 col">--%>
-<%--                <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>--%>
-<%--                <!--headin5_amrc-->--%>
-<%--                <p class="mb10">The Lysander is the crown jewel of the Leisure and Aviation sector of Sri Lanka’s leading conglomerate, Lysander PLC and was the first hotel to be reinstated as a five-star hotel in Galle in 2017. Since its launch in 2012, it has grown from strength to strength gaining international acclaim including Regional Winner Luxury Business Hotel in South West Asia (2016) and Winner- Best Luxury Business Hotel in Sri Lanka (2017) at The World Luxury Hotel Awards.</p>--%>
-<%--                <p><i class="fa fa-location-arrow"></i> +94-123456789 </p>--%>
-<%--                <p><i class="fa fa-phone"></i>  +94-123456789  </p>--%>
-<%--                <p><i class="fa fa fa-envelope"></i> hotellysanderinfo@gmail.com  </p>--%>
 
-
-<%--            </div>--%>
-
-
-<%--            <div class=" col-sm-4 col-md  col-6 col" id="footerelement">--%>
-<%--                <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>--%>
-<%--                <!--headin5_amrc-->--%>
-<%--                <ul class="footer_ul_amrc">--%>
-<%--                    <li><a href="">Home</a></li>--%>
-<%--                    <li><a href="">Room & Suits</a></li>--%>
-<%--                    <li><a href="">Dining</a></li>--%>
-<%--                    <li><a href="">Wellness</a></li>--%>
-<%--                    <li><a href="">Wedding</a></li>--%>
-<%--                    <li><a href="">Offers</a></li>--%>
-<%--                </ul>--%>
-<%--                <!--footer_ul_amrc ends here-->--%>
-<%--            </div>--%>
-
-
-<%--            <div class=" col-sm-4 col-md  col-6 col" id="footerelement">--%>
-<%--                <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>--%>
-<%--                <!--headin5_amrc-->--%>
-<%--                <ul class="footer_ul_amrc">--%>
-<%--                    <li><a href="">Home</a></li>--%>
-<%--                    <li><a href="">Room & Suits</a></li>--%>
-<%--                    <li><a href="">Dining</a></li>--%>
-<%--                    <li><a href="">Wellness</a></li>--%>
-<%--                    <li><a href="">Wedding</a></li>--%>
-<%--                    <li><a href="">Offers</a></li>--%>
-<%--                </ul>--%>
-<%--                <!--footer_ul_amrc ends here-->--%>
-<%--            </div>--%>
-
-
-<%--            <div class=" col-sm-4 col-md  col-12 col">--%>
-
-<%--                <!--headin5_amrc ends here-->--%>
-<%--                <h5 class="headin5_amrc col_white_amrc pt2">Give us a Feedback</h5>--%>
-<%--                <a href="Feedback.html"><button type="button" class="btn btn-light" id="feedback_button" onclick="myFunctionFeedback()">Feedback</button></a>--%>
-<%--                <!--footer_ul2_amrc ends here-->--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--    </div>--%>
-
-
-<%--    <div class="container">--%>
-<%--        <ul class="foote_bottom_ul_amrc">--%>
-<%--            <li><a href="">Room & Suits</a></li>--%>
-<%--            <li><a href="">Dining</a></li>--%>
-<%--            <li><a href="">Wellness</a></li>--%>
-<%--            <li><a href="">Wedding</a></li>--%>
-<%--            <li><a href="">Offers</a></li>--%>
-<%--        </ul>--%>
-<%--        <!--foote_bottom_ul_amrc ends here-->--%>
-<%--        <p class="text-center">Copyright @2022 | <a href="#">Lysander Hotel</a></p>--%>
-
-<%--        <ul class="social_footer_ul">--%>
-<%--            <li><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></li>--%>
-<%--            <li><a href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>--%>
-<%--            <li><a href="http://linkedin.com"><i class="fab fa-linkedin"></i></a></li>--%>
-<%--            <li><a href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>--%>
-<%--        </ul>--%>
-<%--        <!--social_footer_ul ends here-->--%>
-<%--    </div>--%>
-
-<%--</footer>--%>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -2599,3 +2597,7 @@
 
 </body>
 </html>
+
+<%--<html>--%>
+<%--<jsp:include page="Footer.html"></jsp:include>--%>
+<%--</html>--%>
