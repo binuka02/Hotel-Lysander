@@ -12,11 +12,10 @@ public class BillCalc {
         int kidsCount=Integer.parseInt(bookLysanderobj.getKidsCount());
         int adultCount=Integer.parseInt(bookLysanderobj.getAdultsCount());
 
-        LocalDate cIn=LocalDate.parse("2022-01-10");
-        LocalDate cOut=LocalDate.parse("2022-01-20");
+        LocalDate cIn=LocalDate.parse(bookLysanderobj.getCheckInDate());
+        LocalDate  cOut=LocalDate.parse(bookLysanderobj.getCheckOutDate());
 
-         cIn=LocalDate.parse(bookLysanderobj.getCheckInDate());
-         cOut=LocalDate.parse(bookLysanderobj.getCheckOutDate());
+
         int noOfDays =cOut.getDayOfYear()-cIn.getDayOfYear();
         int totCharge;
 

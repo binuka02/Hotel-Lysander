@@ -476,7 +476,7 @@ and open the template in the editor.
                 var date_input = $('input[name="date"]');
                 var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
                 var options = {
-                    format: 'mm/dd/yyyy',
+                    format: 'yyyy-mm-dd',
                     container: container,
                     todayHighlight: true,
                     autoclose: true,

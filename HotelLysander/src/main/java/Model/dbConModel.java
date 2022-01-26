@@ -11,8 +11,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 
 
 public class dbConModel {
@@ -114,5 +117,25 @@ public class dbConModel {
 
         //find a way to take the count in int
         return count;
+    }
+
+    public static List<bookInLysanderModel> viewBooking(String gFname) throws SQLException, ClassNotFoundException {
+        List<bookInLysanderModel> list= new ArrayList<bookInLysanderModel>();
+
+        PreparedStatement ps=createConnection().prepareStatement("SELECT * FROM bookings WHERE gFname =?");
+        ps.setString(1,gFname);
+        System.out.println("guest namne: "+gFname);
+        ResultSet rs=ps.executeQuery();
+        if(rs.next()){
+            bookInLysanderModel o=new bookInLysanderModel();
+            o.setCheckInDate(rs.getString(3));
+            o.setCheckOutDate(rs.getString(4));
+            o.setAdultsCount(rs.getString(6));
+            o.setRoomType(rs.getString(5));
+            o.setPackages(rs.getString(8));
+
+            list.add(o);
+        }
+        return list;
     }
 }
