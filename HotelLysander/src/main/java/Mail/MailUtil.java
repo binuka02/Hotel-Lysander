@@ -29,7 +29,7 @@ public class MailUtil {
 
 
         String myAccountEmail = "hotellysanderinfo@gmail.com";
-        String password = "lysander123";
+        String password = "123456@nsbm";
 
         Session session = Session.getInstance(properties, new Authenticator()
         {
