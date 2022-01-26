@@ -14,7 +14,7 @@ public class BillCalc {
 
         LocalDate cIn=LocalDate.parse(bookLysanderobj.getCheckInDate());
         LocalDate cOut=LocalDate.parse(bookLysanderobj.getCheckOutDate());
-        
+
 
         int noOfDays =cOut.getDayOfYear()-cIn.getDayOfYear();
         int totCharge;

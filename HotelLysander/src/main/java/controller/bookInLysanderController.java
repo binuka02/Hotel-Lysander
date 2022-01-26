@@ -93,8 +93,9 @@ public class bookInLysanderController extends HttpServlet {
 
         BillCalc bill = new BillCalc();
         int fee=10000;
-        fee= (int) (fee*0.2);
+
         fee=bill.finalcharge(bookLysanderobj);
+        fee= (int) (fee*0.2);
         System.out.println("fee from bill calculation "+fee);
 
         request.setAttribute("fee",fee);
