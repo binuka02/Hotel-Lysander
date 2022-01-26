@@ -1999,9 +1999,9 @@
     </div>
 
     <!-- About Us link in the Header -->
-    <a href="">
+    <a href="http://localhost:8080/HotelLysander/ViewBookings.jsp">
         <div id="ABOUT_US_t">
-            <span>ABOUT US</span>
+            <span>VIEW BOOKINGS</span>
         </div>
     </a>
 
@@ -2563,7 +2563,7 @@
 
 
 </div>
-<jsp:include page="Footer.html"></jsp:include>
+<%--<jsp:include page="Footer.html"></jsp:include>--%>
 
 <script>
 

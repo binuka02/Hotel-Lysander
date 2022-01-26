@@ -48,14 +48,14 @@ public class MailUtil {
     public static String name;
     public static String email_Adress;
     public static String subject;
-    public static String message;
+    public static String message1;
 
-    public boolean getFeedback(String name, String email_Adress, String subject, String message)
+    public boolean getFeedback(String name, String email_Adress, String subject, String message1)
     {
         this.name=name;
         this.email_Adress=email_Adress;
         this.subject=subject;
-        this.message=message;
+        this.message1=message1;
         return false;
     }
 
@@ -69,7 +69,8 @@ public class MailUtil {
             message.setSubject("Customer Feedback");
 //            String htmlCode = "<h1>HOTEL LYSANDER</h1>";
 //            message.setContent(htmlCode, "text/html");
-            message.setText("Name : "+name+"<br>Email : "+email_Adress+"<br>Subject :"+subject+"<br>Message :"+message);
+            message.setText("Name : "+name+"<br>Email : "+email_Adress+"<br>Subject :"+subject+"<br>Message :"+message1);
+
             return message;
 
 
