@@ -1,7 +1,9 @@
 package controller;
 
+import Mail.UserEmail;
 import Mail.SignupMailUtil;
 import Model.dbConModel;
+
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -38,9 +40,8 @@ public class signpController extends HttpServlet {
         String guest_Phone = request.getParameter("guest_Phone");
         String guest_Username = request.getParameter("guest_Username");
 
-
-
-
+        UserEmail mail=new UserEmail();
+        mail.setGuest_Email(guest_Email);
         try {
             dbConModel con = new dbConModel();
             boolean match = con.regUser(guest_FName, guest_LName, guest_Email, guest_Country, guest_NIC, guest_Phone, guest_Username);
@@ -61,7 +62,8 @@ public class signpController extends HttpServlet {
 
         }
         try {
-            SignupMailUtil.sendMail("UserEmail.getGuest_Email()");
+            UserEmail mobj = new UserEmail();
+            SignupMailUtil.sendMail(mobj.getGuest_Email());
         } catch (Exception e) {
             e.printStackTrace();
         }
