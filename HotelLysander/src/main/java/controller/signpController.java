@@ -1,5 +1,6 @@
 package controller;
 
+import Mail.SignupMailUtil;
 import Model.dbConModel;
 
 import javax.servlet.RequestDispatcher;
@@ -10,11 +11,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+import static Mail.SignupJavaMail.main;
 import static java.lang.System.out;
 //import javax.persistence.Id;
 
 @WebServlet(name = "signpController", value = "/signpController")
 public class signpController extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -35,10 +38,15 @@ public class signpController extends HttpServlet {
         String guest_Phone = request.getParameter("guest_Phone");
         String guest_Username = request.getParameter("guest_Username");
 
+
+
+
         try {
             dbConModel con = new dbConModel();
-
             boolean match = con.regUser(guest_FName, guest_LName, guest_Email, guest_Country, guest_NIC, guest_Phone, guest_Username);
+
+            main(null);
+
             if (match == true) {
                 out.println("You have successfully registered!!!");
                 RequestDispatcher rs = request.getRequestDispatcher("SignUpSuccess.html");
@@ -52,10 +60,10 @@ public class signpController extends HttpServlet {
             se.printStackTrace();
 
         }
-//        try {
-//            MailUtil.sendMail("hotellysanderinfo@gmail.com");
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        try {
+            SignupMailUtil.sendMail("UserEmail.getGuest_Email()");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

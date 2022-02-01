@@ -8,7 +8,7 @@ import java.util.Properties;
 
 /**
  *
- * @author Dell
+ * @author Binuka SIlva
  */
 public class MailUtil {
 
@@ -59,6 +59,7 @@ public class MailUtil {
         return false;
     }
 
+
     private static Message prepareMessage(Session session, String myAccountEmail, String recepient) throws AddressException, MessagingException {
         try{
 
@@ -67,8 +68,8 @@ public class MailUtil {
             message.setFrom(new InternetAddress(myAccountEmail));
             message.setRecipient(Message.RecipientType.TO, new InternetAddress(recepient));
             message.setSubject("Customer Feedback");
-//            String htmlCode = "<h1>HOTEL LYSANDER</h1>";
-//            message.setContent(htmlCode, "text/html");
+            String htmlCode = "<h1>HOTEL LYSANDER</h1>";
+            message.setContent(htmlCode, "text/html");
             message.setText("Name : "+name+"<br>Email : "+email_Adress+"<br>Subject :"+subject+"<br>Message :"+message1);
 
             return message;

@@ -49,8 +49,6 @@ public class FeedbackController extends HttpServlet {
 //                out.println("Feedback has received!");
                 RequestDispatcher rs = request.getRequestDispatcher("FeedbackThanks.html");
                 rs.include(request, response);
-
-
             }
             else
             {
