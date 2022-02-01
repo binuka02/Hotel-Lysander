@@ -30,8 +30,7 @@ public class bookInLysanderController extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
-    {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
         //requests from the bookInLysander.jsp
         String Fname = request.getParameter("name");
@@ -56,75 +55,49 @@ public class bookInLysanderController extends HttpServlet {
         bookLysanderobj.setKidsCount(kidsCount);
         bookLysanderobj.setPackages(packages);
 
-        dbConModel obj=new dbConModel();
+        dbConModel obj = new dbConModel();
 
-        int count = 0;
+        int count = 10;
         try {
-            count = obj.checkBooking(checkInDate,checkOutDate,roomType);
+            count = obj.checkBooking(checkInDate, checkOutDate, roomType);
+            System.out.println(count + " Count no");
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
 
-//        if(count>=30){
-//                System.out.println("Already booked your preferences try on other one");
-//                RequestDispatcher rs = request.getRequestDispatcher("Error.html");
-//                rs.include(request, response);
-//            }else {
-////                int status=dbConModel.addBooking(bookLysanderobj);
-////                if(status>0)
-////                {
-////                    out.print("<p>Booking Recorded!!!</p>");
-////                    RequestDispatcher rs = request.getRequestDispatcher("SignUpSuccess.html");
-////                    rs.include(request, response);
-////                }
-////                else
-////                {
-////                    out.println("Booking not Caputured");
-////                    RequestDispatcher rs = request.getRequestDispatcher("Error.html");
-////                    rs.include(request, response);
-////                }
-//                out.print("<p>Booking Recorded!!!</p>");
-//                RequestDispatcher rs = request.getRequestDispatcher("bookInLysanderRate.jsp");
-//                rs.include(request, response);
-//            }
-
-
-        BillCalc bill = new BillCalc();
-        int fee=10000;
-
-        fee=bill.finalcharge(bookLysanderobj);
-        fee= (int) (fee*0.2);
-        System.out.println("fee from bill calculation "+fee);
-
-        request.setAttribute("fee",fee);
-        request.getRequestDispatcher("bookInLysanderRate.jsp").forward(request,response);
-
-        //int BookingFee=2000;
-//        BookingFee=(int)(fee*0.2);
-//        request.setAttribute("BookingFee",BookingFee);
-//        request.getRequestDispatcher("bookInLysanderRate.jsp").forward(request,response);
-
-        //bill.finalcharge(bookLysanderobj);
-
-        int status=dbConModel.addBooking(bookLysanderobj);
-        if(status>0)
-        {
-            System.out.print("<p>Booking Recorded!!!</p>");
-            RequestDispatcher rs = request.getRequestDispatcher("bookInLysanderRate.jsp");
-            rs.include(request, response);
-        }
-        else
-        {
-            System.out.println("Booking not Caputured");
+        if (count >= 30) {
+            System.out.println("Already booked your preferences try on other one");
             RequestDispatcher rs = request.getRequestDispatcher("Error.html");
             rs.include(request, response);
+        } else {
+            BillCalc bill = new BillCalc();
+            int fee = 10000;
+            fee = bill.finalcharge(bookLysanderobj);
+            if (fee == 1000) {
+                System.out.println("Already booked your preferences try on other one");
+                RequestDispatcher rs = request.getRequestDispatcher("Error.html");
+                rs.include(request, response);
+            } else {
+                fee = (int) (fee * 0.2);
+                System.out.println("fee from bill calculation " + fee);
+
+                int status = dbConModel.addBooking(bookLysanderobj);
+                if (status > 0) {
+                    System.out.print("<p>Booking Recorded!!!</p>");
+                    request.setAttribute("fee", fee);
+                    request.getRequestDispatcher("bookInLysanderRate.jsp").forward(request, response);
+                } else {
+                    System.out.println("Booking not Caputured");
+                    RequestDispatcher rs = request.getRequestDispatcher("Error.html");
+                    rs.include(request, response);
+                }
+            }
+
+
         }
-        //forward to bookInLysanderRateController
-
     }
-
     @Override
     public String getServletInfo() {
         return "Short description";
