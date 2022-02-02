@@ -77,7 +77,7 @@ public class bookInLysanderController extends HttpServlet {
             fee = bill.finalcharge(bookLysanderobj);
             if (fee == 1000) {
                 System.out.println("Already booked your preferences try on other one");
-                RequestDispatcher rs = request.getRequestDispatcher("Error.html");
+                RequestDispatcher rs = request.getRequestDispatcher("BookingCollapse.html");
                 rs.include(request, response);
             } else {
                 fee = (int) (fee * 0.2);
