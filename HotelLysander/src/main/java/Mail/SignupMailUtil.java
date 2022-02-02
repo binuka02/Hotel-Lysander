@@ -47,16 +47,29 @@ public class SignupMailUtil {
         System.out.println("Message sent Successfully");
     }
 
+
+    public static String guest_Email;
+
+    public boolean getGuestEmail(String guest_Email)
+    {
+        this.guest_Email=guest_Email;
+        return false;
+    }
+
     private static Message prepareMessage(Session session, String myAccountEmail, String recepient) throws AddressException, MessagingException {
         try{
+
+//            UserEmail mailObj=new UserEmail();
+//            recepient = mailObj.getGuest_Email();
+//            SignupMailUtil.sendMail(user_mail);
 
 
             Message message =  new MimeMessage(session);
             message.setFrom(new InternetAddress(myAccountEmail));
-            message.setRecipient(Message.RecipientType.TO, new InternetAddress(recepient));
+            message.setRecipient(Message.RecipientType.TO, new InternetAddress(guest_Email));
             message.setSubject("Signup Thanks");
-//            String htmlCode = "<h1>HOTEL LYSANDER</h1>";
-//            message.setContent(htmlCode, "text/html");
+            String htmlCode = "<h1>HOTEL LYSANDER</h1>";
+            message.setContent(htmlCode, "text/html");
             message.setText("Thanks for Signup");
 
             return message;

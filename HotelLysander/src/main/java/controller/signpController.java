@@ -1,5 +1,6 @@
 package controller;
 
+import Mail.SignupJavaMail;
 import Mail.UserEmail;
 import Mail.SignupMailUtil;
 import Model.dbConModel;
@@ -40,11 +41,14 @@ public class signpController extends HttpServlet {
         String guest_Phone = request.getParameter("guest_Phone");
         String guest_Username = request.getParameter("guest_Username");
 
-        UserEmail mail=new UserEmail();
-        mail.setGuest_Email(guest_Email);
+
+
         try {
             dbConModel con = new dbConModel();
+            SignupMailUtil signupMailUtil = new SignupMailUtil();
+
             boolean match = con.regUser(guest_FName, guest_LName, guest_Email, guest_Country, guest_NIC, guest_Phone, guest_Username);
+            boolean signupmail = signupMailUtil.getGuestEmail(guest_Email);
 
             main(null);
 
@@ -57,15 +61,18 @@ public class signpController extends HttpServlet {
                 RequestDispatcher rs = request.getRequestDispatcher("Error.html");
                 rs.include(request, response);
             }
-        } catch (Exception se) {
+
+        }
+        catch (Exception se) {
             se.printStackTrace();
 
         }
+
         try {
-            UserEmail mobj = new UserEmail();
-            SignupMailUtil.sendMail(mobj.getGuest_Email());
+            SignupMailUtil.sendMail(guest_Email);
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 }
