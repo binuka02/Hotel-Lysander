@@ -26,8 +26,6 @@ public class MailUtil {
         properties.put("mail.smtp.socketFactory.port", "465");
         properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 
-
-
         String myAccountEmail = "hotellysanderinfo@gmail.com";
         String password = "123456@nsbm";
 

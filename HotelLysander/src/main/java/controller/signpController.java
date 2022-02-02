@@ -23,8 +23,6 @@ public class signpController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
-
         //Taking the data from the form
 //        String guest_Id = request.getParameter("guest_Id");
         String guest_FName = request.getParameter("guest_FName");

@@ -26,7 +26,7 @@ public class viewBookingController extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         out.println("<a href='ViewBookings.jsp'></a>");
-        out.println("<h1>Bookings</h1>");
+        out.println("<h1 style=color:'#555555'>Bookings</h1>");
 //        String guest = (String) request.getAttribute("guest_Fname");
         String guest="Sandaruj";
         List<bookInLysanderModel> list = null;
@@ -37,7 +37,7 @@ public class viewBookingController extends HttpServlet {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        out.print("<table border='1' width='100%'");
+        out.print("<table border='1' width='100%' bgcolor='yellow'");
         out.print("<tr><th>Id</th><th>Name</th><th>Password</th><th>Email</th><th>Country</th><th>Update</th><th>Delete</th></tr>");
         for (bookInLysanderModel o : list) {
             out.print("<tr><td>" + o.getCheckInDate() + "</td><td>" + o.getCheckOutDate() + "</td><td>" + o.getAdultsCount() + "</td><td>" + o.getRoomType() + "</td><td>" + o.getPackages() + "</td><td><a href='UpdateEmpServlet?id="  + "'>Update</a></td><td><a href='DeleteEmpServlet?id=" + "'>delete</a></td></tr>");
