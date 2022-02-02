@@ -21,6 +21,7 @@ public class BillCalc {
 
         switch (packageId*roomTypeId){
             case 5:
+
                 totCharge=8000;
                 break;
             case 6:
