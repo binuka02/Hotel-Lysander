@@ -68,7 +68,7 @@ public class dbConModel {
     public static int addBooking(bookInLysanderModel bookLysanderobj) {
         int status = 0;
 
-        try {
+        try   {
             Connection con = dbConModel.createConnection();
             PreparedStatement ps = con.prepareStatement("insert into bookings values(?,?,?,?,?,?,?,?,?)");
 
