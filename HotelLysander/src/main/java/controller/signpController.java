@@ -1,7 +1,5 @@
 package controller;
 
-import Mail.SignupJavaMail;
-import Mail.UserEmail;
 import Mail.SignupMailUtil;
 import Model.dbConModel;
 
