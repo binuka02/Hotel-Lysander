@@ -19,8 +19,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
-    <title>Dining</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Wellness</title>
     <style>
+
+        @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
         #WelcomeDiv {
             margin-top: 20px;
             margin-left: 10px;
@@ -191,18 +196,34 @@
             font-weight: bold;
         }
 
-
+        #book
+        {
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: #9e6c1c;
+            border: #9e6c1c;
+            font-weight: bold;
+        }
         card-body
         {
             text-align: center;
         }
 
+        #price
+        {
+            color: #9e6c1c;
+            font-weight: bold;
+            text-align: center;
+            font-size: 18px;
+        }
 
         .col{
             text-align: center;
         }
 
     </style>
+
 </head>
 
 <body>
@@ -211,26 +232,25 @@
 
         <p>
             <span><p id="LysanderHeaderName"></p></span>
-        <span><p id="LysanderHeaderName">Welcome </p></span>
-        <span><p id="LysanderHeaderName"> to</p></span><br><br>
-        <span><span id="Lysanders"><p>LYSANDER'S </p></span></span><br>
-        <span><span id="category"> -- </span></span>
-        <span><span id="category"> Dining </span></span>
-        <span><span id="category"> --</span></span><br>
-        <span><h6 style="margin-top: 10px; margin-bottom: 40px;">Seaside </h6></span>
-        <span><h6 style="margin-top: 10px; margin-bottom: 40px;"> Breaking </h6></span>
-        <span><h6 style="margin-top: 10px; margin-bottom: 40px;"> Dinings </h6></span>
-        <span><h6 style="margin-top: 10px; margin-bottom: 40px;"> Since </h6></span>
-        <span><h6 style="margin-top: 10px; margin-bottom: 40px;"> 1815</h6></span>
+            <span><p id="LysanderHeaderName">Welcome </p></span>
+            <span><p id="LysanderHeaderName"> to</p></span><br><br>
+            <span><span id="Lysanders"><p>LYSANDER'S </p></span></span><br>
+            <span><span id="category"> -- </span></span>
+            <span><span id="category"> Wellness </span></span>
+            <span><span id="category"> --</span></span><br>
+            <span><h6 style="margin-top: 10px; margin-bottom: 40px;">Seaside </h6></span>
+            <span><h6 style="margin-top: 10px; margin-bottom: 40px;"> Breaking </h6></span>
+            <span><h6 style="margin-top: 10px; margin-bottom: 40px;"> Facilities </h6></span>
+            <span><h6 style="margin-top: 10px; margin-bottom: 40px;"> Since </h6></span>
+            <span><h6 style="margin-top: 10px; margin-bottom: 40px;"> 1815</h6></span>
         </p>
 
 
     </div>
 
     <div style="margin-left: 20px;">
-        <h5 id="LysanderRoomsHTag">Dining</h5>
+        <h5 id="LysanderRoomsHTag">WELLNESS</h5>
     </div>
-
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -241,19 +261,19 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="Images/dining.jpg" alt="First slide">
+                <img class="d-block w-100" src="Images/rooms%20(4).jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="Images/dining1.jpg" alt="Second slide">
+                <img class="d-block w-100" src="Images/rooms%20(13).jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="Images/dining2.jpg" alt="Third slide">
+                <img class="d-block w-100" src="Images/rooms%20(7).jpg" alt="Third slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="Images/dining3.jpg" alt="Forth slide">
+                <img class="d-block w-100" src="Images/rooms%20(2).jpg" alt="Forth slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="Images/dining4.jpg" alt="Fifth slide">
+                <img class="d-block w-100" src="Images/rooms%20(6).jpg" alt="Fifth slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -267,123 +287,103 @@
     </div><br><br><br>
 
 
+
     <div class="d-flex justify-content-center" style="margin-top: 40px; margin-bottom: 40px;">
         <div class="row">
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/buffet.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="Images/singleroom.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">BUFFET</h5>
+                        <h5 class="card-title">LYSANDER ALL OVER BODY BEAUTY</h5>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            Daily Buffet
-                            Breakfast
-                            06.00 am – 10.30 am
-                            Rs.1680/= net</li>
-                        <li class="list-group-item">
-                            Lunch
-                            12.00 noon –2.30 pm
-                            Rs.2160/= net</li>
-                        <li class="list-group-item">
-                            Weekend Family Lunch
-                            12.00 noon –2.30 pm
-                            Rs.1920/= net</li>
-                        <li class="list-group-item">
-                            Dinner - International Dinner Buffet
-                            7.00 pm – 11.00 pm
-                            Rs.2640/= net
-                        </li>
+                        <li class="list-group-item"><b>02 Hours</b></li>
+                        <li class="list-group-item">Head, Shoulder and Back Massage
+                        <li class="list-group-item">Herbal Bath</li>
+                        <li class="list-group-item">Facial Treatment Incorporating Herbal Face Mask</li>
+                        <li class="list-group-item">All over body scrub with indigenous herbs and plant, tea leaves extracts</li>
+                        <li class="list-group-item">Sandalwood and Milk Beauty Bath</li>
+                        <li class="list-group-item">Moisturizing Aloe Vera Body Lotion Application</li>
+                        <li class="list-group-item" id="price">$150</li>
                     </ul>
+                    <div class="card-body">
+                        <button onclick="myFunctionBookOpen()" type="button" class="btn btn-primary" id="book">BOOK NOW</button>
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/sushi.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="Images/kingsizebedroom.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">SHUSHI TIME</h5>
+                        <h5 class="card-title">LYSANDER SPECIAL CHILL OUT EXPERIENCE</h5>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            Daily Buffet
-                            Breakfast
-                            06.00 am – 10.30 am
-                            Rs.1680/= net</li>
-                        <li class="list-group-item">
-                            Lunch
-                            12.00 noon –2.30 pm
-                            Rs.2160/= net</li>
-                        <li class="list-group-item">
-                            Weekend Family Lunch
-                            12.00 noon –2.30 pm
-                            Rs.1920/= net</li>
-                        <li class="list-group-item">
-                            Dinner - International Dinner Buffet
-                            7.00 pm – 11.00 pm
-                            Rs.2640/= net
-                        </li>
+                        <li class="list-group-item"><b>02 Hours</b></li>
+                        <li class="list-group-item">Head Massage</li>
+                        <li class="list-group-item">Body Massage</li>
+                        <li class="list-group-item">Warm Stone Full Body Treatment</li>
+                        <li class="list-group-item">Herbal Bath</li>
+                        <li class="list-group-item">Tea Leaves Scrub</li>
+                        <li class="list-group-item">This is a special treatment for physical and mental rejuvenation. This will help you
+                            enter day to day life with a relaxed body, mind and soul.</li>
+                        <li class="list-group-item" id="price">$120</li>
                     </ul>
+                    <div class="card-body">
+                        <button onclick="myFunctionBookOpen()" type="button" class="btn btn-primary" id="book">BOOK NOW</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Images/kingsizebedroom.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">LYSANDER LOVE AND DESIRE</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><b>03 Hours</b></li>
+                        <li class="list-group-item">Full Body Massage with body specific herbal oils.</li>
+                        <li class="list-group-item">Gently exfoliating face scrub and revitalizing herbal face mask</li>
+                        <li class="list-group-item">Reflexology foot massage and herbal foot bath to ease tension and promote
+                            relaxation</li>
+                        <li class="list-group-item">Special Foot Reflexology</li>
+                        <li class="list-group-item">Herbal Steam bath</li>
+                        <li class="list-group-item">Bee Honey Body Scrub Treatment</li>
+                        <li class="list-group-item" id="price">$145</li>
+                    </ul>
+                    <div class="card-body">
+                        <button onclick="myFunctionBookOpen()" type="button" class="btn btn-primary" id="book">BOOK NOW</button>
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/bbq.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="Images/cabana.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">BBQ PARTY</h5>
+                        <h5 class="card-title">LYSANDER HIDDEN RELAXATIONS</h5>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            Daily Buffet
-                            Breakfast
-                            06.00 am – 10.30 am
-                            Rs.1680/= net</li>
-                        <li class="list-group-item">
-                            Lunch
-                            12.00 noon –2.30 pm
-                            Rs.2160/= net</li>
-                        <li class="list-group-item">
-                            Weekend Family Lunch
-                            12.00 noon –2.30 pm
-                            Rs.1920/= net</li>
-                        <li class="list-group-item">
-                            Dinner - International Dinner Buffet
-                            7.00 pm – 11.00 pm
-                            Rs.2640/= net
-                        </li>
+                        <li class="list-group-item"><b>02 Hours</b></li>
+                        <li class="list-group-item">Head to feet full body Massage</li>
+                        <li class="list-group-item">Special Foot Reflexology</li>
+                        <li class="list-group-item">Special Herbal Steam bath</li>
+                        <li class="list-group-item">Natural Body Pack with (curd, sandalwood powder, neem powder, bee honey,
+                            cocoa butter)</li>
+                        <li class="list-group-item">Natural Moisturizing Body Lotion Application</li>
+                        <li class="list-group-item">Moisturizing Aloe Vera Body Lotion Application</li>
+                        <li class="list-group-item" id="price">$250</li>
                     </ul>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/bar.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">BAR</h5>
+                        <button onclick="myFunctionBookOpen()" type="button" class="btn btn-primary" id="book">BOOK NOW</button>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            Daily Buffet
-                            Breakfast
-                            06.00 am – 10.30 am
-                            Rs.1680/= net</li>
-                        <li class="list-group-item">
-                            Lunch
-                            12.00 noon –2.30 pm
-                            Rs.2160/= net</li>
-                        <li class="list-group-item">
-                            Weekend Family Lunch
-                            12.00 noon –2.30 pm
-                            Rs.1920/= net</li>
-                        <li class="list-group-item">
-                            Dinner - International Dinner Buffet
-                            7.00 pm – 11.00 pm
-                            Rs.2640/= net
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
     </div><br><br><br>
+
     <jsp:include page="Footer.html"></jsp:include>
+
 
     <script>
         //function to open the choose country window
@@ -398,11 +398,13 @@
                 window.open("BookingNew.html");
             } else {
                 window.open("Error.html");
-                //window.open("LogInPage.jsp");
+                //window.open("LogInPage.html");
             }
         }
 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

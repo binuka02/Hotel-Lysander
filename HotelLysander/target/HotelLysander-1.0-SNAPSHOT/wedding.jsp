@@ -325,7 +325,7 @@
                 window.open("BookingNew.html");
             } else {
                 window.open("Error.html");
-                //window.open("LogInPage.html");
+                //window.open("LogInPage.jsp");
             }
         }
 

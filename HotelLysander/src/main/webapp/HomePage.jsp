@@ -2070,14 +2070,14 @@
     </a>
 
     <!-- Wellness link in the header -->
-    <a href="http://localhost:8080/HotelLysander/Rooms&Suites.jsp">
+    <a href="http://localhost:8080/HotelLysander/Wellness.jsp">
         <div id="WELLNESS">
             <span class="effect-underline">WELLNESS</span>
         </div>
     </a>
 
     <!-- Offers link in the header -->
-    <a href="http://localhost:8080/HotelLysander/Rooms&Suites.jsp">
+    <a href="http://localhost:8080/HotelLysander/Offers.jsp">
         <div id="OFFERS">
             <span class="effect-underline">OFFERS</span>
         </div>
@@ -2570,7 +2570,7 @@
 
     //function to open the login and signup
     function myFunctionChooseLogInSignUp() {
-        window.open("LogInPage.html","_self");
+        window.open("LogInPage.jsp","_self");
     }
 
 

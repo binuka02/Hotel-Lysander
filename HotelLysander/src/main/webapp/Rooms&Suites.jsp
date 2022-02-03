@@ -286,7 +286,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </div><br><br><br>
 
 
 
@@ -377,7 +377,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div><br><br><br>
 
     <jsp:include page="Footer.html"></jsp:include>
 
@@ -395,7 +395,7 @@
                 window.open("BookingNew.html");
             } else {
                 window.open("Error.html");
-                //window.open("LogInPage.html");
+                //window.open("LogInPage.jsp");
             }
         }
 
