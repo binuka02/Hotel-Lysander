@@ -285,7 +285,7 @@
                 <div class="flex-container text-center">
                     <p>
                         If you're Plannung to have a wedding ceremony at a pure beach not far away from the
-                        capital, then Colombo Lysander is one of the best wedding venues in Sri Lanka.
+                        capital, then Galle Lysander is one of the best wedding venues in Sri Lanka.
                         Can host up to 300 guests with their crowning classic design.
                     </p>
                     <button type="button" id="division-container-button" class="btn btn-primary">CONTACT US</button>
@@ -299,7 +299,7 @@
                 <div class="flex-container text-center">
                     <p style="padding-right: 150px; padding-left: 150px; font-size: 25px;">
                         If you're Plannung to have a wedding ceremony at a pure beach not far away from the <br>
-                        capital, then Colombo Lysander is one of the best wedding venues in Sri Lanka. <br>
+                        capital, then Galle Lysander is one of the best wedding venues in Sri Lanka. <br>
                         Can host up to 300 guests with their crowning classic design.
                     </p>
                     <button type="button" id="division-container-button" class="btn btn-primary">CONTACT US</button>
