@@ -1953,7 +1953,7 @@
             right: 0;
             bottom: 0;
             width: 100%;
-            height: 200px;
+
         }
 
         #footer_aboutus
@@ -1998,7 +1998,7 @@
     </svg>
 
     <!-- Header Logo Hotel Lysander -->
-    <a href="">
+    <a href="http://localhost:8080/HotelLysander/" target="_self">
         <div id="HOTEL_LYSANDER">
             <span>HOTEL LYSANDER</span>
         </div>
@@ -2040,14 +2040,14 @@
     </div>
 
     <!-- Contact us link in the Header -->
-    <a href="">
+    <a href="#foot">
         <div id="CONTACT_US_y">
             <span>CONTACT US</span>
         </div>
     </a>
     <a href="">
         <div id="Group_2" style="text-align: center; margin-top: 5px;">
-            <svg class="Rectangle_6" >
+            <svg class="Rectangle_6"  >
                 <rect onclick="myFunctionChooseLogInSignUp()" id="Rectangle_6" rx="10" ry="10" x="0" y="0" width="100" height="47" >
                 </rect>
             </svg>
@@ -2497,7 +2497,7 @@
 <%--            </path>--%>
 <%--        </svg>--%>
 
-    <footer class="footer">
+    <footer class="footer" id="foot">
         <div class="container bottom_border">
             <div class="row">
                 <div class=" col-sm-4 col-md col-sm-4  col-12 col">
