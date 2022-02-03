@@ -2515,7 +2515,7 @@
                     <!--headin5_amrc-->
                     <p><i class="fa fa-location-arrow"></i> +94-123456789 </p>
                     <p><i class="fa fa-phone"></i>  +94-123456789  </p>
-                    <p><i class="fa fa fa-envelope"></i> hotellysanderinfo@gmail.com  </p>l_amrc ends here-->
+                    <p><i class="fa fa fa-envelope"></i> hotellysanderinfo@gmail.com  </p>
                 </div>
 
 
