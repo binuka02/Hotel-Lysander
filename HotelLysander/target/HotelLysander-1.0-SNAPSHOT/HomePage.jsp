@@ -1953,6 +1953,13 @@
             right: 0;
             bottom: 0;
             width: 100%;
+            height: 200px;
+        }
+
+        #footer_aboutus
+        {
+            max-width: 500px;
+            text-align: center;
         }
 
     </style>
@@ -2215,7 +2222,7 @@
 			Our 300 rooms are expertly designed with every luxury in mind. <br/>
 			With a host of amenities and dining options; whether in-room or <br/>
 			from our restaurants, intuitive service & heavenly frette linen bedding, <br/>
-			we gurantee a one of a kind holiday
+			we gurantee a one of a kind holiday.
 		</span>
     </div>
     <div id="Group_3">
@@ -2257,27 +2264,28 @@
     </svg>
     <div id="Discover_the_true_meaning_of_e">
 		<span>
-			Discover the true meaning of elegance, glance & splendour at the Lysander,
-			where we bring you regal indulgence, outstanding individual comforts & the best
-			service amongst hotels in Colombo.</span>
+			Located along the glistening pool waters, Lysander is the ideal place to unwind and relax with your friends.
+            Lysander moves to the rhythm of great beach vibes and will now offer its clientele different spaces
+            to experience in one location. The beverage list is extensive and so is the variety of snacks, bites and mains on offer.</span>
     </div>
     <div id="Discover_the_true_meaning_of_e_b">
 		<span>
-			Discover the true meaning of elegance, glance & splendour at the Lysander,
-			where we bring you regal indulgence, outstanding individual comforts & the best
-			service amongst hotels in Colombo.</span>
+			The city's sought-after location for weddings, Lysander Hotel, Galle
+            offers unique and luxuriously styled venus with a dedicated team who will help make your special day a memorable one.
+            Can host up to 1000 guests.</span>
     </div>
     <div id="Discover_the_true_meaning_of_e_ca">
 		<span>
-			Discover the true meaning of elegance, glance & splendour at the Lysander,
-			where we bring you regal indulgence, outstanding individual comforts & the best
-			service amongst hotels in Colombo.</span>
+			Directly connected to the World Trade Centre, our hotel features a pillar-free ballroom,
+            an outdoor restaurant, and soundproof multifunction space with the latest A/V.
+            Our multi-lingual planners assist with every detail of your event.</span>
     </div>
     <div id="Discover_the_true_meaning_of_e_cb">
 		<span>
-			Discover the true meaning of elegance, glance & splendour at the Lysander,
-			where we bring you regal indulgence, outstanding individual comforts & the best
-			service amongst hotels in Colombo.</span>
+			Retreat in to relaxing environs of our luxury spa in Galle and experience
+            rejuvenating therapies and treatments.
+            Come and experience the signature treatments and spa packages available at our well-appointed spa space and
+            let your worries ease away as your senses awaken to a new realm of relaxation.</span>
     </div>
     <div id="Group_4">
         <svg class="Rectangle_10_ca">
@@ -2357,20 +2365,20 @@
     <div id="Mortalize_your_nuptials__celeb">
 		<span>Mortalize your nuptials & celebrate like royalty at one of our breath-taking
 			Wedding Venues. These venues are renowned as some of the best wedding reception
-			halls in Colombo. Choose from carefully-crafted wedding packages to suit your exact
+			halls in Galle. Choose from carefully-crafted wedding packages to suit your exact
 			requirements. Our dedicated wedding hosts will guide you through the entire planning
 			process and will be with you to orchestrate the most memorable day of your life.</span>
     </div>
     <div id="Mortalize_your_nuptials__celeb_cy">
 		<span>Mortalize your nuptials & celebrate like royalty at one of our breath-taking
 			Wedding Venues. These venues are renowned as some of the best wedding reception halls
-			in Colombo. Choose from carefully-crafted wedding packages to suit your exact requirements.
+			in Galle. Choose from carefully-crafted wedding packages to suit your exact requirements.
 			Our dedicated wedding hosts will guide you through the entire planning process and will be
 			with you to orchestrate the most memorable day of your life.</span>
     </div>
     <div id="Mortalize_your_nuptials__celeb_cz">
 		<span>Mortalize your nuptials & celebrate like royalty at one of our breath-taking Wedding
-			Venues. These venues are renowned as some of the best wedding reception halls in Colombo.
+			Venues. These venues are renowned as some of the best wedding reception halls in Galle.
 			Choose from carefully-crafted wedding packages to suit your exact requirements. Our dedicated
 			wedding hosts will guide you through the entire planning process and will be with you to
 			orchestrate the most memorable day of your life.</span>
@@ -2493,34 +2501,26 @@
         <div class="container bottom_border">
             <div class="row">
                 <div class=" col-sm-4 col-md col-sm-4  col-12 col">
-                    <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+                    <h5 class="headin5_amrc col_white_amrc pt2">About Us</h5>
                     <!--headin5_amrc-->
                     <p class="mb10">The Lysander is the crown jewel of the Leisure and Aviation sector of Sri Lanka’s leading conglomerate, Lysander PLC and was the first hotel to be reinstated as a five-star hotel in Galle in 2017. Since its launch in 2012, it has grown from strength to strength gaining international acclaim including Regional Winner Luxury Business Hotel in South West Asia (2016) and Winner- Best Luxury Business Hotel in Sri Lanka (2017) at The World Luxury Hotel Awards.</p>
+
+
+
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-6 col" id="footerelement">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Find Us</h5>
+                    <!--headin5_amrc-->
                     <p><i class="fa fa-location-arrow"></i> +94-123456789 </p>
                     <p><i class="fa fa-phone"></i>  +94-123456789  </p>
-                    <p><i class="fa fa fa-envelope"></i> hotellysanderinfo@gmail.com  </p>
-
-
+                    <p><i class="fa fa fa-envelope"></i> hotellysanderinfo@gmail.com  </p>l_amrc ends here-->
                 </div>
 
 
                 <div class=" col-sm-4 col-md  col-6 col" id="footerelement">
-                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
-                    <!--headin5_amrc-->
-                    <ul class="footer_ul_amrc">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Room & Suits</a></li>
-                        <li><a href="">Dining</a></li>
-                        <li><a href="">Wellness</a></li>
-                        <li><a href="">Wedding</a></li>
-                        <li><a href="">Offers</a></li>
-                    </ul>
-                    <!--footer_ul_amrc ends here-->
-                </div>
-
-
-                <div class=" col-sm-4 col-md  col-6 col" id="footerelement">
-                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                    <h5 class="headin5_amrc col_white_amrc pt2">Quick Links</h5>
                     <!--headin5_amrc-->
                     <ul class="footer_ul_amrc">
                         <li><a href="">Home</a></li>
@@ -2538,7 +2538,7 @@
 
                     <!--headin5_amrc ends here-->
                     <h5 class="headin5_amrc col_white_amrc pt2">Give us a Feedback</h5>
-                    <a href="Feedback.html"><button type="button" class="btn btn-light" id="feedback_button" onclick="myFunctionFeedback()">Feedback</button></a>
+                    <a href="FeedbackForm.html"><button type="button" class="btn btn-light" id="feedback_button" onclick="myFunctionFeedback()" formaction="HotelLysander/src/main/java/Mail/MailUtil.java">Feedback</button></a>
                     <!--footer_ul2_amrc ends here-->
                 </div>
             </div>
@@ -2547,14 +2547,14 @@
 
         <div class="container">
             <ul class="foote_bottom_ul_amrc">
-                <li><a href="">Room & Suits</a></li>
-                <li><a href="">Dining</a></li>
-                <li><a href="">Wellness</a></li>
-                <li><a href="">Wedding</a></li>
-                <li><a href="">Offers</a></li>
+                <li><a href="http://localhost:8080/HotelLysander/Rooms&Suites.jsp">Room & Suits</a></li>
+                <li><a href="http://localhost:8080/HotelLysander/dining.jsp">Dining</a></li>
+                <li><a href="http://localhost:8080/HotelLysander/Wellness.jsp">Wellness</a></li>
+                <li><a href="http://localhost:8080/HotelLysander/wedding.jsp">Wedding</a></li>
+                <li><a href="http://localhost:8080/HotelLysander/Offers.jsp">Offers</a></li>
             </ul>
             <!--foote_bottom_ul_amrc ends here-->
-            <p class="text-center">Copyright @2022 | <a href="#">Lysander Hotel</a></p>
+            <p class="text-center">Copyright @2022 | <a href="http://localhost:8080/HotelLysander/">Lysander Hotel</a></p>
 
             <ul class="social_footer_ul">
                 <li><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
