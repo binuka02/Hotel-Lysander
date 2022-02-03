@@ -317,7 +317,7 @@
             position: absolute;
             width: 290px;
             height: 3px;
-            left: 815px;
+            left: 830px;
             top: 146px;
             transform: matrix(1,0,0,1,0,0);
         }
@@ -1372,7 +1372,7 @@
         }
         #Mortalize_your_nuptials__celeb_cz {
             left: 1326px;
-            top: 4718px;
+            top: 4725px;
             position: absolute;
             overflow: visible;
             width: 371px;
@@ -2009,7 +2009,7 @@
     </svg>
 
     <!-- Button to Choose the country in Home Page -->
-    <div id="SRI_LANKA">
+    <div id="SRI_LANKA" style="margin-top: 20px;">
         <p>SRI LANKA</p>
     </div>
 
@@ -2046,9 +2046,9 @@
         </div>
     </a>
     <a href="">
-        <div id="Group_2">
-            <svg class="Rectangle_6">
-                <rect onclick="myFunctionChooseLogInSignUp()" id="Rectangle_6" rx="10" ry="10" x="0" y="0" width="100" height="47">
+        <div id="Group_2" style="text-align: center; margin-top: 5px;">
+            <svg class="Rectangle_6" >
+                <rect onclick="myFunctionChooseLogInSignUp()" id="Rectangle_6" rx="10" ry="10" x="0" y="0" width="100" height="47" >
                 </rect>
             </svg>
         </div>
