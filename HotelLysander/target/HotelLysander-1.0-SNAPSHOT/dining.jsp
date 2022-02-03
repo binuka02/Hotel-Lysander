@@ -227,7 +227,7 @@
 
     </div>
 
-    <div style="margin-left: 20px;">
+    <div>
         <h5 id="LysanderRoomsHTag">Dining</h5>
     </div>
 

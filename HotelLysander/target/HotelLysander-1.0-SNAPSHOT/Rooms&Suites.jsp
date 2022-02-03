@@ -250,7 +250,7 @@
 
     </div>
 
-    <div style="margin-left: 20px;">
+    <div>
         <h5 id="LysanderRoomsHTag">ROOMS & SUITES</h5>
     </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

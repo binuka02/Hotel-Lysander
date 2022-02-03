@@ -210,6 +210,16 @@
             text-align: center;
         }
 
+        #division-container-button
+        {
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: #9e6c1c;
+            border: #9e6c1c;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 
@@ -236,7 +246,7 @@
     </div>
 
 
-    <div style="margin-left: 20px;">
+    <div>
         <h5 id="LysanderRoomsHTag"><b>WEDDINGS</b></h5>
     </div>
 

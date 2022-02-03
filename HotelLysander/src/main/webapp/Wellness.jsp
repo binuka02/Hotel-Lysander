@@ -248,7 +248,7 @@
 
     </div>
 
-    <div style="margin-left: 20px;">
+    <div>
         <h5 id="LysanderRoomsHTag">WELLNESS</h5>
     </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -261,19 +261,19 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="Images/rooms%20(4).jpg" alt="First slide">
+                <img class="d-block w-100" src="Images/spa%20(2).jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="Images/rooms%20(13).jpg" alt="Second slide">
+                <img class="d-block w-100" src="Images/wellness5.png" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="Images/rooms%20(7).jpg" alt="Third slide">
+                <img class="d-block w-100" src="Images/spa%20(1).jpg" alt="Third slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="Images/rooms%20(2).jpg" alt="Forth slide">
+                <img class="d-block w-100" src="Images/spa%20(3).jpg" alt="Forth slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="Images/rooms%20(6).jpg" alt="Fifth slide">
+                <img class="d-block w-100" src="Images/spa%20(4).jpg" alt="Fifth slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -292,7 +292,7 @@
         <div class="row">
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/singleroom.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="Images/wellness9.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">LYSANDER ALL OVER BODY BEAUTY</h5>
                     </div>
@@ -313,7 +313,7 @@
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/kingsizebedroom.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="Images/wellness11.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">LYSANDER SPECIAL CHILL OUT EXPERIENCE</h5>
                     </div>
@@ -337,7 +337,7 @@
 
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/kingsizebedroom.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="Images/wellness4.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">LYSANDER LOVE AND DESIRE</h5>
                     </div>
@@ -359,7 +359,7 @@
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="Images/cabana.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="Images/wellness10.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">LYSANDER HIDDEN RELAXATIONS</h5>
                     </div>
