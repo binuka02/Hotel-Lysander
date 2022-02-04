@@ -36,7 +36,7 @@ and open the template in the editor.
 
         body
         {
-            background-image: url("image.png");  
+            background-image: url("Images/image.png");
             background-attachment: fixed;
         }
 
@@ -112,7 +112,7 @@ and open the template in the editor.
         String userName = null;
         //allow access only if session exists
         if(session.getAttribute("guest_Fname") == null){
-            response.sendRedirect("LogInPage.html");
+            response.sendRedirect("LogInPage.jsp");
             System.out.println("log in to Your account before booking");
         }else {
             RequestDispatcher rs = request.getRequestDispatcher("HomePage.jsp");

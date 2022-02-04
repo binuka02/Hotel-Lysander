@@ -317,7 +317,7 @@
             position: absolute;
             width: 290px;
             height: 3px;
-            left: 815px;
+            left: 830px;
             top: 146px;
             transform: matrix(1,0,0,1,0,0);
         }
@@ -1372,7 +1372,7 @@
         }
         #Mortalize_your_nuptials__celeb_cz {
             left: 1326px;
-            top: 4718px;
+            top: 4725px;
             position: absolute;
             overflow: visible;
             width: 371px;
@@ -1947,6 +1947,21 @@
             left: 5;
         }
 
+        .footer {
+            position:absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+
+        }
+
+        #footer_aboutus
+        {
+            max-width: 500px;
+            text-align: center;
+        }
+
     </style>
 
 </head>
@@ -1983,7 +1998,7 @@
     </svg>
 
     <!-- Header Logo Hotel Lysander -->
-    <a href="">
+    <a href="http://localhost:8080/HotelLysander/" target="_self">
         <div id="HOTEL_LYSANDER">
             <span>HOTEL LYSANDER</span>
         </div>
@@ -1994,7 +2009,7 @@
     </svg>
 
     <!-- Button to Choose the country in Home Page -->
-    <div id="SRI_LANKA">
+    <div id="SRI_LANKA" style="margin-top: 20px;">
         <p>SRI LANKA</p>
     </div>
 
@@ -2025,15 +2040,15 @@
     </div>
 
     <!-- Contact us link in the Header -->
-    <a href="">
+    <a href="#foot">
         <div id="CONTACT_US_y">
             <span>CONTACT US</span>
         </div>
     </a>
     <a href="">
-        <div id="Group_2">
-            <svg class="Rectangle_6">
-                <rect onclick="myFunctionChooseLogInSignUp()" id="Rectangle_6" rx="10" ry="10" x="0" y="0" width="100" height="47">
+        <div id="Group_2" style="text-align: center; margin-top: 5px;">
+            <svg class="Rectangle_6"  >
+                <rect onclick="myFunctionChooseLogInSignUp()" id="Rectangle_6" rx="10" ry="10" x="0" y="0" width="100" height="47" >
                 </rect>
             </svg>
         </div>
@@ -2070,14 +2085,14 @@
     </a>
 
     <!-- Wellness link in the header -->
-    <a href="http://localhost:8080/HotelLysander/Rooms&Suites.jsp">
+    <a href="http://localhost:8080/HotelLysander/Wellness.jsp">
         <div id="WELLNESS">
             <span class="effect-underline">WELLNESS</span>
         </div>
     </a>
 
     <!-- Offers link in the header -->
-    <a href="http://localhost:8080/HotelLysander/Rooms&Suites.jsp">
+    <a href="http://localhost:8080/HotelLysander/Offers.jsp">
         <div id="OFFERS">
             <span class="effect-underline">OFFERS</span>
         </div>
@@ -2207,7 +2222,7 @@
 			Our 300 rooms are expertly designed with every luxury in mind. <br/>
 			With a host of amenities and dining options; whether in-room or <br/>
 			from our restaurants, intuitive service & heavenly frette linen bedding, <br/>
-			we gurantee a one of a kind holiday
+			we gurantee a one of a kind holiday.
 		</span>
     </div>
     <div id="Group_3">
@@ -2249,27 +2264,28 @@
     </svg>
     <div id="Discover_the_true_meaning_of_e">
 		<span>
-			Discover the true meaning of elegance, glance & splendour at the Lysander,
-			where we bring you regal indulgence, outstanding individual comforts & the best
-			service amongst hotels in Colombo.</span>
+			Located along the glistening pool waters, Lysander is the ideal place to unwind and relax with your friends.
+            Lysander moves to the rhythm of great beach vibes and will now offer its clientele different spaces
+            to experience in one location. The beverage list is extensive and so is the variety of snacks, bites and mains on offer.</span>
     </div>
     <div id="Discover_the_true_meaning_of_e_b">
 		<span>
-			Discover the true meaning of elegance, glance & splendour at the Lysander,
-			where we bring you regal indulgence, outstanding individual comforts & the best
-			service amongst hotels in Colombo.</span>
+			The city's sought-after location for weddings, Lysander Hotel, Galle
+            offers unique and luxuriously styled venus with a dedicated team who will help make your special day a memorable one.
+            Can host up to 1000 guests.</span>
     </div>
     <div id="Discover_the_true_meaning_of_e_ca">
 		<span>
-			Discover the true meaning of elegance, glance & splendour at the Lysander,
-			where we bring you regal indulgence, outstanding individual comforts & the best
-			service amongst hotels in Colombo.</span>
+			Directly connected to the World Trade Centre, our hotel features a pillar-free ballroom,
+            an outdoor restaurant, and soundproof multifunction space with the latest A/V.
+            Our multi-lingual planners assist with every detail of your event.</span>
     </div>
     <div id="Discover_the_true_meaning_of_e_cb">
 		<span>
-			Discover the true meaning of elegance, glance & splendour at the Lysander,
-			where we bring you regal indulgence, outstanding individual comforts & the best
-			service amongst hotels in Colombo.</span>
+			Retreat in to relaxing environs of our luxury spa in Galle and experience
+            rejuvenating therapies and treatments.
+            Come and experience the signature treatments and spa packages available at our well-appointed spa space and
+            let your worries ease away as your senses awaken to a new realm of relaxation.</span>
     </div>
     <div id="Group_4">
         <svg class="Rectangle_10_ca">
@@ -2349,20 +2365,20 @@
     <div id="Mortalize_your_nuptials__celeb">
 		<span>Mortalize your nuptials & celebrate like royalty at one of our breath-taking
 			Wedding Venues. These venues are renowned as some of the best wedding reception
-			halls in Colombo. Choose from carefully-crafted wedding packages to suit your exact
+			halls in Galle. Choose from carefully-crafted wedding packages to suit your exact
 			requirements. Our dedicated wedding hosts will guide you through the entire planning
 			process and will be with you to orchestrate the most memorable day of your life.</span>
     </div>
     <div id="Mortalize_your_nuptials__celeb_cy">
 		<span>Mortalize your nuptials & celebrate like royalty at one of our breath-taking
 			Wedding Venues. These venues are renowned as some of the best wedding reception halls
-			in Colombo. Choose from carefully-crafted wedding packages to suit your exact requirements.
+			in Galle. Choose from carefully-crafted wedding packages to suit your exact requirements.
 			Our dedicated wedding hosts will guide you through the entire planning process and will be
 			with you to orchestrate the most memorable day of your life.</span>
     </div>
     <div id="Mortalize_your_nuptials__celeb_cz">
 		<span>Mortalize your nuptials & celebrate like royalty at one of our breath-taking Wedding
-			Venues. These venues are renowned as some of the best wedding reception halls in Colombo.
+			Venues. These venues are renowned as some of the best wedding reception halls in Galle.
 			Choose from carefully-crafted wedding packages to suit your exact requirements. Our dedicated
 			wedding hosts will guide you through the entire planning process and will be with you to
 			orchestrate the most memorable day of your life.</span>
@@ -2460,109 +2476,102 @@
 
 
 
-    <!--
-      <svg class="Icon_awesome-long-arrow-alt-ri" viewBox="0 10.258 24.75 16.871">
-            <path id="Icon_awesome-long-arrow-alt-ri" d="M 17.34380912780762 15.62905216217041 L 0.6629452705383301 15.62905216217041 C 0.2968337535858154 15.62905216217041 0 16.04068374633789 0 16.54838180541992 L 0 20.83858871459961 C 0 21.34628677368164 0.2968337535858154 21.75791931152344 0.6629452705383301 21.75791931152344 L 17.34380912780762 21.75791931152344 L 17.34380912780762 25.28653335571289 C 17.34380912780762 26.92462921142578 18.77195930480957 27.74497604370117 19.60727119445801 26.58669662475586 L 24.36163711547852 19.99364852905273 C 24.87945175170898 19.27557373046875 24.87945175170898 18.11139678955078 24.36163711547852 17.39339828491211 L 19.60727119445801 10.80035018920898 C 18.77201461791992 9.642070770263672 17.34380912780762 10.4624195098877 17.34380912780762 12.10051155090332 L 17.34380912780762 15.62905216217041 Z">
-            </path>
-        </svg>
-        <svg class="Icon_awesome-long-arrow-alt-ri_dy" viewBox="0 10.258 24.75 16.871">
-            <path id="Icon_awesome-long-arrow-alt-ri_dy" d="M 17.34380912780762 15.62905216217041 L 0.6629452705383301 15.62905216217041 C 0.2968337535858154 15.62905216217041 0 16.04068374633789 0 16.54838180541992 L 0 20.83858871459961 C 0 21.34628677368164 0.2968337535858154 21.75791931152344 0.6629452705383301 21.75791931152344 L 17.34380912780762 21.75791931152344 L 17.34380912780762 25.28653335571289 C 17.34380912780762 26.92462921142578 18.77195930480957 27.74497604370117 19.60727119445801 26.58669662475586 L 24.36163711547852 19.99364852905273 C 24.87945175170898 19.27557373046875 24.87945175170898 18.11139678955078 24.36163711547852 17.39339828491211 L 19.60727119445801 10.80035018920898 C 18.77201461791992 9.642070770263672 17.34380912780762 10.4624195098877 17.34380912780762 12.10051155090332 L 17.34380912780762 15.62905216217041 Z">
-            </path>
-        </svg>
-        <svg class="Icon_awesome-long-arrow-alt-ri_dz" viewBox="0 10.258 24.75 16.871">
-            <path id="Icon_awesome-long-arrow-alt-ri_dz" d="M 17.34380912780762 15.62905216217041 L 0.6629452705383301 15.62905216217041 C 0.2968337535858154 15.62905216217041 0 16.04068374633789 0 16.54838180541992 L 0 20.83858871459961 C 0 21.34628677368164 0.2968337535858154 21.75791931152344 0.6629452705383301 21.75791931152344 L 17.34380912780762 21.75791931152344 L 17.34380912780762 25.28653335571289 C 17.34380912780762 26.92462921142578 18.77195930480957 27.74497604370117 19.60727119445801 26.58669662475586 L 24.36163711547852 19.99364852905273 C 24.87945175170898 19.27557373046875 24.87945175170898 18.11139678955078 24.36163711547852 17.39339828491211 L 19.60727119445801 10.80035018920898 C 18.77201461791992 9.642070770263672 17.34380912780762 10.4624195098877 17.34380912780762 12.10051155090332 L 17.34380912780762 15.62905216217041 Z">
-            </path>
-        </svg>
-        <svg class="Icon_awesome-long-arrow-alt-ri_d" viewBox="0 10.258 24.75 16.871">
-            <path id="Icon_awesome-long-arrow-alt-ri_d" d="M 17.34380912780762 15.62905216217041 L 0.6629452705383301 15.62905216217041 C 0.2968337535858154 15.62905216217041 0 16.04068374633789 0 16.54838180541992 L 0 20.83858871459961 C 0 21.34628677368164 0.2968337535858154 21.75791931152344 0.6629452705383301 21.75791931152344 L 17.34380912780762 21.75791931152344 L 17.34380912780762 25.28653335571289 C 17.34380912780762 26.92462921142578 18.77195930480957 27.74497604370117 19.60727119445801 26.58669662475586 L 24.36163711547852 19.99364852905273 C 24.87945175170898 19.27557373046875 24.87945175170898 18.11139678955078 24.36163711547852 17.39339828491211 L 19.60727119445801 10.80035018920898 C 18.77201461791992 9.642070770263672 17.34380912780762 10.4624195098877 17.34380912780762 12.10051155090332 L 17.34380912780762 15.62905216217041 Z">
-            </path>
-        </svg>
-        <svg class="Icon_awesome-long-arrow-alt-ri_ea" viewBox="0 10.258 24.75 16.871">
-            <path id="Icon_awesome-long-arrow-alt-ri_ea" d="M 17.34380912780762 15.62905216217041 L 0.6629452705383301 15.62905216217041 C 0.2968337535858154 15.62905216217041 0 16.04068374633789 0 16.54838180541992 L 0 20.83858871459961 C 0 21.34628677368164 0.2968337535858154 21.75791931152344 0.6629452705383301 21.75791931152344 L 17.34380912780762 21.75791931152344 L 17.34380912780762 25.28653335571289 C 17.34380912780762 26.92462921142578 18.77195930480957 27.74497604370117 19.60727119445801 26.58669662475586 L 24.36163711547852 19.99364852905273 C 24.87945175170898 19.27557373046875 24.87945175170898 18.11139678955078 24.36163711547852 17.39339828491211 L 19.60727119445801 10.80035018920898 C 18.77201461791992 9.642070770263672 17.34380912780762 10.4624195098877 17.34380912780762 12.10051155090332 L 17.34380912780762 15.62905216217041 Z">
-            </path>
-        </svg>
-    -->
-<%--    <footer class="footer">--%>
-<%--        <div class="container bottom_border">--%>
-<%--            <div class="row">--%>
-<%--                <div class=" col-sm-4 col-md col-sm-4  col-12 col">--%>
-<%--                    <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>--%>
-<%--                    <!--headin5_amrc-->--%>
-<%--                    <p class="mb10">The Lysander is the crown jewel of the Leisure and Aviation sector of Sri Lanka’s leading conglomerate, Lysander PLC and was the first hotel to be reinstated as a five-star hotel in Galle in 2017. Since its launch in 2012, it has grown from strength to strength gaining international acclaim including Regional Winner Luxury Business Hotel in South West Asia (2016) and Winner- Best Luxury Business Hotel in Sri Lanka (2017) at The World Luxury Hotel Awards.</p>--%>
-<%--                    <p><i class="fa fa-location-arrow"></i> +94-123456789 </p>--%>
-<%--                    <p><i class="fa fa-phone"></i>  +94-123456789  </p>--%>
-<%--                    <p><i class="fa fa fa-envelope"></i> hotellysanderinfo@gmail.com  </p>--%>
+<%--      <svg class="Icon_awesome-long-arrow-alt-ri" viewBox="0 10.258 24.75 16.871">--%>
+<%--            <path id="Icon_awesome-long-arrow-alt-ri" d="M 17.34380912780762 15.62905216217041 L 0.6629452705383301 15.62905216217041 C 0.2968337535858154 15.62905216217041 0 16.04068374633789 0 16.54838180541992 L 0 20.83858871459961 C 0 21.34628677368164 0.2968337535858154 21.75791931152344 0.6629452705383301 21.75791931152344 L 17.34380912780762 21.75791931152344 L 17.34380912780762 25.28653335571289 C 17.34380912780762 26.92462921142578 18.77195930480957 27.74497604370117 19.60727119445801 26.58669662475586 L 24.36163711547852 19.99364852905273 C 24.87945175170898 19.27557373046875 24.87945175170898 18.11139678955078 24.36163711547852 17.39339828491211 L 19.60727119445801 10.80035018920898 C 18.77201461791992 9.642070770263672 17.34380912780762 10.4624195098877 17.34380912780762 12.10051155090332 L 17.34380912780762 15.62905216217041 Z">--%>
+<%--            </path>--%>
+<%--        </svg>--%>
+<%--        <svg class="Icon_awesome-long-arrow-alt-ri_dy" viewBox="0 10.258 24.75 16.871">--%>
+<%--            <path id="Icon_awesome-long-arrow-alt-ri_dy" d="M 17.34380912780762 15.62905216217041 L 0.6629452705383301 15.62905216217041 C 0.2968337535858154 15.62905216217041 0 16.04068374633789 0 16.54838180541992 L 0 20.83858871459961 C 0 21.34628677368164 0.2968337535858154 21.75791931152344 0.6629452705383301 21.75791931152344 L 17.34380912780762 21.75791931152344 L 17.34380912780762 25.28653335571289 C 17.34380912780762 26.92462921142578 18.77195930480957 27.74497604370117 19.60727119445801 26.58669662475586 L 24.36163711547852 19.99364852905273 C 24.87945175170898 19.27557373046875 24.87945175170898 18.11139678955078 24.36163711547852 17.39339828491211 L 19.60727119445801 10.80035018920898 C 18.77201461791992 9.642070770263672 17.34380912780762 10.4624195098877 17.34380912780762 12.10051155090332 L 17.34380912780762 15.62905216217041 Z">--%>
+<%--            </path>--%>
+<%--        </svg>--%>
+<%--        <svg class="Icon_awesome-long-arrow-alt-ri_dz" viewBox="0 10.258 24.75 16.871">--%>
+<%--            <path id="Icon_awesome-long-arrow-alt-ri_dz" d="M 17.34380912780762 15.62905216217041 L 0.6629452705383301 15.62905216217041 C 0.2968337535858154 15.62905216217041 0 16.04068374633789 0 16.54838180541992 L 0 20.83858871459961 C 0 21.34628677368164 0.2968337535858154 21.75791931152344 0.6629452705383301 21.75791931152344 L 17.34380912780762 21.75791931152344 L 17.34380912780762 25.28653335571289 C 17.34380912780762 26.92462921142578 18.77195930480957 27.74497604370117 19.60727119445801 26.58669662475586 L 24.36163711547852 19.99364852905273 C 24.87945175170898 19.27557373046875 24.87945175170898 18.11139678955078 24.36163711547852 17.39339828491211 L 19.60727119445801 10.80035018920898 C 18.77201461791992 9.642070770263672 17.34380912780762 10.4624195098877 17.34380912780762 12.10051155090332 L 17.34380912780762 15.62905216217041 Z">--%>
+<%--            </path>--%>
+<%--        </svg>--%>
+<%--        <svg class="Icon_awesome-long-arrow-alt-ri_d" viewBox="0 10.258 24.75 16.871">--%>
+<%--            <path id="Icon_awesome-long-arrow-alt-ri_d" d="M 17.34380912780762 15.62905216217041 L 0.6629452705383301 15.62905216217041 C 0.2968337535858154 15.62905216217041 0 16.04068374633789 0 16.54838180541992 L 0 20.83858871459961 C 0 21.34628677368164 0.2968337535858154 21.75791931152344 0.6629452705383301 21.75791931152344 L 17.34380912780762 21.75791931152344 L 17.34380912780762 25.28653335571289 C 17.34380912780762 26.92462921142578 18.77195930480957 27.74497604370117 19.60727119445801 26.58669662475586 L 24.36163711547852 19.99364852905273 C 24.87945175170898 19.27557373046875 24.87945175170898 18.11139678955078 24.36163711547852 17.39339828491211 L 19.60727119445801 10.80035018920898 C 18.77201461791992 9.642070770263672 17.34380912780762 10.4624195098877 17.34380912780762 12.10051155090332 L 17.34380912780762 15.62905216217041 Z">--%>
+<%--            </path>--%>
+<%--        </svg>--%>
+<%--        <svg class="Icon_awesome-long-arrow-alt-ri_ea" viewBox="0 10.258 24.75 16.871">--%>
+<%--            <path id="Icon_awesome-long-arrow-alt-ri_ea" d="M 17.34380912780762 15.62905216217041 L 0.6629452705383301 15.62905216217041 C 0.2968337535858154 15.62905216217041 0 16.04068374633789 0 16.54838180541992 L 0 20.83858871459961 C 0 21.34628677368164 0.2968337535858154 21.75791931152344 0.6629452705383301 21.75791931152344 L 17.34380912780762 21.75791931152344 L 17.34380912780762 25.28653335571289 C 17.34380912780762 26.92462921142578 18.77195930480957 27.74497604370117 19.60727119445801 26.58669662475586 L 24.36163711547852 19.99364852905273 C 24.87945175170898 19.27557373046875 24.87945175170898 18.11139678955078 24.36163711547852 17.39339828491211 L 19.60727119445801 10.80035018920898 C 18.77201461791992 9.642070770263672 17.34380912780762 10.4624195098877 17.34380912780762 12.10051155090332 L 17.34380912780762 15.62905216217041 Z">--%>
+<%--            </path>--%>
+<%--        </svg>--%>
+
+    <footer class="footer" id="foot">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">About Us</h5>
+                    <!--headin5_amrc-->
+                    <p class="mb10">The Lysander is the crown jewel of the Leisure and Aviation sector of Sri Lanka’s leading conglomerate, Lysander PLC and was the first hotel to be reinstated as a five-star hotel in Galle in 2017. Since its launch in 2012, it has grown from strength to strength gaining international acclaim including Regional Winner Luxury Business Hotel in South West Asia (2016) and Winner- Best Luxury Business Hotel in Sri Lanka (2017) at The World Luxury Hotel Awards.</p>
 
 
-<%--                </div>--%>
+
+                </div>
 
 
-<%--                <div class=" col-sm-4 col-md  col-6 col" id="footerelement">--%>
-<%--                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>--%>
-<%--                    <!--headin5_amrc-->--%>
-<%--                    <ul class="footer_ul_amrc">--%>
-<%--                        <li><a href="">Home</a></li>--%>
-<%--                        <li><a href="">Room & Suits</a></li>--%>
-<%--                        <li><a href="">Dining</a></li>--%>
-<%--                        <li><a href="">Wellness</a></li>--%>
-<%--                        <li><a href="">Wedding</a></li>--%>
-<%--                        <li><a href="">Offers</a></li>--%>
-<%--                    </ul>--%>
-<%--                    <!--footer_ul_amrc ends here-->--%>
-<%--                </div>--%>
+                <div class=" col-sm-4 col-md  col-6 col" id="footerelement">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Find Us</h5>
+                    <!--headin5_amrc-->
+                    <p><i class="fa fa-location-arrow"></i> +94-123456789 </p>
+                    <p><i class="fa fa-phone"></i>  +94-123456789  </p>
+                    <p><i class="fa fa fa-envelope"></i> hotellysanderinfo@gmail.com  </p>
+                </div>
 
 
-<%--                <div class=" col-sm-4 col-md  col-6 col" id="footerelement">--%>
-<%--                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>--%>
-<%--                    <!--headin5_amrc-->--%>
-<%--                    <ul class="footer_ul_amrc">--%>
-<%--                        <li><a href="">Home</a></li>--%>
-<%--                        <li><a href="">Room & Suits</a></li>--%>
-<%--                        <li><a href="">Dining</a></li>--%>
-<%--                        <li><a href="">Wellness</a></li>--%>
-<%--                        <li><a href="">Wedding</a></li>--%>
-<%--                        <li><a href="">Offers</a></li>--%>
-<%--                    </ul>--%>
-<%--                    <!--footer_ul_amrc ends here-->--%>
-<%--                </div>--%>
+                <div class=" col-sm-4 col-md  col-6 col" id="footerelement">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Quick Links</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Room & Suits</a></li>
+                        <li><a href="">Dining</a></li>
+                        <li><a href="">Wellness</a></li>
+                        <li><a href="">Wedding</a></li>
+                        <li><a href="">Offers</a></li>
+                    </ul>
+                    <!--footer_ul_amrc ends here-->
+                </div>
 
 
-<%--                <div class=" col-sm-4 col-md  col-12 col">--%>
+                <div class=" col-sm-4 col-md  col-12 col">
 
-<%--                    <!--headin5_amrc ends here-->--%>
-<%--                    <h5 class="headin5_amrc col_white_amrc pt2">Give us a Feedback</h5>--%>
-<%--                    <a href="Feedback.html"><button type="button" class="btn btn-light" id="feedback_button" onclick="myFunctionFeedback()">Feedback</button></a>--%>
-<%--                    <!--footer_ul2_amrc ends here-->--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--        </div>--%>
+                    <!--headin5_amrc ends here-->
+                    <h5 class="headin5_amrc col_white_amrc pt2">Give us a Feedback</h5>
+                    <a href="FeedbackForm.html"><button type="button" class="btn btn-light" id="feedback_button" onclick="myFunctionFeedback()" formaction="HotelLysander/src/main/java/Mail/MailUtil.java">Feedback</button></a>
+                    <!--footer_ul2_amrc ends here-->
+                </div>
+            </div>
+        </div>
 
 
-<%--        <div class="container">--%>
-<%--            <ul class="foote_bottom_ul_amrc">--%>
-<%--                <li><a href="">Room & Suits</a></li>--%>
-<%--                <li><a href="">Dining</a></li>--%>
-<%--                <li><a href="">Wellness</a></li>--%>
-<%--                <li><a href="">Wedding</a></li>--%>
-<%--                <li><a href="">Offers</a></li>--%>
-<%--            </ul>--%>
-<%--            <!--foote_bottom_ul_amrc ends here-->--%>
-<%--            <p class="text-center">Copyright @2022 | <a href="#">Lysander Hotel</a></p>--%>
+        <div class="container">
+            <ul class="foote_bottom_ul_amrc">
+                <li><a href="http://localhost:8080/HotelLysander/Rooms&Suites.jsp">Room & Suits</a></li>
+                <li><a href="http://localhost:8080/HotelLysander/dining.jsp">Dining</a></li>
+                <li><a href="http://localhost:8080/HotelLysander/Wellness.jsp">Wellness</a></li>
+                <li><a href="http://localhost:8080/HotelLysander/wedding.jsp">Wedding</a></li>
+                <li><a href="http://localhost:8080/HotelLysander/Offers.jsp">Offers</a></li>
+            </ul>
+            <!--foote_bottom_ul_amrc ends here-->
+            <p class="text-center">Copyright @2022 | <a href="http://localhost:8080/HotelLysander/">Lysander Hotel</a></p>
 
-<%--            <ul class="social_footer_ul">--%>
-<%--                <li><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></li>--%>
-<%--                <li><a href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>--%>
-<%--                <li><a href="http://linkedin.com"><i class="fab fa-linkedin"></i></a></li>--%>
-<%--                <li><a href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>--%>
-<%--            </ul>--%>
-<%--            <!--social_footer_ul ends here-->--%>
-<%--        </div>--%>
+            <ul class="social_footer_ul">
+                <li><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="http://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <!--social_footer_ul ends here-->
+        </div>
 
-<%--    </footer>--%>
+    </footer>
 
 
 
 </div>
+
+
 <%--<jsp:include page="Footer.html"></jsp:include>--%>
 
 <script>
@@ -2570,7 +2579,7 @@
 
     //function to open the login and signup
     function myFunctionChooseLogInSignUp() {
-        window.open("LogInPage.html","_self");
+        window.open("LogInPage.jsp","_self");
     }
 
 
@@ -2598,6 +2607,4 @@
 </body>
 </html>
 
-<%--<html>--%>
-<%--<jsp:include page="Footer.html"></jsp:include>--%>
-<%--</html>--%>
+

@@ -227,7 +227,7 @@
 
     </div>
 
-    <div style="margin-left: 20px;">
+    <div>
         <h5 id="LysanderRoomsHTag">Dining</h5>
     </div>
 
@@ -264,7 +264,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </div><br><br><br>
 
 
     <div class="d-flex justify-content-center" style="margin-top: 40px; margin-bottom: 40px;">
@@ -382,7 +382,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div><br><br><br>
     <jsp:include page="Footer.html"></jsp:include>
 
     <script>
@@ -398,7 +398,7 @@
                 window.open("BookingNew.html");
             } else {
                 window.open("Error.html");
-                //window.open("LogInPage.html");
+                //window.open("LogInPage.jsp");
             }
         }
 

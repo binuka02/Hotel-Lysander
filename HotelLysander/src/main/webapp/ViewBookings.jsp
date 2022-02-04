@@ -36,7 +36,7 @@ and open the template in the editor.
 
     body
     {
-        background-image: url("image.png");
+        background-image: url("Images/image.png");
         background-attachment: fixed;
     }
 

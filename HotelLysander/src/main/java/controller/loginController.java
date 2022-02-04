@@ -50,7 +50,7 @@ public class loginController extends HttpServlet {
             }else
             {
                 System.out.println("Email and NIC is not matching");
-                RequestDispatcher lrd = request.getRequestDispatcher("LogInPage.html");
+                RequestDispatcher lrd = request.getRequestDispatcher("LogInPage.jsp");
                 lrd.include(request, response);
             }
         }catch(Exception se) {
