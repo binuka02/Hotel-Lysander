@@ -22,34 +22,34 @@ public class BillCalc {
         switch (packageId*roomTypeId){
             case 5:
 
-                totCharge=8000;
+                totCharge=80;
                 break;
             case 6:
-                totCharge=11000;
+                totCharge=110;
                 break;
             case 7:
-                totCharge=15000;
+                totCharge=150;
                 break;
             case 10:
-                totCharge=14000;
+                totCharge=140;
                 break;
             case 12:
-                totCharge=19000;
+                totCharge=190;
                 break;
             case 14:
-                totCharge=24000;
+                totCharge=240;
                 break;
             case 15:
-                totCharge=18000;
+                totCharge=180;
                 break;
             case 18:
-                totCharge=26000;
+                totCharge=260;
                 break;
             case 21:
-                totCharge=32000;
+                totCharge=320;
                 break;
             default:
-                totCharge=40000;
+                totCharge=400;
         }
 
         totCharge= (int) (((totCharge*0.5)*kidsCount)+(totCharge*adultCount));
