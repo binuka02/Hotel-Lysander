@@ -125,12 +125,22 @@ and open the template in the editor.
                 <br><br><p class="heading" id="booking">BOOK-IN LYSANDER</p><br>
 
                 <form action="bookInLysanderController" method="POST">
-
                     <div class="form-group mb-3">
-                        <label for="exampleFormControlInput1" id="label_name">Username</label>
-                        <input class="form-control" type="text" value="<%=(session.getAttribute("guest_Fname") == null) ? "" : session.getAttribute("guest_Fname")%>" name="name" required>
+                        <div class="container1">
 
-                    </div>
+                            <div class="row align-items-start">
+                                <div class="col">
+                                    <label for="exampleFormControlInput1" id="label_name">Username</label>
+                                    <input class="form-control" type="text" value="<%=(session.getAttribute("guest_Fname") == null) ? "" : session.getAttribute("guest_Fname")%>" name="name" required>
+                                </div>
+                                <div class="col">
+                                    <label class="control-label" for="date">Email</label>
+                                    <input class="form-control" name="booking_Email" placeholder="Email" type="text" required>
+                                </div>
+
+                            </div>
+                        </div>
+
                     <div class="form-group mb-3">
                         <label class="control-label">Region</label>
                         <select class="form-select" name="region" aria-label="Default select example" placeholder="Region" required>

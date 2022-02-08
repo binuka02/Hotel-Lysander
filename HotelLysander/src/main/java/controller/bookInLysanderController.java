@@ -1,9 +1,13 @@
 
 package controller;
 
+import Mail.BookingMailUtil;
+import Mail.SignupJavaMail;
 import Model.bookInLysanderModel;
 import Model.dbConModel;
 import Bill.BillCalc;
+
+import javax.mail.internet.AddressException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,26 +18,19 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 
+import static Mail.BookingJavaMail.main;
+import static java.lang.System.out;
+
 @WebServlet(name = "bookInLysanderController", urlPatterns = {"/bookInLysanderController"})
 public class bookInLysanderController extends HttpServlet {
 
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
-    {
-
-    }
-
-
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
-    {
-
-    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
         //requests from the bookInLysander.jsp
         String Fname = request.getParameter("name");
+        String booking_Email = request.getParameter("booking_Email");
         String region = request.getParameter("region");
         String checkInDate = request.getParameter("date");
         String checkOutDate = request.getParameter("dateOut");
@@ -59,11 +56,19 @@ public class bookInLysanderController extends HttpServlet {
 
         int count = 10;
         try {
+            BookingMailUtil bookingMailUtil = new BookingMailUtil();
+            boolean bookingmail = bookingMailUtil.getBookingEmail(booking_Email);
+
             count = obj.checkBooking(checkInDate, checkOutDate, roomType);
             System.out.println(count + " Count no");
+            main(null);
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (AddressException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

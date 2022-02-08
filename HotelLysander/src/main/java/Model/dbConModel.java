@@ -115,4 +115,20 @@ public class dbConModel {
         //find a way to take the count in int
         return count;
     }
+
+    public boolean sendBookingMail(String guest_Email) throws SQLException, ClassNotFoundException {
+
+        boolean st = false;
+        try {
+            PreparedStatement ps = createConnection().prepareStatement("select guest_Email from guest where guest_Username=?");
+            ps.setString(1, guest_Email);
+            ResultSet rs = ps.executeQuery();
+            st = rs.next();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return st;
+    }
 }
