@@ -65,7 +65,7 @@ public class SignupMailUtil {
             message.setSubject("Thanks for Choosing Lysander!");
             String htmlCode ="<h2>THANK YOU FOR CHOOSING US!</h2><br>Your account created successfully.<br>We are honored that you have choden to stay with us &<br>look forward to provideing you with<br>a memorable experience.<br><br>ENJOY YOUR STAY IN LYSANDER!!!";
             message.setContent(htmlCode, "text/html");
-            
+
             return message;
         }
         catch(Exception ex)
