@@ -61,11 +61,7 @@ public class FeedbackController extends HttpServlet {
         {
             se.printStackTrace();
         }
-        try {
-            MailUtil.sendMail("hotellysanderinfo@gmail.com");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
 
     }
 }

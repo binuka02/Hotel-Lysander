@@ -67,10 +67,10 @@ public class MailUtil {
             Message message =  new MimeMessage(session);
             message.setFrom(new InternetAddress(myAccountEmail));
             message.setRecipient(Message.RecipientType.TO, new InternetAddress(recepient));
-            message.setSubject("Customer Feedback");
-            String htmlCode = "<h1>HOTEL LYSANDER</h1>";
+            message.setSubject("Customer Feedbacks");
+            String htmlCode = "<h2>CUSTOMER FEEDBACKS</h2><br><table><tr><td><b>Name</td> :</b><td> "+name+"</td></tr><tr><td><b>Email Address</td> :</b><td> "+email_Adress+"</td></tr><tr><td><b>Subject</td> :</b><td> "+subject+"</td></tr><tr><td><b>Message</td> :</b><td> "+message1+"</td></tr></table>";
             message.setContent(htmlCode, "text/html");
-            message.setText("Name : "+name+"<br>Email : "+email_Adress+"<br>Subject :"+subject+"<br>Message :"+message1);
+
 
             return message;
 

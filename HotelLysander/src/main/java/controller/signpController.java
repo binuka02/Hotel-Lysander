@@ -66,11 +66,7 @@ public class signpController extends HttpServlet {
 
         }
 
-        try {
-            SignupMailUtil.sendMail(guest_Email);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
 
     }
 }
