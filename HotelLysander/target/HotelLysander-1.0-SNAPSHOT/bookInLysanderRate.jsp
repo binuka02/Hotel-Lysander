@@ -134,7 +134,7 @@
                             <div class="col">
                                 <div class="form" id="textbox">
                                     <input type="text" name="paymentAmount" value="<%= request.getAttribute("fee")%>" readonly>
-                                    <p>Calculated Booking 20% From Total Amount LKR <%= request.getAttribute("fee")%>.00</p>
+                                    <p>Calculated Booking 20% From Total Amount</p>
 <%--                                    <p>calculated Amount 20% ${paymentAmount}</p>--%>
                                 </div>
                             </div>
@@ -143,18 +143,9 @@
                     <div class="container2 mb-3">
                             <div class="col">
                             </div>
-                            <div class="col">
-                                <div class="form" id="textbox">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="TRUE" name="checkPaymentAmount" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <b>CLICK HERE TO PAY THE FULL AMOUNT</b>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
-                    </div>  
+
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <button type="submit" name="checkPaymentAmount"  class="btn btn-secondary" id="buttons">OK</button>
                     </div><br>

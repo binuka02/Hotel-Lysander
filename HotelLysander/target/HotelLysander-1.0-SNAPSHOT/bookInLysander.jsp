@@ -128,12 +128,12 @@ and open the template in the editor.
 
                     <div class="form-group mb-3">
                         <label for="exampleFormControlInput1" id="label_name">Username</label>
-                        <input class="form-control" type="text" value="<%=(session.getAttribute("guest_Fname") == null) ? "" : session.getAttribute("guest_Fname")%>" name="name">
+                        <input class="form-control" type="text" value="<%=(session.getAttribute("guest_Fname") == null) ? "" : session.getAttribute("guest_Fname")%>" name="name" required>
 
                     </div>
                     <div class="form-group mb-3">
                         <label class="control-label">Region</label>
-                        <select class="form-select" name="region" aria-label="Default select example" placeholder="Region">
+                        <select class="form-select" name="region" aria-label="Default select example" placeholder="Region" required>
                             <option selected></option>
                             <option value="Afganistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
@@ -390,18 +390,18 @@ and open the template in the editor.
                             <div class="row align-items-start">
                                 <div class="col">
                                     <label class="control-label" for="date">Check-In</label>
-                                    <input class="form-control" value="<%=(request.getParameter("checkInDate") == null) ? "" : request.getAttribute("checkInDate") %>" id="date" name="date" placeholder="Check-In" type="text"/>
+                                    <input class="form-control" value="<%=(request.getParameter("checkInDate") == null) ? "" : request.getAttribute("checkInDate") %>" id="date" name="date" placeholder="Check-In" type="text"/ required>
                                 </div>
                                 <div class="col">
                                     <label class="control-label" for="date">Check-Out  </label>
-                                    <input class="form-control" id="date1" value="<%=(request.getParameter("checkOutDate") == null) ? "" : request.getAttribute("checkOutDate") %>" name="dateOut" placeholder="Check-Out" type="text"/>
+                                    <input class="form-control" id="date1" value="<%=(request.getParameter("checkOutDate") == null) ? "" : request.getAttribute("checkOutDate") %>" name="dateOut" placeholder="Check-Out" type="text"/ required>
                                 </div>
 
                             </div>
                         </div><br>
                         <div class="form-group mb-3">
                             <label class="control-label" for="date">Room Type</label>
-                            <select class="form-select" name="roomType" aria-label="Default select example">
+                            <select class="form-select" name="roomType" aria-label="Default select example" required>
                                 <option selected></option>
                                 <option value="1">Single Room</option>
                                 <option value="2">Double Room</option>
@@ -429,7 +429,7 @@ and open the template in the editor.
                                     <div class="row">
                                         <div class="col">
                                             <label class="control-label" for="date">Adults</label>
-                                            <select class="form-select" name="adultsCount" value="fasd" aria-label="Default select example">
+                                            <select class="form-select" name="adultsCount" value="fasd" aria-label="Default select example" required>
                                                 <option selected></option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -453,7 +453,7 @@ and open the template in the editor.
                     </div>
                     <div class="form-group mb-3">
                         <label class="control-label" for="date">Package</label>
-                        <select class="form-select" name="packages" aria-label="Default select example">
+                        <select class="form-select" name="packages" aria-label="Default select example" required>
                             <option selected></option>
                             <option value="5">BB</option>
                             <option value="6">HB</option>

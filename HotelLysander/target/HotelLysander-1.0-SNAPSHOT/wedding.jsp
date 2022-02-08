@@ -325,7 +325,7 @@
     <script>
 
         function myFunctionBookOpen() {
-            window.open("bookInLysander.jsp", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=540,height=660");
+            window.open("bookInLysander.jsp", "_self");
         }
 
         //function to connect to booking page

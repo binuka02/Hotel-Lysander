@@ -74,15 +74,20 @@
     {
       margin-left: 1000px;
     }
+    #footer_bottom
+    {
+      text-align: center;
+      
+    }
 
   </style>
 
   <script type="text/javascript">
 
-    // function myFunctionFeedback()
-    // {
-    //   window.open("FeedbackForm.html", "_blank", "toolbar=yes,scrollbars=yes");
-    // }
+    function myFunctionFeedback()
+    {
+      window.open("FeedbackForm.html", "_self");
+    }
 
   </script>
 
@@ -117,7 +122,7 @@
         <!--headin5_amrc-->
         <p><i class="fa fa-location-arrow"></i> +94-123456789 </p>
         <p><i class="fa fa-phone"></i>  +94-123456789  </p>
-        <p><i class="fa fa fa-envelope"></i> hotellysanderinfo@gmail.com  </p>l_amrc ends here-->
+        <p><i class="fa fa fa-envelope"></i> hotellysanderinfo@gmail.com  </p>
       </div>
 
 
@@ -125,12 +130,12 @@
         <h5 class="headin5_amrc col_white_amrc pt2">Quick Links</h5>
         <!--headin5_amrc-->
         <ul class="footer_ul_amrc">
-          <li><a href="">Home</a></li>
-          <li><a href="">Room & Suits</a></li>
-          <li><a href="">Dining</a></li>
-          <li><a href="">Wellness</a></li>
-          <li><a href="">Wedding</a></li>
-          <li><a href="">Offers</a></li>
+          <li><a href="http://localhost:8080/HotelLysander/">Home</a></li>
+          <li><a href="http://localhost:8080/HotelLysander/Rooms&Suites.jsp">Room & Suits</a></li>
+          <li><a href="http://localhost:8080/HotelLysander/dining.jsp">Dining</a></li>
+          <li><a href="http://localhost:8080/HotelLysander/Wellness.jsp">Wellness</a></li>
+          <li><a href="http://localhost:8080/HotelLysander/wedding.jsp">Wedding</a></li>
+          <li><a href="http://localhost:8080/HotelLysander/Offers.jsp">Offers</a></li>
         </ul>
         <!--footer_ul_amrc ends here-->
       </div>
@@ -140,14 +145,14 @@
 
         <!--headin5_amrc ends here-->
         <h5 class="headin5_amrc col_white_amrc pt2">Give us a Feedback</h5>
-        <a href="FeedbackForm.html"><button type="button" class="btn btn-light" id="feedback_button" onclick="myFunctionFeedback()" formaction="HotelLysander/src/main/java/Mail/MailUtil.java">Feedback</button></a>
+        <button type="button" class="btn btn-light" id="feedback_button" onclick="myFunctionFeedback()" formaction="HotelLysander/src/main/java/Mail/MailUtil.java">Feedback</button>
         <!--footer_ul2_amrc ends here-->
       </div>
     </div>
   </div>
 
 
-  <div class="container">
+  <div class="container" id="footer_bottom">
     <ul class="foote_bottom_ul_amrc">
       <li><a href="http://localhost:8080/HotelLysander/Rooms&Suites.jsp">Room & Suits</a></li>
       <li><a href="http://localhost:8080/HotelLysander/dining.jsp">Dining</a></li>
