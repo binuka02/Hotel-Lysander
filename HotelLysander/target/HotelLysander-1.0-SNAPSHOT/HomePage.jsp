@@ -2065,7 +2065,7 @@
     </div>
 
     <!-- About Us link in the Header -->
-    <a href="http://localhost:8080/HotelLysander/ViewBookings.jsp">
+    <a href="viewBookingController">
         <div id="ABOUT_US_t">
             <span>VIEW BOOKINGS</span>
         </div>

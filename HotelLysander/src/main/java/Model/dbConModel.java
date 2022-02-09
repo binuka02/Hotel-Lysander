@@ -13,7 +13,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
+import java.util.ArrayList;
+import java.util.List;
 
 public class dbConModel {
 
@@ -131,4 +132,41 @@ public class dbConModel {
 
         return st;
     }
+
+    public static List<bookInLysanderModel> viewBooking(String gFname) throws SQLException, ClassNotFoundException {
+        List<bookInLysanderModel> list= new ArrayList<bookInLysanderModel>();
+        PreparedStatement ps=createConnection().prepareStatement("SELECT * FROM bookings WHERE gFname =?");
+        ps.setString(1,gFname);
+        System.out.println("guest name: "+gFname);
+        ResultSet rs=ps.executeQuery();
+        if(rs.next()){
+            bookInLysanderModel o=new bookInLysanderModel();
+            o.setCheckInDate(rs.getString(3));
+            o.setCheckOutDate(rs.getString(4));
+            o.setAdultsCount(rs.getString(6));
+            o.setKidsCount(rs.getString(7));
+            list.add(o);
+        }
+        return list;
+    }
+
+    public int deleteBooking(String gFname){
+
+        int i=0;
+        PreparedStatement ps= null;
+        try {
+            ps = createConnection().prepareStatement("DELETE * FROM bookings WHERE gFname =?");
+            ps.setString(1,gFname);
+
+            i=ps.executeUpdate();
+
+            System.out.println("Deleted from Booking");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return i;
+    }
+
 }

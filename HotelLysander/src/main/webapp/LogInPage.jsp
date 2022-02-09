@@ -96,8 +96,8 @@
             <label for="floatingInput">Username</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" name="guest_NIC" placeholder="NIC" required>
-            <label for="floatingInput">NIC</label>
+            <input type="password" class="form-control" id="floatingInput" name="guest_NIC" placeholder="NIC" required>
+            <label for="floatingInput">Password</label>
           </div>
           <div class="d-grid gap-2 col-6 mx-auto">
             <button type="submit" class="btn btn-secondary" id="buttons">Log In</button>
