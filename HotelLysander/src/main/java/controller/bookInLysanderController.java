@@ -54,7 +54,7 @@ public class bookInLysanderController extends HttpServlet {
 
         dbConModel obj = new dbConModel();
 
-        int count = 10;
+        int count = 5;
         try {
             BookingMailUtil bookingMailUtil = new BookingMailUtil();
             boolean bookingmail = bookingMailUtil.getBookingEmail(booking_Email);

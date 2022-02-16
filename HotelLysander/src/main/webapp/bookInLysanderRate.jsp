@@ -127,7 +127,7 @@
                         <div class="row">
                             <div class="col">
                                 <div class="row">
-                                    <label for="floatingInput" id="labels">Payment Amount</label>
+                                    <label for="floatingInput" id="labels">Payment Amount ($)</label>
                                 </div>
 
                             </div>
